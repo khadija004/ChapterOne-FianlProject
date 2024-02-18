@@ -1,0 +1,176 @@
+#navbar {
+    .logo-pages {
+        display: flex;
+
+        .logo {
+            width: 20px;
+            height: 20px;
+
+            img {
+                width: 70px;
+                margin-top: 40px;
+            }
+        }
+
+        .pages {
+            margin-left: 70px;
+            margin-top: 55px;
+            font-size: 19px;
+
+            ul {
+                display: flex;
+                gap: 20px;
+
+                .active-menu {
+                    a{
+                        color: #d14031;
+                    }
+                    
+                }
+
+                li {
+                    list-style: none;
+
+
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-family: 'Times New Roman', Times, serif;
+                    }
+                }
+            }
+        }
+    }
+
+    .basket-search {
+        margin-top: 55px;
+        display: flex;
+        margin-left: 476px;
+
+        .basket {
+            display: flex;
+
+            a {
+
+                i {
+                    color: black;
+                    font-size: 20px;
+                }
+            }
+
+            .basket-number {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: red;
+                color: white;
+                margin-top: -7px;
+                margin-left: -5px;
+                position: relative;
+                margin-right: 10px;
+
+                span {
+                    font-size: 13px;
+                    position: absolute;
+                    left: 3px;
+                    bottom: -2px;
+                }
+            }
+        }
+
+        .search {
+            margin-left: 12px;
+            cursor: pointer;
+
+            i {
+                font-size: 20px;
+            }
+        }
+
+        .wishlist {
+            margin-left: 12px;
+            display: flex;
+            a {
+
+                i {
+                    font-size: 20px;
+                    color: black;
+                }
+            }
+
+            .wishlist-number {
+                width: 14px;
+                height: 14px;
+                border-radius: 50%;
+                background-color: red;
+                color: white;
+                margin-top: -7px;
+                margin-left: -5px;
+                position: relative;
+                margin-right: -4px;
+
+                span {
+                    font-size: 13px;
+                    position: absolute;
+                    left: 3px;
+                    bottom: -2px;
+                }
+            }
+
+            .border {
+                margin-left: 10px;
+            }
+        }
+
+        .user {
+            margin-left: 12px;
+            cursor: pointer;
+
+            i {
+                font-size: 20px;
+                color: black;
+            }
+
+            .border {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .search-input {
+        right: 113px;
+        position: absolute;
+        top: 125px;
+        width: 85%;
+        input {
+            border: none;
+            outline: none;
+            width: 100%;
+        }
+    }
+
+    .login-register {
+        width: 230px;
+        height: 80px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 7px;
+        position: absolute;
+        right: 109px;
+        top: 91px;
+
+        a {
+            margin-left: 20px;
+            font-size: 17px;
+            padding-top: 7px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .border {
+            margin-top: 13px;
+        }
+    }
+
+
+
+}
