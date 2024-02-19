@@ -218,6 +218,174 @@
   opacity: 1;
 }
 
+#our-services {
+  margin-top: 100px;
+}
+#our-services .service .background-image {
+  height: 420px;
+}
+#our-services .service .background-image .icon {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+}
+#our-services .service .background-image .icon span {
+  color: white;
+}
+#our-services .service .background-image .name {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: monospace;
+}
+#our-services .service .background-image .description {
+  color: white;
+  text-align: center;
+  font-family: serif;
+}
+#our-services .service .background-image .description h3 {
+  width: 600px;
+  margin-left: 350px;
+}
+#our-services .service .background-image .button {
+  margin-top: 40px;
+  text-align: center;
+}
+#our-services .service .background-image .button button {
+  width: 200px;
+  background: none;
+  border: 1px solid white;
+}
+#our-services .service .background-image .button button:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+#our-services .service .background-image .button button:hover p {
+  color: #000;
+}
+#our-services .service .background-image .button button p {
+  padding-top: 13px;
+  color: white;
+}
+
+#authors {
+  margin-top: 150px;
+}
+#authors .authors {
+  margin-left: 100px;
+}
+#authors .authors .services {
+  text-align: center;
+  color: gray;
+}
+#authors .authors .month {
+  text-align: center;
+  font-family: monospace;
+}
+#authors .authors .description {
+  text-align: center;
+  color: gray;
+  margin-top: 10px;
+}
+#authors .authors .description p {
+  font-size: 18px;
+  width: 567px;
+  margin-left: 300px;
+}
+#authors .authors .author {
+  margin-top: 50px;
+}
+#authors .authors .author .profession {
+  margin-left: 70px;
+  margin-top: 20px;
+  font-family: fantasy;
+}
+#authors .authors .author .profession p {
+  color: gray;
+}
+#authors .authors .author .name {
+  margin-left: 45px;
+}
+#authors .authors .author .name p {
+  font-size: 18px;
+}
+#authors .authors .author .author-description {
+  margin-left: -22px;
+}
+#authors .authors .author .author-description p {
+  width: 250px;
+  text-align: center;
+}
+
+#autobiography1 {
+  margin-top: 150px;
+}
+#autobiography1 .autobiography1 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+#autobiography1 .autobiography1 .left .name {
+  color: gray;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .name p {
+  padding-top: 101px;
+  font-family: fangsong;
+}
+#autobiography1 .autobiography1 .left .title {
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .description {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#autobiography1 .autobiography1 .left .description p {
+  width: 400px;
+}
+#autobiography1 .autobiography1 .left .button {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .button button {
+  width: 200px;
+  background: none;
+  border: 1px solid black;
+}
+#autobiography1 .autobiography1 .left .button button:hover {
+  background-color: #282828;
+  transition: 0.5s;
+}
+#autobiography1 .autobiography1 .left .button button:hover p {
+  color: white;
+}
+#autobiography1 .autobiography1 .left .button button p {
+  padding-top: 13px;
+  color: black;
+  font-family: initial;
+}
+#autobiography1 .autobiography1 .left .image {
+  margin-left: 500px;
+}
+#autobiography1 .autobiography1 .left .image img {
+  width: 170px;
+}
+#autobiography1 .autobiography1 .right {
+  width: 200px;
+  height: 100%;
+}
+#autobiography1 .autobiography1 .right .image1 img {
+  width: 300px;
+  margin-top: -46px;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .right .image2 img {
+  width: 350px;
+  margin-top: -88px;
+  margin-left: 200px;
+}
+
 #navbar .logo-pages {
   display: flex;
 }
@@ -353,4 +521,57 @@
 }
 #navbar .login-register .border {
   margin-top: 13px;
+}
+
+#navbar-phone .nav {
+  display: flex;
+  justify-content: space-between;
+}
+#navbar-phone .nav .logo-img {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#navbar-phone .nav .logo-img img {
+  width: 50px;
+  height: 50px;
+}
+#navbar-phone .nav .icons {
+  margin-top: 20px;
+  margin-left: -30px;
+}
+#navbar-phone .nav .icons ul {
+  gap: 15px;
+  display: flex;
+}
+#navbar-phone .nav .icons ul li {
+  list-style: none;
+}
+#navbar-phone .nav .icons ul li a {
+  text-decoration: none;
+}
+#navbar-phone .nav .icons ul li a i {
+  color: black;
+  cursor: pointer;
+}
+#navbar-phone .nav .icons ul li i {
+  color: black;
+  cursor: pointer;
+}
+#navbar-phone .nav .hamburger-icon {
+  margin-top: 20px;
+}
+#navbar-phone .search-input input {
+  border: none;
+  outline: none;
+}
+#navbar-phone .hamburger-menu {
+  margin-top: 10px;
+}
+#navbar-phone .hamburger-menu ul li {
+  list-style: none;
+}
+#navbar-phone .hamburger-menu ul li a {
+  text-decoration: none;
+  color: gray;
+  font-family: auto;
 }/*# sourceMappingURL=style.css.map */
