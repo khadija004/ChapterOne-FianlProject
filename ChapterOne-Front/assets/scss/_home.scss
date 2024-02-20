@@ -507,3 +507,292 @@
 
     }
 }
+
+#autobiography2 {
+    margin-top: 200px;
+
+    .autobiography2 {
+        background-color: aliceblue;
+        width: 100%;
+        height: 500px;
+        display: flex;
+
+        .left {
+            .backgrounds {
+                display: flex;
+
+                .backgorund-image {
+
+                    width: 200px;
+                    height: 500px;
+                }
+
+                .images {
+                    .image1 {
+
+                        img {
+                            width: 400px;
+                            margin-top: -38px;
+                        }
+                    }
+
+                    .image2 {
+
+                        img {
+                            width: 200px;
+                            margin-left: -140px;
+                            margin-top: -42px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .right {
+            margin-left: 50px;
+
+            .name {
+                color: gray;
+                margin-left: 100px;
+
+                p {
+                    padding-top: 101px;
+                    font-family: fangsong;
+                }
+            }
+
+            .title {
+                margin-left: 100px;
+            }
+
+            .description {
+                margin-left: 100px;
+                margin-top: 20px;
+
+                p {
+                    width: 400px;
+                }
+            }
+
+            .button {
+                margin-top: 40px;
+                margin-left: 100px;
+
+                button {
+                    width: 200px;
+                    background: none;
+                    border: 1px solid black;
+
+                    &:hover {
+                        background-color: #282828;
+                        transition: 0.5s;
+
+                        p {
+                            color: white;
+                        }
+                    }
+
+                    p {
+                        padding-top: 13px;
+                        color: black;
+                        font-family: initial;
+                    }
+                }
+            }
+
+            .image {
+                margin-left: 320px;
+
+                img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+#gallery {
+    margin-top: 200px;
+
+    .image1 {
+        opacity: 1;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+
+    }
+
+    .image2 {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .image3 {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            margin-top: 23px;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .image4 {
+        margin-top: 20px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .image5 {
+        margin-top: 20px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .image6 {
+        margin-top: 26px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .image7 {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .image8 {
+        margin-top: 17px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .image9 {
+        margin-top: 26px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .image10 {
+        margin-top: 26px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .image11 {
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .image12 {
+        overflow: hidden;
+        margin-top: 18px;
+
+        img {
+            width: 100%;
+            transition: 0.8s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+
+
+}

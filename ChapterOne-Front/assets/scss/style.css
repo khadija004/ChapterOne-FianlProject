@@ -386,6 +386,213 @@
   margin-left: 200px;
 }
 
+#autobiography2 {
+  margin-top: 200px;
+}
+#autobiography2 .autobiography2 {
+  background-color: aliceblue;
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+#autobiography2 .autobiography2 .left .backgrounds {
+  display: flex;
+}
+#autobiography2 .autobiography2 .left .backgrounds .backgorund-image {
+  width: 200px;
+  height: 500px;
+}
+#autobiography2 .autobiography2 .left .backgrounds .images .image1 img {
+  width: 400px;
+  margin-top: -38px;
+}
+#autobiography2 .autobiography2 .left .backgrounds .images .image2 img {
+  width: 200px;
+  margin-left: -140px;
+  margin-top: -42px;
+}
+#autobiography2 .autobiography2 .right {
+  margin-left: 50px;
+}
+#autobiography2 .autobiography2 .right .name {
+  color: gray;
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .name p {
+  padding-top: 101px;
+  font-family: fangsong;
+}
+#autobiography2 .autobiography2 .right .title {
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .description {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#autobiography2 .autobiography2 .right .description p {
+  width: 400px;
+}
+#autobiography2 .autobiography2 .right .button {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .button button {
+  width: 200px;
+  background: none;
+  border: 1px solid black;
+}
+#autobiography2 .autobiography2 .right .button button:hover {
+  background-color: #282828;
+  transition: 0.5s;
+}
+#autobiography2 .autobiography2 .right .button button:hover p {
+  color: white;
+}
+#autobiography2 .autobiography2 .right .button button p {
+  padding-top: 13px;
+  color: black;
+  font-family: initial;
+}
+#autobiography2 .autobiography2 .right .image {
+  margin-left: 320px;
+}
+#autobiography2 .autobiography2 .right .image img {
+  width: 300px;
+}
+
+#gallery {
+  margin-top: 200px;
+}
+#gallery .image1 {
+  opacity: 1;
+  overflow: hidden;
+}
+#gallery .image1 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image1 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image2 {
+  overflow: hidden;
+}
+#gallery .image2 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image2 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image3 {
+  overflow: hidden;
+}
+#gallery .image3 img {
+  width: 100%;
+  margin-top: 23px;
+  transition: 0.8s;
+}
+#gallery .image3 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image4 {
+  margin-top: 20px;
+  overflow: hidden;
+}
+#gallery .image4 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image4 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image5 {
+  margin-top: 20px;
+  overflow: hidden;
+}
+#gallery .image5 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image5 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image6 {
+  margin-top: 26px;
+  overflow: hidden;
+}
+#gallery .image6 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image6 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image7 {
+  overflow: hidden;
+}
+#gallery .image7 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image7 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image8 {
+  margin-top: 17px;
+  overflow: hidden;
+}
+#gallery .image8 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image8 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image9 {
+  margin-top: 26px;
+  overflow: hidden;
+}
+#gallery .image9 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image9 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image10 {
+  margin-top: 26px;
+  overflow: hidden;
+}
+#gallery .image10 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image10 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image11 {
+  overflow: hidden;
+}
+#gallery .image11 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image11 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image12 {
+  overflow: hidden;
+  margin-top: 18px;
+}
+#gallery .image12 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image12 img:hover {
+  transform: scale(1.1);
+}
+
 #navbar .logo-pages {
   display: flex;
 }
