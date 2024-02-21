@@ -593,6 +593,19 @@
   transform: scale(1.1);
 }
 
+#brand {
+  margin-top: 150px;
+}
+#brand img {
+  width: 100%;
+  height: 170px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+#brand img:hover {
+  margin-top: -20px;
+}
+
 #navbar .logo-pages {
   display: flex;
 }
@@ -781,4 +794,521 @@
   text-decoration: none;
   color: gray;
   font-family: auto;
+}
+
+#footer {
+  margin-top: 150px;
+  background-color: #282828;
+  width: 100%;
+  height: 450px;
+}
+#footer .left1 {
+  margin-top: 80px;
+}
+#footer .left1 h4 {
+  color: white;
+}
+#footer .left1 .story {
+  margin-top: 40px;
+}
+#footer .left1 .story p {
+  cursor: pointer;
+  color: rgb(153, 153, 153);
+}
+#footer .left1 .story p:hover {
+  color: white;
+  transition: 0.5s;
+}
+#footer .left2 {
+  margin-top: 80px;
+}
+#footer .left2 h4 {
+  color: white;
+}
+#footer .left2 .story {
+  margin-top: 40px;
+}
+#footer .left2 .story p {
+  cursor: pointer;
+  color: rgb(153, 153, 153);
+}
+#footer .left2 .story p:nth-child(2) {
+  margin-top: -15px;
+}
+#footer .left2 .story p:nth-child(3) {
+  margin-top: -15px;
+}
+#footer .left2 .icons a i {
+  color: rgb(153, 153, 153);
+}
+#footer .left2 .icons a i:hover {
+  color: white;
+  transition: 0.5s;
+}
+#footer .left3 {
+  margin-top: 80px;
+}
+#footer .left3 h4 {
+  color: white;
+}
+#footer .left3 .story {
+  margin-top: 40px;
+}
+#footer .left3 .story p {
+  cursor: pointer;
+  color: rgb(153, 153, 153);
+}
+#footer .left3 .story p:nth-child(2) {
+  margin-top: -15px;
+}
+#footer .left3 .email-input input {
+  background-color: #282828;
+  border: 1px solid rgb(153, 153, 153);
+  width: 260px;
+  height: 50px;
+}
+#footer .right {
+  margin-top: 80px;
+}
+#footer .right h4 {
+  color: white;
+}
+#footer .right .story {
+  margin-top: 40px;
+}
+#footer .right .story .images1 {
+  display: flex;
+  gap: 10px;
+}
+#footer .right .story .images1 img {
+  width: 100%;
+}
+#footer .right .story .images2 {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+#footer .right .story .images2 img {
+  width: 100%;
+}
+#footer .btn {
+  margin-left: 350px;
+}
+#footer .btn #topbtn {
+  width: 40px;
+  height: 40px;
+  background-color: #d14031;
+  border: none;
+}
+#footer .btn #topbtn i {
+  color: white !important;
+  font-size: 15px;
+}
+
+@media (max-width: 850px) {
+  #slider .swiper .swiper-wrapper .swiper-slide p {
+    font-size: 10px;
+  }
+  #slider .swiper .swiper-wrapper .swiper-slide h1 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  #slider .swiper .swiper-wrapper .swiper-slide h3 {
+    width: 100px;
+    font-size: 10px;
+    margin-top: 30px !important;
+  }
+  #slider .swiper .swiper-wrapper .swiper-slide .shop {
+    margin-top: 30px;
+    font-size: 9px;
+    width: 100px;
+    height: 30px;
+  }
+  #products .category ul li a {
+    font-size: 8px;
+  }
+  #products .products .price-button button {
+    margin-left: 50px;
+    margin-left: 228px;
+  }
+  #our-services .service .background-image .description h3 {
+    font-size: 15px;
+    width: 150px;
+    margin-left: 111px;
+  }
+  #authors .authors .services {
+    margin-left: -90px;
+  }
+  #authors .authors .month {
+    margin-left: -75px;
+  }
+  #authors .authors .description {
+    margin-left: -332px;
+  }
+  #authors .authors .description p {
+    width: 267px;
+  }
+  #autobiography1 .autobiography1 .left .image {
+    display: none;
+  }
+  #autobiography1 .autobiography1 .left .name {
+    margin-left: 121px;
+  }
+  #autobiography1 .autobiography1 .left .title {
+    margin-left: 60px;
+  }
+  #autobiography1 .autobiography1 .left .description {
+    margin-left: 17px;
+  }
+  #autobiography1 .autobiography1 .left .description p {
+    width: 350px;
+    text-align: center;
+  }
+  #autobiography1 .autobiography1 .left .button {
+    margin-left: 97px;
+  }
+  #autobiography1 .autobiography1 .right .image1 {
+    display: none;
+  }
+  #autobiography1 .autobiography1 .right .image2 {
+    display: none;
+  }
+  #autobiography2 .autobiography2 .left .backgrounds .backgorund-image {
+    display: none;
+  }
+  #autobiography2 .autobiography2 .left .images {
+    display: none;
+  }
+  #autobiography2 .autobiography2 .left .title {
+    margin-left: 60px;
+  }
+  #autobiography2 .autobiography2 .left .description {
+    margin-left: 17px;
+  }
+  #autobiography2 .autobiography2 .left .description p {
+    width: 350px;
+    text-align: center;
+  }
+  #autobiography2 .autobiography2 .left .button {
+    margin-left: 97px;
+  }
+  #autobiography2 .autobiography2 .right .name {
+    margin-left: 70px;
+  }
+  #autobiography2 .autobiography2 .right .title {
+    margin-left: 22px;
+  }
+  #autobiography2 .autobiography2 .right .description {
+    margin-left: -32px;
+  }
+  #autobiography2 .autobiography2 .right .description p {
+    width: 350px;
+    text-align: center;
+  }
+  #autobiography2 .autobiography2 .right .button {
+    margin-left: 50px;
+  }
+  #autobiography2 .autobiography2 .right .image {
+    display: none;
+  }
+  #brand .brand {
+    margin-top: 30px;
+  }
+  #brand .brand img {
+    margin-left: 100px;
+    width: 50%;
+  }
+  #footer .footer-background-color {
+    background-color: #282828;
+  }
+  #footer .footer-background-color .right .story .images1 img {
+    width: 31%;
+  }
+  #footer .footer-background-color .right .story .images2 img {
+    width: 31%;
+  }
+  #footer .footer-background-color .btn {
+    margin-left: 220px;
+  }
+  #carts .carts1 {
+    margin-left: 27px;
+  }
+  #carts .carts3 {
+    margin-left: 20px;
+  }
+  #promo-products .description {
+    margin-left: 60px;
+  }
+  #promo-products .description p {
+    width: 250px;
+  }
+  #promo-products .cartsss {
+    width: 84%;
+    margin-left: 35px;
+  }
+  #product-sidebar .products .price-button button {
+    margin-left: 228px;
+  }
+  #product-sidebar .right-section {
+    margin-left: 0;
+  }
+  #product-sidebar .right-section .logo {
+    margin-left: 69px;
+  }
+  #product-sidebar .right-section .images img {
+    width: 70px;
+  }
+  #product-sidebar .pagination {
+    margin-top: 40px;
+  }
+  #contact .name {
+    margin-top: 40px;
+  }
+  #blog .section-2 .description {
+    width: 273px;
+    margin-left: 50px;
+  }
+  #blog .section-6 {
+    margin-left: 0;
+  }
+  #blog .section-7 {
+    margin-left: 0;
+  }
+  #blog .section-8 {
+    margin-left: 0;
+  }
+  #blog .section-9 {
+    margin-left: 0;
+  }
+  #blog .section-10 {
+    margin-left: 0;
+  }
+  #blog .section-11 {
+    margin-left: 0;
+  }
+  #blog .logo span {
+    margin-left: 176px !important;
+  }
+  #review-area .tab-menu ul {
+    margin-left: -30px;
+  }
+  #review-area .user-comment input {
+    width: 100%;
+  }
+  #review-area .user-comment textarea {
+    width: 100%;
+  }
+  #blog-detail .details .section-1 .icons {
+    margin-left: 100px;
+  }
+  #blog-detail .details .section-2 .image-names .description-4 {
+    width: 200px;
+  }
+  #blog-detail .details .section-3 .comments .image-names .description-4 {
+    width: 200px;
+    margin-top: 0;
+  }
+  #blog-detail .section-5 {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+  #blog-detail .section-5 .logo span {
+    margin-left: 177px;
+  }
+  #blog-detail .section-6 {
+    margin-left: 0;
+  }
+  #blog-detail .section-6 .logo span {
+    margin-left: 177px;
+  }
+  #blog-detail .section-7 {
+    margin-left: 0;
+  }
+  #blog-detail .section-7 .logo span {
+    margin-left: 177px;
+  }
+  #blog-detail .section-8 {
+    margin-left: 0;
+  }
+  #blog-detail .section-8 .logo span {
+    margin-left: 177px;
+  }
+  #blog-detail .section-9 {
+    margin-left: 0;
+  }
+  #blog-detail .section-9 .logo span {
+    margin-left: 177px;
+  }
+  #blog-detail .section-10 {
+    margin-left: 0;
+  }
+  #cart-products .basket-products {
+    overflow-x: scroll;
+  }
+  #wishlist-products .wishlist-products {
+    overflow-x: scroll;
+  }
+}
+@media (min-width: 760px) and (max-width: 1200px) {
+  #products .category ul li a {
+    font-size: 15px;
+  }
+  #products .products .price-button button {
+    margin-left: 197px;
+  }
+  #our-services .service .description h3 {
+    width: 350px !important;
+    margin-left: 172px !important;
+  }
+  #authors .authors .description p {
+    width: 579px;
+  }
+  #autobiography1 .autobiography1 .left .name {
+    margin-left: 275px;
+  }
+  #autobiography1 .autobiography1 .left .title {
+    margin-left: 200px;
+  }
+  #autobiography1 .autobiography1 .left .description {
+    margin-left: 120px;
+  }
+  #autobiography1 .autobiography1 .left .description p {
+    width: 450px;
+  }
+  #autobiography1 .autobiography1 .left .button {
+    margin-left: 243px;
+  }
+  #autobiography1 .autobiography1 .right {
+    background-image: none !important;
+  }
+  #autobiography2 .autobiography2 .right .name {
+    margin-left: 230px;
+  }
+  #autobiography2 .autobiography2 .right .title {
+    margin-left: 170px;
+  }
+  #autobiography2 .autobiography2 .right .description {
+    margin-left: 80px;
+  }
+  #autobiography2 .autobiography2 .right .description p {
+    width: 450px;
+  }
+  #autobiography2 .autobiography2 .right .button {
+    margin-left: 200px;
+  }
+  #promo-products .description {
+    margin-left: 120px;
+  }
+  #promo-products .description p {
+    width: 450px;
+  }
+  #promo-products .cartsss .box-area {
+    margin-left: -20px;
+  }
+  #product-sidebar .products .price-button button {
+    margin-left: 197px;
+  }
+  #product-sidebar .logo span {
+    margin-left: 272px !important;
+  }
+  #product-sidebar .right-section {
+    margin-left: 0;
+  }
+  #product-sidebar .right-section .images img {
+    width: 135px;
+    height: 190px;
+  }
+  #blog .section-2 .description {
+    width: 600px;
+  }
+  #blog .section-6 .description p {
+    width: 582px !important;
+  }
+  #blog .section-6 .logo span {
+    margin-left: 340px !important;
+  }
+  #blog .section-7 .logo span {
+    margin-left: 340px !important;
+  }
+  #blog .section-8 .logo span {
+    margin-left: 340px !important;
+  }
+  #blog .section-9 .logo span {
+    margin-left: 340px !important;
+  }
+  #blog .section-10 .logo span {
+    margin-left: 340px !important;
+  }
+  #blog-detail .details .section-1 .icons {
+    margin-left: 270px;
+  }
+  #blog-detail .details .section-2 .image-names .description-4 {
+    width: 515px;
+  }
+  #blog-detail .details .section-3 .comments .image-names .description-4 {
+    width: 515px;
+  }
+  #blog-detail .section-5 .description p {
+    width: 600px;
+  }
+  #blog-detail .section-5 .logo span {
+    margin-left: 341px;
+  }
+  #blog-detail .section-6 {
+    margin-left: 0;
+  }
+  #blog-detail .section-6 .logo span {
+    margin-left: 341px;
+  }
+  #blog-detail .section-7 {
+    margin-left: 0;
+  }
+  #blog-detail .section-7 .logo span {
+    margin-left: 341px;
+  }
+  #blog-detail .section-8 {
+    margin-left: 0;
+  }
+  #blog-detail .section-8 .logo span {
+    margin-left: 341px;
+  }
+  #blog-detail .section-9 {
+    margin-left: 0;
+  }
+  #blog-detail .section-9 .logo span {
+    margin-left: 341px;
+  }
+  #blog-detail .section-10 {
+    margin-left: 0;
+  }
+  #footer .footer-background-color {
+    background-color: #282828;
+  }
+  #footer .footer-background-color .right .story .images1 img {
+    width: 31%;
+  }
+  #footer .footer-background-color .right .story .images2 img {
+    width: 31%;
+  }
+  #footer .footer-background-color .btn {
+    margin-left: 220px;
+  }
+}
+#background {
+  margin-top: 73px;
+}
+#background .background-image {
+  width: 100%;
+  height: 400px;
+}
+#background .title-name {
+  text-align: center;
+  padding-top: 150px;
+  color: white;
+}
+#background .title-name p {
+  font-family: monospace;
+}
+#background .title-name h3 {
+  font-family: monospace;
 }/*# sourceMappingURL=style.css.map */
