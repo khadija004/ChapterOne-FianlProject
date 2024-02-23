@@ -1311,4 +1311,280 @@
 }
 #background .title-name h3 {
   font-family: monospace;
+}
+
+#carts {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+#carts .small-logo1 {
+  margin-left: 58px;
+  margin-top: 10px;
+}
+#carts .small-logo1 span {
+  font-size: 20px;
+}
+#carts .description1 p {
+  width: 213px;
+  text-align: center;
+  margin-left: -40px;
+  color: gray;
+}
+#carts .small-logo2 {
+  margin-left: 83px;
+  margin-top: 10px;
+}
+#carts .small-logo2 span {
+  font-size: 20px;
+}
+#carts .description2 p {
+  width: 213px;
+  text-align: center;
+  margin-left: -15px;
+  color: gray;
+}
+#carts .carts3 .image {
+  margin-left: 18px;
+}
+#carts .small-logo3 {
+  margin-left: 69px;
+  margin-top: 10px;
+}
+#carts .small-logo3 span {
+  font-size: 20px;
+}
+#carts .description3 p {
+  width: 213px;
+  text-align: center;
+  margin-left: -24px;
+  color: gray;
+}
+#carts .small-logo4 {
+  margin-left: 93px;
+  margin-top: 10px;
+}
+#carts .small-logo4 span {
+  font-size: 20px;
+}
+#carts .name4 {
+  margin-left: 15px;
+}
+#carts .description4 p {
+  width: 213px;
+  text-align: center;
+  color: gray;
+}
+
+#autobiography1 {
+  margin-top: 150px;
+}
+#autobiography1 .autobiography1 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+#autobiography1 .autobiography1 .left .name {
+  color: gray;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .name p {
+  padding-top: 101px;
+  font-family: fangsong;
+}
+#autobiography1 .autobiography1 .left .title {
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .description {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#autobiography1 .autobiography1 .left .description p {
+  width: 400px;
+}
+#autobiography1 .autobiography1 .left .button {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .button button {
+  width: 200px;
+  background: none;
+  border: 1px solid black;
+}
+#autobiography1 .autobiography1 .left .button button:hover {
+  background-color: #282828;
+  transition: 0.5s;
+}
+#autobiography1 .autobiography1 .left .button button:hover p {
+  color: white;
+}
+#autobiography1 .autobiography1 .left .button button p {
+  padding-top: 13px;
+  color: black;
+  font-family: initial;
+}
+#autobiography1 .autobiography1 .left .image {
+  margin-left: 500px;
+}
+#autobiography1 .autobiography1 .left .image img {
+  z-index: 1;
+}
+#autobiography1 .autobiography1 .right {
+  width: 200px;
+  height: 100%;
+}
+#autobiography1 .autobiography1 .right .image1 {
+  position: relative;
+}
+#autobiography1 .autobiography1 .right .image1 img {
+  width: 300px;
+  margin-top: -46px;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .right .image2 img {
+  width: 350px;
+  margin-top: -88px;
+  margin-left: 200px;
+}
+
+#autobiography2 {
+  margin-top: 200px;
+}
+#autobiography2 .autobiography2 {
+  background-color: aliceblue;
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+#autobiography2 .autobiography2 .left .backgrounds {
+  display: flex;
+}
+#autobiography2 .autobiography2 .left .backgrounds .backgorund-image {
+  width: 200px;
+  height: 500px;
+}
+#autobiography2 .autobiography2 .left .backgrounds .images .image1 img {
+  width: 400px;
+  margin-top: -38px;
+}
+#autobiography2 .autobiography2 .left .backgrounds .images .image2 img {
+  width: 200px;
+  margin-left: -140px;
+  margin-top: -42px;
+}
+#autobiography2 .autobiography2 .right {
+  margin-left: 50px;
+}
+#autobiography2 .autobiography2 .right .name {
+  color: gray;
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .name p {
+  padding-top: 101px;
+  font-family: fangsong;
+}
+#autobiography2 .autobiography2 .right .title {
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .description {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#autobiography2 .autobiography2 .right .description p {
+  width: 400px;
+}
+#autobiography2 .autobiography2 .right .button {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .button button {
+  width: 200px;
+  background: none;
+  border: 1px solid black;
+}
+#autobiography2 .autobiography2 .right .button button:hover {
+  background-color: #282828;
+  transition: 0.5s;
+}
+#autobiography2 .autobiography2 .right .button button:hover p {
+  color: white;
+}
+#autobiography2 .autobiography2 .right .button button p {
+  padding-top: 13px;
+  color: black;
+  font-family: initial;
+}
+#autobiography2 .autobiography2 .right .image {
+  margin-left: 320px;
+}
+#autobiography2 .autobiography2 .right .image img {
+  width: 300px;
+}
+
+#promo-products {
+  background-color: #FBF9F6;
+  margin-top: 150px;
+}
+#promo-products .title {
+  text-align: center;
+  padding-top: 100px;
+}
+#promo-products .title p {
+  color: gray;
+  font-family: monospace;
+}
+#promo-products .name {
+  text-align: center;
+}
+#promo-products .name h1 {
+  font-family: monospace;
+}
+#promo-products .description {
+  text-align: center;
+  margin-left: 400px;
+  margin-top: 20px;
+}
+#promo-products .description p {
+  color: gray;
+  font-family: monospace;
+  width: 511px;
+}
+#promo-products .box-area .image {
+  width: 250px;
+  margin-left: 25px;
+}
+#promo-products .box-area .image img {
+  width: 100%;
+  cursor: pointer;
+}
+#promo-products .box-area .name {
+  opacity: 0;
+  transition: 0.4s;
+}
+#promo-products .box-area .name h5 {
+  margin-top: -40px;
+}
+#promo-products .box-area .price {
+  transition: 0.4s;
+  text-align: center !important;
+  opacity: 0;
+}
+#promo-products .box-area:hover .name,
+#promo-products .box-area:hover .price {
+  opacity: 1;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
 }/*# sourceMappingURL=style.css.map */
