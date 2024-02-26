@@ -2017,4 +2017,297 @@
 #product-sidebar .right-section .icons ul li a i:hover {
   color: #d14031;
   transition: 0.5s;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#detail {
+  margin-top: 100px;
+}
+#detail .product-image {
+  position: sticky;
+  top: 50px !important;
+  left: 0;
+}
+#detail .product-image img {
+  width: 100%;
+}
+#detail .section-1 .name p {
+  color: gray;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+}
+#detail .section-1 .name p:hover {
+  color: rgb(241, 6, 6);
+  transition: 1s;
+}
+#detail .section-1 .wellness {
+  margin-top: -15px;
+}
+#detail .section-1 .wellness h2 {
+  font-family: auto;
+}
+#detail .section-1 .price p {
+  font-size: 20px;
+}
+#detail .section-1 .description {
+  margin-top: 20px;
+}
+#detail .section-1 .description p {
+  font-family: auto;
+  color: gray;
+}
+#detail .section-1 .add-basket-button {
+  margin-top: 20px;
+  gap: 10px;
+}
+#detail .section-1 .add-basket-button button {
+  width: 200px;
+  height: 50px;
+  background-color: #d14031;
+  color: white;
+  border: none;
+  font-family: auto;
+}
+#detail .section-1 .add-basket-button button:nth-child(2) {
+  background-color: green;
+}
+#detail .section-1 .add-basket-button button:nth-child(2):hover {
+  background-color: rgb(2, 78, 2);
+  transition: 0.5s;
+}
+#detail .section-1 .add-basket-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#detail .section-1 .sku-code {
+  display: flex;
+  margin-top: 50px;
+}
+#detail .section-1 .sku-code p {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .sku-code span {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .categories {
+  display: flex;
+}
+#detail .section-1 .categories p {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .categories span {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .tags {
+  display: flex;
+}
+#detail .section-1 .tags p {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .tags span {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .border {
+  margin-top: 20px;
+}
+#detail .section-1 .authorimage-authorname {
+  margin-top: 50px;
+  display: flex;
+}
+#detail .section-1 .authorimage-authorname .author-image img {
+  width: 80px;
+}
+#detail .section-1 .authorimage-authorname .author-name {
+  margin-left: 20px;
+}
+#detail .section-1 .authorimage-authorname .author-name p {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .authorimage-authorname .author-name span {
+  font-size: 20px;
+  font-family: auto;
+}
+#detail .section-1 .author-description {
+  margin-top: 20px;
+}
+#detail .section-1 .author-description p {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .author-comment {
+  background-color: #fbf9f6;
+  padding: 30px 40px;
+  margin-top: 30px;
+}
+#detail .section-1 .author-comment .starts {
+  display: flex;
+  gap: 5px;
+}
+#detail .section-1 .author-comment .comment p {
+  color: gray;
+  font-family: auto;
+  margin-top: 20px;
+  font-size: 18px;
+}
+#detail .section-1 .author-comment .logo-name {
+  display: flex;
+  padding-top: 10px;
+}
+#detail .section-1 .author-comment .logo-name .names {
+  margin-left: 10px;
+}
+#detail .section-1 .author-comment .logo-name .names p {
+  font-family: auto;
+  font-size: 18px;
+}
+
+#review-area .tab-menu {
+  margin-top: 100px;
+}
+#review-area .tab-menu ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+#review-area .tab-menu ul .active {
+  transition: 1s;
+  background-color: #000;
+}
+#review-area .tab-menu ul .active a {
+  color: #fff !important;
+}
+#review-area .tab-menu ul li {
+  list-style: none;
+  border: 1px solid black;
+  width: 150px;
+  text-align: center;
+  height: 40px;
+  padding-top: 7px;
+  cursor: pointer;
+}
+#review-area .tab-menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+#review-area .description {
+  margin-top: 20px;
+}
+#review-area .description p {
+  text-align: center;
+  font-family: auto;
+  color: gray;
+}
+#review-area .filterDiv {
+  display: none;
+}
+#review-area .show {
+  display: block;
+}
+#review-area .user-comment {
+  margin-top: 20px;
+  text-align: center;
+}
+#review-area .user-comment p {
+  font-size: 20px;
+  font-family: auto;
+  font-weight: bold;
+}
+#review-area .user-comment .stars i {
+  cursor: pointer;
+  color: gray;
+}
+#review-area .user-comment input {
+  width: 50%;
+  height: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.2117647059);
+  padding-left: 15px;
+  outline: none;
+}
+#review-area .user-comment textarea {
+  width: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.2117647059);
+  padding-left: 15px;
+  padding-top: 15px;
+  outline: none;
+}
+#review-area .user-comment .submit-button {
+  margin-top: 20px;
+}
+#review-area .user-comment .submit-button button {
+  width: 130px;
+  height: 50px;
+  background-color: #d14031;
+  color: white;
+  border: none;
+  font-family: initial;
+}
+#review-area .user-comment .submit-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+
+#related-products {
+  margin-top: 100px;
+}
+#related-products .related-products-word h2 {
+  font-family: auto;
+}
+#related-products .related-products {
+  margin-top: 50px;
+}
+#related-products .related-products .image img {
+  cursor: pointer;
+  width: 100%;
+}
+#related-products .related-products .author-name {
+  margin-top: 10px;
+}
+#related-products .related-products .author-name p {
+  color: gray;
+  font-family: auto;
+  font-size: 18px;
+  cursor: pointer;
+}
+#related-products .related-products .author-name p:hover {
+  color: rgb(241, 6, 6);
+  transition: 1s;
+}
+#related-products .related-products .book-name {
+  margin-top: -10px;
+}
+#related-products .related-products .book-name span {
+  font-family: auto;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+#related-products .related-products .book-name span:hover {
+  color: rgb(241, 6, 6);
+  transition: 1s;
+}
+#related-products .related-products .book-price {
+  margin-top: 5px;
+}
+#related-products .related-products .book-price p {
+  color: gray;
+  font-family: auto;
 }/*# sourceMappingURL=style.css.map */

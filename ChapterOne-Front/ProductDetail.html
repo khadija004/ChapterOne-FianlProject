@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="./assets/images/home/book-logo-5.png" />
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <title>ChapterOne - Product-Detail</title>
+</head>
+
+<body>
+
+    <!-- Header Area -->
+    <header>
+        <section id="navbar" class="d-lg-block d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo-pages">
+                            <div class="logo">
+                                <a href="Home.html"><img src="./assets/images/home/book-logo-5.png" alt=""></a>
+                            </div>
+                            <div class="pages">
+                                <ul>
+                                    <li><a href="Home.html">Home</a></li>
+                                    <li><a href="About.html">About</a></li>
+                                    <li><a href="Shop.html">Shop</a></li>
+                                    <li><a href="Contact.html">Contact</a></li>
+                                    <li><a href="Blog.html">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="basket-search">
+                            <div class="basket">
+                                <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <div class="basket-number">
+                                    <span>0</span>
+                                </div>
+                                <span class="border"></span>
+                            </div>
+                            <div class="user">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="border"></span>
+                            </div>
+                            <div class="wishlist">
+                                <a href="Wishlist.html"><i class="fa-solid fa-heart"></i></a>
+                                <div class="wishlist-number">
+                                    <span>0</span>
+                                </div>
+                                <span class="border"></span>
+                            </div>
+                            <div class="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="search-input d-none">
+                            <div class="border"></div>
+                            <input type="text" placeholder="Search">
+                            <div class="border"></div>
+                        </div>
+                        <div class="login-register d-none">
+                            <a href="Login.html">Login</a>
+                            <div class="border"></div>
+                            <a href="Register.html">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="navbar-phone" class="d-lg-none d-block">
+            <div class="container">
+                <div class="nav">
+                    <div class="logo-img">
+                        <a href="Home.html"><img src="./assets/images/home/book-logo-5.png" alt=""></a>
+                    </div>
+                    <div class="icons">
+                        <ul>
+                            <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a href="Login.html"><i class="fa-solid fa-user"></i></a></li>
+                            <li><a href="Wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                            <li><i class="fa-solid fa-magnifying-glass search"></i></li>
+                        </ul>
+                    </div>
+                    <div class="hamburger-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+                <div class="search-input d-none mt-2">
+                    <div class="border"></div>
+                    <input type="text" placeholder="Search">
+                    <div class="border"></div>
+                </div>
+                <div class="hamburger-menu d-none">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Shop.html">Shop</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="border mt-3 d-lg-none d-block"></div>
+    </header>
+    <!-- Header Area -->
+
+    <main>
+        <section id="background">
+            <div class="background-images" style="background-image:url(./assets/images/product-detail/bacground.jpg)">
+                <h2>Product Detail</h2>
+            </div>
+        </section>
+        <section id="detail">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="product-image">
+                            <img src="./assets/images/product-detail/product-image.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-sm-12">
+                        <div class="section-1">
+                            <div class="name">
+                                <p>BY JANE DOE</p>
+                            </div>
+                            <div class="wellness">
+                                <h2>Wellness And Paradise</h2>
+                            </div>
+                            <div class="price">
+                                <p>$67.00</p>
+                            </div>
+                            <div class="description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit. Simul vidisse eu vim. Probo
+                                    tincidunt ne vel.</p>
+                            </div>
+                            <div class="add-basket-button d-flex">
+                                <button>ADD TO BASKET</button>
+                                <button>ADD TO WISHLIST</button>
+                            </div>
+                            <div class="sku-code">
+                                <p>SKU:</p>
+                                <span>42</span>
+                            </div>
+                            <div class="categories">
+                                <p>Categories:</p>
+                                <span>Art, Best Sellers</span>
+                            </div>
+                            <div class="tags">
+                                <p>Tags:</p>
+                                <span>Fiction, New, Novel</span>
+                            </div>
+
+                            <div class="border"></div>
+
+                            <div class="authorimage-authorname">
+                                <div class="author-image">
+                                    <img src="./assets/images/product-detail/user-1.png" alt="">
+                                </div>
+                                <div class="author-name">
+                                    <p>France</p>
+                                    <span>Jane Doe</span>
+                                </div>
+                            </div>
+
+                            <div class="author-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur.</p>
+                            </div>
+
+                            <div class="border mt-5"></div>
+
+                            <div class="author-comment">
+                                <div class="starts">
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <div class="comment">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea."</p>
+                                </div>
+
+                                <div class="logo-name">
+                                    <div class="logo-image">
+                                        <img src="./assets/images/product-detail/logo-1.png" alt="">
+                                    </div>
+                                    <div class="names">
+                                        <p>Michael Lord - New York Times</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="author-comment mt-3">
+                                <div class="starts">
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                </div>
+
+                                <div class="comment">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea."</p>
+                                </div>
+
+                                <div class="logo-name">
+                                    <div class="logo-image">
+                                        <img src="./assets/images/product-detail/logo-2.png" alt="">
+                                    </div>
+                                    <div class="names">
+                                        <p>Joanne Smith - Huffington Post</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="author-comment mt-3">
+                                <div class="starts">
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <div class="comment">
+                                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea."</p>
+                                </div>
+
+                                <div class="logo-name">
+                                    <div class="logo-image">
+                                        <img src="./assets/images/product-detail/logo-3.png" alt="">
+                                    </div>
+                                    <div class="names">
+                                        <p>Minnie Loyd - The Guardian</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="review-area">
+            <div class="container">
+                <div class="tab-menu">
+                    <ul id="myBtnContainer">
+                        <li onclick="filterSelection('description')" class="item1 active btn-tab" data-id="description">
+                            <a>Description</a>
+                        </li>
+                        <li onclick="filterSelection('additional')" class="item2 btn-tab" data-id="additional">
+                            <a>
+                                Additional</a>
+                        </li>
+                        <li onclick="filterSelection('reviews')" class="item3 btn-tab" data-id="reviews"><a>Reviews
+                                <span>(0)</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="filterDiv description">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident.</p>
+                </div>
+                <div class="additional-information filterDiv description d-none">
+                    <p>Weight:0.5 kg</p>
+                    <p>Dimensions:56 × 23 × 27 cm</p>
+                    <p>Type:Paperback, Hardcover, Audiobook, Audio CD, Kindle</p>
+                </div>
+                <div class="user-comment filterDiv reviews d-none">
+                    <p>Leave a comment</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <input class="mt-4" type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email" class="mt-3">
+                    <input type="text" placeholder="Subject" class="mt-3">
+                    <textarea name="" id="" cols="30" rows="10" class="mt-3" placeholder="Your Review"></textarea>
+                    <div class="submit-button">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="related-products">
+            <div class="container">
+                <div class="related-products-word">
+                    <h2>Related products</h2>
+                </div>
+                <div class="border mt-4"></div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="related-products">
+                            <div class="image">
+                                <img src="./assets/images/product-detail/related-product-1.jpg" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>JAMES HOFFMAN</p>
+                            </div>
+                            <div class="book-name">
+                                <span>Sea Sadness PDF</span>
+                            </div>
+                            <div class="book-price">
+                                <p>$22.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="related-products">
+                            <div class="image">
+                                <img src="./assets/images/product-detail/related-product-2.jpg" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>ADAM STRASS</p>
+                            </div>
+                            <div class="book-name">
+                                <span>Renaissance History</span>
+                            </div>
+                            <div class="book-price">
+                                <p>$25.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="related-products">
+                            <div class="image">
+                                <img src="./assets/images/product-detail/related-product-3.jpg" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>JANE DOE</p>
+                            </div>
+                            <div class="book-name">
+                                <span>Fantasy Storytelling</span>
+                            </div>
+                            <div class="book-price">
+                                <p>$25.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="related-products">
+                            <div class="image">
+                                <img src="./assets/images/product-detail/related-product-4.jpg" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>JANE DOE</p>
+                            </div>
+                            <div class="book-name">
+                                <span>Amsterdam Travel Stories</span>
+                            </div>
+                            <div class="book-price">
+                                <p>$12.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="related-products">
+                            <div class="image">
+                                <img src="./assets/images/product-detail/related-product-5.jpg" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>JAMES HOFFMAN</p>
+                            </div>
+                            <div class="book-name">
+                                <span>Symphony Of Trilogy</span>
+                            </div>
+                            <div class="book-price">
+                                <p>$120.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="related-products">
+                            <div class="image">
+                                <img src="./assets/images/product-detail/related-product-6.jpg" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>ADMIN</p>
+                            </div>
+                            <div class="book-name">
+                                <span>Color Pencils</span>
+                            </div>
+                            <div class="book-price">
+                                <p>$12.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer Area -->
+        <footer>
+            <section id="footer">
+                <div class="container footer-background-color">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="left1">
+                                <h4>Publishers</h4>
+                                <div class="story">
+                                    <p>Bestsellers</p>
+                                    <p>Interviews</p>
+                                    <p>Authors Story</p>
+                                    <p>Book Fairs</p>
+                                    <p>Help (FAQ)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="left2">
+                                <h4>Contact</h4>
+                                <div class="story">
+                                    <p>Stay in touch with everything ChapterOne,</p>
+                                    <p>follow us on social media and learn about</p>
+                                    <p>new promotions.</p>
+                                    <div class="icons">
+                                        <a href="https://twitter.com/" target="_blank"><i
+                                                class="fa-brands fa-twitter"></i></a>
+                                        <a href="https://www.instagram.com/?hl=en" target="_blank"><i
+                                                class="fa-brands fa-instagram"></i></a>
+                                        <a href="https://www.facebook.com/" target="_blank"><i
+                                                class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="https://dribbble.com/" target="_blank"><i
+                                                class="fa-solid fa-basketball"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="left3">
+                                <h4>News & Update</h4>
+                                <div class="story">
+                                    <p>We’d love it if you subscribed to our</p>
+                                    <p>newsletter! You’ll love it too.</p>
+                                    <div class="email-input">
+                                        <input type="text" placeholder=" Email...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="right">
+                                <h4>Social media</h4>
+                                <div class="story">
+                                    <div class="col-4">
+                                        <div class="images1">
+                                            <img src="./assets/images/home/footer-image-1.jpg" alt="">
+                                            <img src="./assets/images/home/footer-image-2.jpg" alt="">
+                                            <img src="./assets/images/home/footer-image-3.jpg" alt="">
+                                        </div>
+                                        <div class="images2">
+                                            <img src="./assets/images/home/footer-image-4.jpg" alt="">
+                                            <img src="./assets/images/home/footer-image-5.jpg" alt="">
+                                            <img src="./assets/images/home/footer-image-6.jpg" alt="">
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button id="topbtn"><i class="fa-solid fa-arrow-up" style="color: #8a8a8a;"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- Footer Area -->
+    
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+            integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./assets/js/productdetail.js"></script>
+        <script src="./assets/js/common.js"></script>
+
+</body>
+
+</html>
