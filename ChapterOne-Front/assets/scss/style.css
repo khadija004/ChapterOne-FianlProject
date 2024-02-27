@@ -2310,4 +2310,11 @@
 #related-products .related-products .book-price p {
   color: gray;
   font-family: auto;
+}
+
+#map {
+  margin-top: 73px;
+}
+#map iframe {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
