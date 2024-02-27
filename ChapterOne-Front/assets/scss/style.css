@@ -2317,4 +2317,83 @@
 }
 #map iframe {
   width: 100%;
+}
+
+#contact {
+  margin-top: 100px;
+  margin-left: 70px;
+}
+#contact .name h4 {
+  font-family: initial;
+}
+#contact .location {
+  margin-top: 30px;
+  display: flex;
+  cursor: pointer;
+}
+#contact .location .address {
+  margin-left: 10px;
+}
+#contact .location .address p {
+  font-family: monospace;
+  color: gray;
+}
+#contact .location:hover p {
+  color: red;
+  transition: 0.5s;
+}
+#contact .phone {
+  display: flex;
+  cursor: pointer;
+}
+#contact .phone .number {
+  margin-left: 10px;
+}
+#contact .phone .number p {
+  font-family: monospace;
+  color: gray;
+}
+#contact .phone:hover p {
+  color: red;
+  transition: 0.5s;
+}
+#contact .message {
+  display: flex;
+  cursor: pointer;
+}
+#contact .message .mail {
+  margin-left: 10px;
+}
+#contact .message .mail p {
+  font-family: monospace;
+  color: gray;
+}
+#contact .message:hover p {
+  color: red;
+  transition: 0.5s;
+}
+
+#brand {
+  margin-top: 150px;
+}
+#brand img {
+  width: 100%;
+  height: 170px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+#brand img:hover {
+  margin-top: -20px;
+}
+
+#background .blog-background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .blog-background-images h2 {
+  text-align: center;
+  color: black;
+  padding-top: 120px;
+  font-family: monospace;
 }/*# sourceMappingURL=style.css.map */
