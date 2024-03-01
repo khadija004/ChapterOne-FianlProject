@@ -1,0 +1,30 @@
+#error-pages {
+    margin-top: 73px;
+
+    .error-background-image {
+        height: 1000px;
+        text-align: center;
+        padding-top: 300px;
+
+        h1 {
+            font-family: cursive;
+        }
+
+        h4 {
+            font-family: cursive;
+        }
+
+        p {
+            font-family: cursive;
+            color: gray;
+        }
+
+        button {
+            margin-top: 30px;
+            width: 200px;
+            height: 50px;
+            background-color: #FAF9F5;
+            border: 1px solid;
+        }
+    }
+}

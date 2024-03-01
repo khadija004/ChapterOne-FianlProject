@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="./assets/images/home/book-logo-5.png" />
+    <link rel="stylesheet" href="./assets/scss/style.css">
+    <title>ChapterOne - Login</title>
+</head>
+
+<body>
+    <!-- Header Area -->
+    <header>
+        <section id="navbar" class="d-lg-block d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="logo-pages">
+                            <div class="logo">
+                                <a href="Home.html"><img src="./assets/images/home/book-logo-5.png" alt=""></a>
+                            </div>
+                            <div class="pages">
+                                <ul>
+                                    <li><a href="Home.html">Home</a></li>
+                                    <li><a href="About.html">About</a></li>
+                                    <li><a href="Shop.html">Shop</a></li>
+                                    <li><a href="Contact.html">Contact</a></li>
+                                    <li><a href="Blog.html">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="basket-search">
+                            <div class="basket">
+                                <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <div class="basket-number">
+                                    <span>0</span>
+                                </div>
+                                <span class="border"></span>
+                            </div>
+                            <div class="user">
+                                <i class="fa-solid fa-user"></i>
+                                <span class="border"></span>
+                            </div>
+                            <div class="wishlist">
+                                <a href="Wishlist.html"><i class="fa-solid fa-heart"></i></a>
+                                <div class="wishlist-number">
+                                    <span>0</span>
+                                </div>
+                                <span class="border"></span>
+                            </div>
+                            <div class="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                        <div class="search-input d-none">
+                            <div class="border"></div>
+                            <input type="text" placeholder="Search">
+                            <div class="border"></div>
+                        </div>
+                        <div class="login-register d-none">
+                            <a href="#">Login</a>
+                            <div class="border"></div>
+                            <a href="Register.html">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="navbar-phone" class="d-lg-none d-block">
+            <div class="container">
+                <div class="nav">
+                    <div class="logo-img">
+                        <a href="Home.html"><img src="./assets/images/home/book-logo-5.png" alt=""></a>
+                    </div>
+                    <div class="icons">
+                        <ul>
+                            <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                            <li><a href="Wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                            <li><i class="fa-solid fa-magnifying-glass search"></i></li>
+                        </ul>
+                    </div>
+                    <div class="hamburger-icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+                <div class="search-input d-none mt-2">
+                    <div class="border"></div>
+                    <input type="text" placeholder="Search">
+                    <div class="border"></div>
+                </div>
+                <div class="hamburger-menu d-none">
+                    <ul>
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Shop.html">Shop</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="border mt-3 d-lg-none d-block"></div>
+    </header>
+    <!-- Header Area -->
+
+    <!-- Main Area -->
+    <main>
+        <section id="background">
+            <div class="login-background-images"
+                style="background-image:url(./assets/images/login/login-backgorund-image.jpg)">
+                <h2>Login</h2>
+            </div>
+        </section>
+        <section id="login-form">
+            <div class="container">
+                <div class="login">
+                    <h2>Login</h2>
+                </div>
+                <div class="username-label">
+                    <label for="">Username or email address *</label>
+                </div>
+                <div class="username-input">
+                    <input type="email">
+                </div>
+                <div class="password-label">
+                    <label for="">Password *</label>
+                </div>
+                <div class="password-input">
+                    <input type="password">
+                    <i class="fa-regular fa-eye eyes"></i>
+                </div>
+                <div class="remenber-login">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                        <label style="color:gray" class="form-check-label" for="form2Example31"> Remember me </label>
+                    </div>
+                    <div class="login-button">
+                        <button>LOG IN</button>
+                    </div>
+                </div>
+                <div class="forgot-password">
+                    <a href="ForgotPassword.html">Forgot Password?</a>
+                </div>
+                <div class="account">
+                    <div class="dont-account">
+                        <p>Don't have an account?</p>
+                    </div>
+                    <div class="register">
+                        <a href="Register.html">Register</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Main Area -->
+
+    <!-- Footer Area -->
+    <footer>
+        <section id="footer">
+            <div class="container footer-background-color">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="left1">
+                            <h4>Publishers</h4>
+                            <div class="story">
+                                <p>Bestsellers</p>
+                                <p>Interviews</p>
+                                <p>Authors Story</p>
+                                <p>Book Fairs</p>
+                                <p>Help (FAQ)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="left2">
+                            <h4>Contact</h4>
+                            <div class="story">
+                                <p>Stay in touch with everything ChapterOne,</p>
+                                <p>follow us on social media and learn about</p>
+                                <p>new promotions.</p>
+                                <div class="icons">
+                                    <a href="https://twitter.com/" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/?hl=en" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.facebook.com/" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="https://dribbble.com/" target="_blank"><i
+                                            class="fa-solid fa-basketball"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="left3">
+                            <h4>News & Update</h4>
+                            <div class="story">
+                                <p>We’d love it if you subscribed to our</p>
+                                <p>newsletter! You’ll love it too.</p>
+                                <div class="email-input">
+                                    <input type="text" placeholder=" Email...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="right">
+                            <h4>Social media</h4>
+                            <div class="story">
+                                <div class="col-4">
+                                    <div class="images1">
+                                        <img src="./assets/images/home/footer-image-1.jpg" alt="">
+                                        <img src="./assets/images/home/footer-image-2.jpg" alt="">
+                                        <img src="./assets/images/home/footer-image-3.jpg" alt="">
+                                    </div>
+                                    <div class="images2">
+                                        <img src="./assets/images/home/footer-image-4.jpg" alt="">
+                                        <img src="./assets/images/home/footer-image-5.jpg" alt="">
+                                        <img src="./assets/images/home/footer-image-6.jpg" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button id="topbtn"><i class="fa-solid fa-arrow-up" style="color: #8a8a8a;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer Area -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/common.js"></script>
+</body>
+
+</html>
