@@ -3609,4 +3609,198 @@
   text-decoration: none;
   color: rgb(241, 6, 6);
   font-weight: bold;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#forgot-password-form {
+  margin-top: 100px;
+}
+#forgot-password-form .login h2 {
+  font-family: monospace;
+}
+#forgot-password-form .email-label {
+  margin-top: 30px;
+}
+#forgot-password-form .email-label label {
+  color: gray;
+}
+#forgot-password-form .email-input {
+  margin-top: 10px;
+}
+#forgot-password-form .email-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#forgot-password-form .send-button {
+  margin-top: 20px;
+}
+#forgot-password-form .send-button button {
+  width: 130px;
+  height: 50px;
+  background-color: #d14031;
+  color: white;
+  border: none;
+  font-family: initial;
+}
+#forgot-password-form .send-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#register-form {
+  margin-top: 100px;
+}
+#register-form .register h2 {
+  font-family: monospace;
+}
+#register-form .first-name-label {
+  margin-top: 30px;
+}
+#register-form .first-name-label label {
+  color: gray;
+}
+#register-form .first-name-input {
+  margin-top: 10px;
+}
+#register-form .first-name-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#register-form .last-name-label {
+  margin-top: 30px;
+}
+#register-form .last-name-label label {
+  color: gray;
+}
+#register-form .last-name-input {
+  margin-top: 10px;
+}
+#register-form .last-name-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#register-form .email-address-label {
+  margin-top: 30px;
+}
+#register-form .email-address-label label {
+  color: gray;
+}
+#register-form .email-address-input {
+  margin-top: 10px;
+}
+#register-form .email-address-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#register-form .password-label {
+  margin-top: 30px;
+}
+#register-form .password-label label {
+  color: gray;
+}
+#register-form .password-input {
+  margin-top: 10px;
+  display: flex;
+}
+#register-form .password-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#register-form .password-input i {
+  color: gray;
+  margin-left: -31px;
+  margin-top: 14px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#register-form .password-input i:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#register-form .confirm-password-label {
+  margin-top: 30px;
+}
+#register-form .confirm-password-label label {
+  color: gray;
+}
+#register-form .confirm-password-input {
+  margin-top: 10px;
+  display: flex;
+}
+#register-form .confirm-password-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#register-form .confirm-password-input i {
+  color: gray;
+  margin-left: -31px;
+  margin-top: 14px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#register-form .confirm-password-input i:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#register-form .register .register-button {
+  margin-top: 20px;
+}
+#register-form .register .register-button button {
+  width: 130px;
+  height: 50px;
+  background-color: #d14031;
+  color: white;
+  font-family: initial;
+  border: none;
+}
+#register-form .register .register-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */
