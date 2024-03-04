@@ -1,0 +1,171 @@
+#background {
+    .background-images {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+
+        h2 {
+            text-align: center;
+            color: white;
+            padding-top: 120px;
+            font-family: monospace;
+        }
+    }
+
+}
+
+#register-form {
+    margin-top: 100px;
+
+    .register {
+        h2 {
+            font-family: monospace;
+        }
+    }
+
+    .first-name-label {
+        margin-top: 30px;
+
+        label {
+            color: gray;
+        }
+    }
+
+    .first-name-input {
+        margin-top: 10px;
+
+        input {
+            width: 100%;
+            height: 50px;
+            border: 1px solid gray;
+            outline: none;
+            padding-left: 15px;
+            caret-color: rgb(241, 6, 6);
+        }
+    }
+
+    .last-name-label {
+        margin-top: 30px;
+
+        label {
+            color: gray;
+        }
+    }
+
+    .last-name-input {
+        margin-top: 10px;
+
+        input {
+            width: 100%;
+            height: 50px;
+            border: 1px solid gray;
+            outline: none;
+            padding-left: 15px;
+            caret-color: rgb(241, 6, 6);
+        }
+    }
+
+    .email-address-label {
+        margin-top: 30px;
+
+        label {
+            color: gray;
+        }
+    }
+
+    .email-address-input {
+        margin-top: 10px;
+
+        input {
+            width: 100%;
+            height: 50px;
+            border: 1px solid gray;
+            outline: none;
+            padding-left: 15px;
+            caret-color: rgb(241, 6, 6);
+        }
+    }
+
+    .password-label {
+        margin-top: 30px;
+
+        label {
+            color: gray;
+        }
+    }
+
+    .password-input {
+        margin-top: 10px;
+        display: flex;
+        input {
+            width: 100%;
+            height: 50px;
+            border: 1px solid gray;
+            outline: none;
+            padding-left: 15px;
+            caret-color: rgb(241, 6, 6);
+        }
+        i{
+            color: gray;
+            margin-left: -31px;
+            margin-top: 14px;
+            font-size: 20px;
+            cursor: pointer;
+            &:hover{
+                color:rgb(172, 2, 2) ;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .confirm-password-label {
+        margin-top: 30px;
+
+        label {
+            color: gray;
+        }
+    }
+
+    .confirm-password-input {
+        margin-top: 10px;
+        display: flex;
+        input {
+            width: 100%;
+            height: 50px;
+            border: 1px solid gray;
+            outline: none;
+            padding-left: 15px;
+            caret-color: rgb(241, 6, 6);
+        }
+        i{
+            color: gray;
+            margin-left: -31px;
+            margin-top: 14px;
+            font-size: 20px;
+            cursor: pointer;
+            &:hover{
+                color:rgb(172, 2, 2) ;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .register {
+        .register-button{
+            margin-top: 20px;
+            button{
+                width: 130px;
+                height: 50px;
+                background-color: #d14031;
+                color: white;
+                font-family: initial;
+                border: none;
+                &:hover{
+                    background-color:rgb(172, 2, 2) ;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+
+}

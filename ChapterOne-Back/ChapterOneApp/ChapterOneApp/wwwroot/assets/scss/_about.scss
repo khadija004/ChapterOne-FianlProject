@@ -1,0 +1,423 @@
+#background {
+    margin-top: 73px;
+
+    .background-image {
+        width: 100%;
+        height: 400px;
+    }
+
+    .title-name {
+        text-align: center;
+        padding-top: 150px;
+        color: white;
+
+        p {
+            font-family: monospace;
+        }
+
+        h3 {
+            font-family: monospace;
+        }
+    }
+}
+
+#carts {
+    margin-top: 100px;
+    margin-left: 100px;
+
+    .carts1 {
+        .image {
+            img {}
+        }
+    }
+
+    .small-logo1 {
+        margin-left: 58px;
+        margin-top: 10px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .name1 {
+        h3 {}
+    }
+
+    .description1 {
+        p {
+            width: 213px;
+            text-align: center;
+            margin-left: -40px;
+            color: gray;
+        }
+    }
+
+
+
+    .carts2 {
+        .image {
+            img {}
+        }
+    }
+
+    .small-logo2 {
+        margin-left: 83px;
+        margin-top: 10px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .name2 {
+        h3 {}
+    }
+
+    .description2 {
+        p {
+            width: 213px;
+            text-align: center;
+            margin-left: -15px;
+            color: gray;
+        }
+    }
+
+
+    .carts3 {
+        .image {
+            margin-left: 18px;
+
+            img {}
+        }
+    }
+
+    .small-logo3 {
+        margin-left: 69px;
+        margin-top: 10px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .name3 {
+        h3 {}
+    }
+
+    .description3 {
+        p {
+            width: 213px;
+            text-align: center;
+            margin-left: -24px;
+            color: gray;
+        }
+    }
+
+    .carts4 {
+        .image {
+            img {}
+        }
+    }
+
+    .small-logo4 {
+        margin-left: 93px;
+        margin-top: 10px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .name4 {
+        margin-left: 15px;
+
+        h3 {}
+    }
+
+    .description4 {
+        p {
+            width: 213px;
+            text-align: center;
+            color: gray;
+        }
+    }
+}
+
+
+#autobiography1 {
+    margin-top: 150px;
+
+    .autobiography1 {
+        width: 100%;
+        height: 500px;
+        display: flex;
+
+        .left {
+            .name {
+                color: gray;
+                margin-left: 100px;
+
+                p {
+                    padding-top: 101px;
+                    font-family: fangsong;
+                }
+            }
+
+            .title {
+                margin-left: 100px;
+            }
+
+            .description {
+                margin-left: 100px;
+                margin-top: 20px;
+
+                p {
+                    width: 400px;
+                }
+            }
+
+            .button {
+                margin-top: 40px;
+                margin-left: 100px;
+
+                button {
+                    width: 200px;
+                    background: none;
+                    border: 1px solid black;
+
+                    &:hover {
+                        background-color: #282828;
+                        transition: 0.5s;
+
+                        p {
+                            color: white;
+                        }
+                    }
+
+                    p {
+                        padding-top: 13px;
+                        color: black;
+                        font-family: initial;
+                    }
+                }
+            }
+
+            .image {
+                margin-left: 500px;
+
+                img {
+                    z-index: 1;
+
+                }
+            }
+        }
+
+        .right {
+            width: 200px;
+            height: 100%;
+
+            .image1 {
+                position: relative;
+
+                img {
+                    width: 300px;
+                    margin-top: -46px;
+                    margin-left: 100px;
+                }
+            }
+
+            .image2 {
+                img {
+                    width: 350px;
+                    margin-top: -88px;
+                    margin-left: 200px;
+                }
+            }
+
+
+        }
+
+    }
+}
+
+#autobiography2 {
+    margin-top: 200px;
+
+    .autobiography2 {
+        background-color: aliceblue;
+        width: 100%;
+        height: 500px;
+        display: flex;
+
+        .left {
+            .backgrounds {
+                display: flex;
+
+                .backgorund-image {
+
+                    width: 200px;
+                    height: 500px;
+                }
+
+                .images {
+                    .image1 {
+
+                        img {
+                            width: 400px;
+                            margin-top: -38px;
+                        }
+                    }
+
+                    .image2 {
+
+                        img {
+                            width: 200px;
+                            margin-left: -140px;
+                            margin-top: -42px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .right {
+            margin-left: 50px;
+
+            .name {
+                color: gray;
+                margin-left: 100px;
+
+                p {
+                    padding-top: 101px;
+                    font-family: fangsong;
+                }
+            }
+
+            .title {
+                margin-left: 100px;
+            }
+
+            .description {
+                margin-left: 100px;
+                margin-top: 20px;
+
+                p {
+                    width: 400px;
+                }
+            }
+
+            .button {
+                margin-top: 40px;
+                margin-left: 100px;
+
+                button {
+                    width: 200px;
+                    background: none;
+                    border: 1px solid black;
+
+                    &:hover {
+                        background-color: #282828;
+                        transition: 0.5s;
+
+                        p {
+                            color: white;
+                        }
+                    }
+
+                    p {
+                        padding-top: 13px;
+                        color: black;
+                        font-family: initial;
+                    }
+                }
+            }
+
+            .image {
+                margin-left: 320px;
+
+                img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+#promo-products {
+    background-color: #FBF9F6;
+    margin-top: 150px;
+
+    .title {
+        text-align: center;
+        padding-top: 100px;
+
+        p {
+            color: gray;
+            font-family: monospace;
+        }
+    }
+
+    .name {
+        text-align: center;
+
+        h1 {
+            font-family: monospace;
+        }
+    }
+
+    .description {
+        text-align: center;
+        margin-left: 400px;
+        margin-top: 20px;
+
+        p {
+            color: gray;
+            font-family: monospace;
+            width: 511px;
+        }
+    }
+
+    .box-area {
+        .image {
+            width: 250px;
+            margin-left: 25px;
+          
+
+            img {
+                width: 100%;
+                cursor: pointer;
+            }
+
+        }
+
+        .name {
+           opacity: 0;
+           transition: .4s;
+            h5 {
+                margin-top: -40px;
+            }
+        }
+
+        .price {
+            transition: .4s;
+            text-align: center !important;
+            opacity: 0;
+        }
+
+        &:hover {
+
+            .name,
+            .price {
+               opacity: 1;
+            }
+        }
+    }
+
+}
+
+.slick-dots{
+    display: none !important;
+}

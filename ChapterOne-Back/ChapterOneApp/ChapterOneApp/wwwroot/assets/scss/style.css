@@ -1,0 +1,3934 @@
+#slider {
+  margin-top: 75px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slider .swiper-pagination-bullet {
+  background-color: #000;
+}
+#slider body {
+  position: relative;
+  height: 100%;
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+#slider .swiper {
+  width: 100%;
+  height: 100%;
+}
+#slider .swiper-button-prev {
+  display: none;
+}
+#slider .swiper-button-next {
+  display: none;
+}
+#slider .swiper-slide:nth-child(3) p {
+  color: white;
+}
+#slider .swiper-slide:nth-child(3) h1 {
+  color: white;
+}
+#slider .swiper-slide:nth-child(3) h3 {
+  color: white;
+}
+#slider .swiper-slide .shop {
+  position: absolute;
+  background-color: rgb(197, 2, 2);
+  color: #fff;
+  padding: 5px 33px;
+  width: 200px;
+  box-shadow: none !important;
+  border: none;
+  font-family: Roboto, Helvetica Neue, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  width: 200x;
+  height: 43px;
+  left: 160px;
+  bottom: 150px;
+}
+#slider .swiper-slide .shop:hover {
+  background-color: rgb(143, 1, 1);
+  transition: 0.5s;
+}
+#slider p {
+  position: absolute;
+  display: inline-block;
+  left: 160px;
+  top: 150px;
+  font-size: 10px;
+  color: #333;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+#slider h1 {
+  position: absolute;
+  display: inline-block;
+  left: 160px;
+  top: 160px;
+  font-size: 48px;
+  color: #333;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+#slider h3 {
+  position: absolute;
+  font-size: 20px;
+  text-align: left;
+  color: #333;
+  margin-bottom: -32px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  bottom: 243px;
+  left: 160px !important;
+  width: 700px;
+}
+#slider img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#products {
+  margin-top: 150px;
+}
+#products .container .row .filterDiv {
+  display: none;
+}
+#products .container .row .show {
+  display: block;
+}
+#products .category ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+#products .category ul .active {
+  transition: 1s;
+  background-color: #000;
+}
+#products .category ul .active a {
+  color: #fff !important;
+}
+#products .category ul li {
+  list-style: none;
+  border: 1px solid rgba(128, 128, 128, 0.1019607843);
+  width: 150px;
+  text-align: center;
+  height: 40px;
+  padding-top: 7px;
+  cursor: pointer;
+}
+#products .category ul li a {
+  text-decoration: none;
+  color: black;
+}
+#products .products {
+  width: 100%;
+  height: 560px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+#products .products a img {
+  transition: s;
+  width: 100%;
+  height: 400px;
+}
+#products .products .name {
+  margin-top: 10px;
+}
+#products .products .name a {
+  text-decoration: none;
+  color: gray;
+  font-family: monospace;
+}
+#products .products .name a:hover {
+  color: red;
+  transition: 0.8s;
+}
+#products .products .category-name a {
+  text-decoration: none;
+  color: black;
+  font-family: initial;
+  font-size: 24px;
+}
+#products .products .category-name a:hover {
+  color: red;
+  transition: 0.8s;
+}
+#products .products .price-button {
+  display: flex;
+  margin-top: 15px;
+}
+#products .products .price-button p {
+  color: gray;
+  font-family: monospace;
+}
+#products .products .price-button button {
+  border: none;
+  margin-left: 167px;
+  background-color: #d14031;
+  border-radius: 0;
+}
+#products .products .price-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#products .product {
+  position: relative;
+}
+#products .product .wishlist-cart {
+  transition: 0.5s;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  font-size: 22px;
+  opacity: 0;
+}
+#products .product .wishlist-cart i {
+  cursor: pointer;
+  color: red;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+#products .product .wishlist-cart i:nth-child(2) {
+  cursor: pointer;
+  color: #000;
+  padding-top: 6px;
+  padding-left: 4px;
+}
+#products .product:hover .wishlist-cart {
+  opacity: 1;
+}
+
+#our-services {
+  margin-top: 100px;
+}
+#our-services .service .background-image {
+  height: 420px;
+}
+#our-services .service .background-image .icon {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+}
+#our-services .service .background-image .icon span {
+  color: white;
+}
+#our-services .service .background-image .name {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: monospace;
+}
+#our-services .service .background-image .description {
+  color: white;
+  text-align: center;
+  font-family: serif;
+}
+#our-services .service .background-image .description h3 {
+  width: 600px;
+  margin-left: 350px;
+}
+#our-services .service .background-image .button {
+  margin-top: 40px;
+  text-align: center;
+}
+#our-services .service .background-image .button button {
+  width: 200px;
+  background: none;
+  border: 1px solid white;
+}
+#our-services .service .background-image .button button:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+#our-services .service .background-image .button button:hover p {
+  color: #000;
+}
+#our-services .service .background-image .button button p {
+  padding-top: 13px;
+  color: white;
+}
+
+#authors {
+  margin-top: 150px;
+}
+#authors .authors {
+  margin-left: 100px;
+}
+#authors .authors .services {
+  text-align: center;
+  color: gray;
+}
+#authors .authors .month {
+  text-align: center;
+  font-family: monospace;
+}
+#authors .authors .description {
+  text-align: center;
+  color: gray;
+  margin-top: 10px;
+}
+#authors .authors .description p {
+  font-size: 18px;
+  width: 567px;
+  margin-left: 300px;
+}
+#authors .authors .author {
+  margin-top: 50px;
+}
+#authors .authors .author .profession {
+  margin-left: 70px;
+  margin-top: 20px;
+  font-family: fantasy;
+}
+#authors .authors .author .profession p {
+  color: gray;
+}
+#authors .authors .author .name {
+  margin-left: 45px;
+}
+#authors .authors .author .name p {
+  font-size: 18px;
+}
+#authors .authors .author .author-description {
+  margin-left: -22px;
+}
+#authors .authors .author .author-description p {
+  width: 250px;
+  text-align: center;
+}
+
+#autobiography1 {
+  margin-top: 150px;
+}
+#autobiography1 .autobiography1 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+#autobiography1 .autobiography1 .left .name {
+  color: gray;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .name p {
+  padding-top: 101px;
+  font-family: fangsong;
+}
+#autobiography1 .autobiography1 .left .title {
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .description {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#autobiography1 .autobiography1 .left .description p {
+  width: 400px;
+}
+#autobiography1 .autobiography1 .left .button {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .button button {
+  width: 200px;
+  background: none;
+  border: 1px solid black;
+}
+#autobiography1 .autobiography1 .left .button button:hover {
+  background-color: #282828;
+  transition: 0.5s;
+}
+#autobiography1 .autobiography1 .left .button button:hover p {
+  color: white;
+}
+#autobiography1 .autobiography1 .left .button button p {
+  padding-top: 13px;
+  color: black;
+  font-family: initial;
+}
+#autobiography1 .autobiography1 .left .image {
+  margin-left: 500px;
+}
+#autobiography1 .autobiography1 .left .image img {
+  width: 170px;
+}
+#autobiography1 .autobiography1 .right {
+  width: 200px;
+  height: 100%;
+}
+#autobiography1 .autobiography1 .right .image1 img {
+  width: 300px;
+  margin-top: -46px;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .right .image2 img {
+  width: 350px;
+  margin-top: -88px;
+  margin-left: 200px;
+}
+
+#autobiography2 {
+  margin-top: 200px;
+}
+#autobiography2 .autobiography2 {
+  background-color: aliceblue;
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+#autobiography2 .autobiography2 .left .backgrounds {
+  display: flex;
+}
+#autobiography2 .autobiography2 .left .backgrounds .backgorund-image {
+  width: 200px;
+  height: 500px;
+}
+#autobiography2 .autobiography2 .left .backgrounds .images .image1 img {
+  width: 400px;
+  margin-top: -38px;
+}
+#autobiography2 .autobiography2 .left .backgrounds .images .image2 img {
+  width: 200px;
+  margin-left: -140px;
+  margin-top: -42px;
+}
+#autobiography2 .autobiography2 .right {
+  margin-left: 50px;
+}
+#autobiography2 .autobiography2 .right .name {
+  color: gray;
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .name p {
+  padding-top: 101px;
+  font-family: fangsong;
+}
+#autobiography2 .autobiography2 .right .title {
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .description {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#autobiography2 .autobiography2 .right .description p {
+  width: 400px;
+}
+#autobiography2 .autobiography2 .right .button {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .button button {
+  width: 200px;
+  background: none;
+  border: 1px solid black;
+}
+#autobiography2 .autobiography2 .right .button button:hover {
+  background-color: #282828;
+  transition: 0.5s;
+}
+#autobiography2 .autobiography2 .right .button button:hover p {
+  color: white;
+}
+#autobiography2 .autobiography2 .right .button button p {
+  padding-top: 13px;
+  color: black;
+  font-family: initial;
+}
+#autobiography2 .autobiography2 .right .image {
+  margin-left: 320px;
+}
+#autobiography2 .autobiography2 .right .image img {
+  width: 300px;
+}
+
+#gallery {
+  margin-top: 200px;
+}
+#gallery .image1 {
+  opacity: 1;
+  overflow: hidden;
+}
+#gallery .image1 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image1 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image2 {
+  overflow: hidden;
+}
+#gallery .image2 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image2 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image3 {
+  overflow: hidden;
+}
+#gallery .image3 img {
+  width: 100%;
+  margin-top: 23px;
+  transition: 0.8s;
+}
+#gallery .image3 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image4 {
+  margin-top: 20px;
+  overflow: hidden;
+}
+#gallery .image4 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image4 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image5 {
+  margin-top: 20px;
+  overflow: hidden;
+}
+#gallery .image5 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image5 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image6 {
+  margin-top: 26px;
+  overflow: hidden;
+}
+#gallery .image6 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image6 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image7 {
+  overflow: hidden;
+}
+#gallery .image7 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image7 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image8 {
+  margin-top: 17px;
+  overflow: hidden;
+}
+#gallery .image8 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image8 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image9 {
+  margin-top: 26px;
+  overflow: hidden;
+}
+#gallery .image9 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image9 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image10 {
+  margin-top: 26px;
+  overflow: hidden;
+}
+#gallery .image10 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image10 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image11 {
+  overflow: hidden;
+}
+#gallery .image11 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image11 img:hover {
+  transform: scale(1.1);
+}
+#gallery .image12 {
+  overflow: hidden;
+  margin-top: 18px;
+}
+#gallery .image12 img {
+  width: 100%;
+  transition: 0.8s;
+}
+#gallery .image12 img:hover {
+  transform: scale(1.1);
+}
+
+#brand {
+  margin-top: 150px;
+}
+#brand img {
+  width: 100%;
+  height: 170px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+#brand img:hover {
+  margin-top: -20px;
+}
+
+#navbar .logo-pages {
+  display: flex;
+}
+#navbar .logo-pages .logo {
+  width: 20px;
+  height: 20px;
+}
+#navbar .logo-pages .logo img {
+  width: 70px;
+  margin-top: 40px;
+}
+#navbar .logo-pages .pages {
+  margin-left: 70px;
+  margin-top: 55px;
+  font-size: 19px;
+}
+#navbar .logo-pages .pages ul {
+  display: flex;
+  gap: 20px;
+}
+#navbar .logo-pages .pages ul .active-menu a {
+  color: #d14031;
+}
+#navbar .logo-pages .pages ul li {
+  list-style: none;
+}
+#navbar .logo-pages .pages ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+#navbar .basket-search {
+  margin-top: 55px;
+  display: flex;
+  margin-left: 476px;
+}
+#navbar .basket-search .basket {
+  display: flex;
+}
+#navbar .basket-search .basket a i {
+  color: black;
+  font-size: 20px;
+}
+#navbar .basket-search .basket .basket-number {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  margin-top: -7px;
+  margin-left: -5px;
+  position: relative;
+  margin-right: 10px;
+}
+#navbar .basket-search .basket .basket-number span {
+  font-size: 13px;
+  position: absolute;
+  left: 3px;
+  bottom: -2px;
+}
+#navbar .basket-search .search {
+  margin-left: 12px;
+  cursor: pointer;
+}
+#navbar .basket-search .search i {
+  font-size: 20px;
+}
+#navbar .basket-search .wishlist {
+  margin-left: 12px;
+  display: flex;
+}
+#navbar .basket-search .wishlist a i {
+  font-size: 20px;
+  color: black;
+}
+#navbar .basket-search .wishlist .wishlist-number {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  margin-top: -7px;
+  margin-left: -5px;
+  position: relative;
+  margin-right: -4px;
+}
+#navbar .basket-search .wishlist .wishlist-number span {
+  font-size: 13px;
+  position: absolute;
+  left: 3px;
+  bottom: -2px;
+}
+#navbar .basket-search .wishlist .border {
+  margin-left: 10px;
+}
+#navbar .basket-search .user {
+  margin-left: 12px;
+  cursor: pointer;
+}
+#navbar .basket-search .user i {
+  font-size: 20px;
+  color: black;
+}
+#navbar .basket-search .user .border {
+  margin-left: 10px;
+}
+#navbar .search-input {
+  right: 113px;
+  position: absolute;
+  top: 125px;
+  width: 85%;
+}
+#navbar .search-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+#navbar .login-register {
+  width: 230px;
+  height: 80px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 7px;
+  position: absolute;
+  right: 109px;
+  top: 91px;
+}
+#navbar .login-register a {
+  margin-left: 20px;
+  font-size: 17px;
+  padding-top: 7px;
+  text-decoration: none;
+  color: black;
+}
+#navbar .login-register .border {
+  margin-top: 13px;
+}
+
+#navbar-phone .nav {
+  display: flex;
+  justify-content: space-between;
+}
+#navbar-phone .nav .logo-img {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#navbar-phone .nav .logo-img img {
+  width: 50px;
+  height: 50px;
+}
+#navbar-phone .nav .icons {
+  margin-top: 20px;
+  margin-left: -30px;
+}
+#navbar-phone .nav .icons ul {
+  gap: 15px;
+  display: flex;
+}
+#navbar-phone .nav .icons ul li {
+  list-style: none;
+}
+#navbar-phone .nav .icons ul li a {
+  text-decoration: none;
+}
+#navbar-phone .nav .icons ul li a i {
+  color: black;
+  cursor: pointer;
+}
+#navbar-phone .nav .icons ul li i {
+  color: black;
+  cursor: pointer;
+}
+#navbar-phone .nav .hamburger-icon {
+  margin-top: 20px;
+}
+#navbar-phone .search-input input {
+  border: none;
+  outline: none;
+}
+#navbar-phone .hamburger-menu {
+  margin-top: 10px;
+}
+#navbar-phone .hamburger-menu ul li {
+  list-style: none;
+}
+#navbar-phone .hamburger-menu ul li a {
+  text-decoration: none;
+  color: gray;
+  font-family: auto;
+}
+
+#footer {
+  margin-top: 150px;
+  background-color: #282828;
+  width: 100%;
+  height: 450px;
+}
+#footer .left1 {
+  margin-top: 80px;
+}
+#footer .left1 h4 {
+  color: white;
+}
+#footer .left1 .story {
+  margin-top: 40px;
+}
+#footer .left1 .story p {
+  cursor: pointer;
+  color: rgb(153, 153, 153);
+}
+#footer .left1 .story p:hover {
+  color: white;
+  transition: 0.5s;
+}
+#footer .left2 {
+  margin-top: 80px;
+}
+#footer .left2 h4 {
+  color: white;
+}
+#footer .left2 .story {
+  margin-top: 40px;
+}
+#footer .left2 .story p {
+  cursor: pointer;
+  color: rgb(153, 153, 153);
+}
+#footer .left2 .story p:nth-child(2) {
+  margin-top: -15px;
+}
+#footer .left2 .story p:nth-child(3) {
+  margin-top: -15px;
+}
+#footer .left2 .icons a i {
+  color: rgb(153, 153, 153);
+}
+#footer .left2 .icons a i:hover {
+  color: white;
+  transition: 0.5s;
+}
+#footer .left3 {
+  margin-top: 80px;
+}
+#footer .left3 h4 {
+  color: white;
+}
+#footer .left3 .story {
+  margin-top: 40px;
+}
+#footer .left3 .story p {
+  cursor: pointer;
+  color: rgb(153, 153, 153);
+}
+#footer .left3 .story p:nth-child(2) {
+  margin-top: -15px;
+}
+#footer .left3 .email-input input {
+  background-color: #282828;
+  border: 1px solid rgb(153, 153, 153);
+  width: 260px;
+  height: 50px;
+}
+#footer .right {
+  margin-top: 80px;
+}
+#footer .right h4 {
+  color: white;
+}
+#footer .right .story {
+  margin-top: 40px;
+}
+#footer .right .story .images1 {
+  display: flex;
+  gap: 10px;
+}
+#footer .right .story .images1 img {
+  width: 100%;
+}
+#footer .right .story .images2 {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+#footer .right .story .images2 img {
+  width: 100%;
+}
+#footer .btn {
+  margin-left: 350px;
+}
+#footer .btn #topbtn {
+  width: 40px;
+  height: 40px;
+  background-color: #d14031;
+  border: none;
+}
+#footer .btn #topbtn i {
+  color: white !important;
+  font-size: 15px;
+}
+
+@media (max-width: 850px) {
+  #slider .swiper .swiper-wrapper .swiper-slide p {
+    font-size: 10px;
+  }
+  #slider .swiper .swiper-wrapper .swiper-slide h1 {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  #slider .swiper .swiper-wrapper .swiper-slide h3 {
+    width: 100px;
+    font-size: 10px;
+    margin-top: 30px !important;
+  }
+  #slider .swiper .swiper-wrapper .swiper-slide .shop {
+    margin-top: 30px;
+    font-size: 9px;
+    width: 100px;
+    height: 30px;
+  }
+  #products .category ul li a {
+    font-size: 8px;
+  }
+  #products .products .price-button button {
+    margin-left: 50px;
+    margin-left: 228px;
+  }
+  #our-services .service .background-image .description h3 {
+    font-size: 15px;
+    width: 150px;
+    margin-left: 111px;
+  }
+  #authors .authors .services {
+    margin-left: -90px;
+  }
+  #authors .authors .month {
+    margin-left: -75px;
+  }
+  #authors .authors .description {
+    margin-left: -332px;
+  }
+  #authors .authors .description p {
+    width: 267px;
+  }
+  #autobiography1 .autobiography1 .left .image {
+    display: none;
+  }
+  #autobiography1 .autobiography1 .left .name {
+    margin-left: 121px;
+  }
+  #autobiography1 .autobiography1 .left .title {
+    margin-left: 60px;
+  }
+  #autobiography1 .autobiography1 .left .description {
+    margin-left: 17px;
+  }
+  #autobiography1 .autobiography1 .left .description p {
+    width: 350px;
+    text-align: center;
+  }
+  #autobiography1 .autobiography1 .left .button {
+    margin-left: 97px;
+  }
+  #autobiography1 .autobiography1 .right .image1 {
+    display: none;
+  }
+  #autobiography1 .autobiography1 .right .image2 {
+    display: none;
+  }
+  #autobiography2 .autobiography2 .left .backgrounds .backgorund-image {
+    display: none;
+  }
+  #autobiography2 .autobiography2 .left .images {
+    display: none;
+  }
+  #autobiography2 .autobiography2 .left .title {
+    margin-left: 60px;
+  }
+  #autobiography2 .autobiography2 .left .description {
+    margin-left: 17px;
+  }
+  #autobiography2 .autobiography2 .left .description p {
+    width: 350px;
+    text-align: center;
+  }
+  #autobiography2 .autobiography2 .left .button {
+    margin-left: 97px;
+  }
+  #autobiography2 .autobiography2 .right .name {
+    margin-left: 70px;
+  }
+  #autobiography2 .autobiography2 .right .title {
+    margin-left: 22px;
+  }
+  #autobiography2 .autobiography2 .right .description {
+    margin-left: -32px;
+  }
+  #autobiography2 .autobiography2 .right .description p {
+    width: 350px;
+    text-align: center;
+  }
+  #autobiography2 .autobiography2 .right .button {
+    margin-left: 50px;
+  }
+  #autobiography2 .autobiography2 .right .image {
+    display: none;
+  }
+  #brand .brand {
+    margin-top: 30px;
+  }
+  #brand .brand img {
+    margin-left: 100px;
+    width: 50%;
+  }
+  #footer .footer-background-color {
+    background-color: #282828;
+  }
+  #footer .footer-background-color .right .story .images1 img {
+    width: 31%;
+  }
+  #footer .footer-background-color .right .story .images2 img {
+    width: 31%;
+  }
+  #footer .footer-background-color .btn {
+    margin-left: 220px;
+  }
+  #carts .carts1 {
+    margin-left: 27px;
+  }
+  #carts .carts3 {
+    margin-left: 20px;
+  }
+  #promo-products .description {
+    margin-left: 60px;
+  }
+  #promo-products .description p {
+    width: 250px;
+  }
+  #promo-products .cartsss {
+    width: 84%;
+    margin-left: 35px;
+  }
+  #product-sidebar .products .price-button button {
+    margin-left: 228px;
+  }
+  #product-sidebar .right-section {
+    margin-left: 0;
+  }
+  #product-sidebar .right-section .logo {
+    margin-left: 69px;
+  }
+  #product-sidebar .right-section .images img {
+    width: 70px;
+  }
+  #product-sidebar .pagination {
+    margin-top: 40px;
+  }
+  #contact .name {
+    margin-top: 40px;
+  }
+  #blog .section-2 .description {
+    width: 273px;
+    margin-left: 50px;
+  }
+  #blog .section-6 {
+    margin-left: 0;
+  }
+  #blog .section-7 {
+    margin-left: 0;
+  }
+  #blog .section-8 {
+    margin-left: 0;
+  }
+  #blog .section-9 {
+    margin-left: 0;
+  }
+  #blog .section-10 {
+    margin-left: 0;
+  }
+  #blog .section-11 {
+    margin-left: 0;
+  }
+  #blog .logo span {
+    margin-left: 176px !important;
+  }
+  #review-area .tab-menu ul {
+    margin-left: -30px;
+  }
+  #review-area .user-comment input {
+    width: 100%;
+  }
+  #review-area .user-comment textarea {
+    width: 100%;
+  }
+  #blog-detail .details .section-1 .icons {
+    margin-left: 100px;
+  }
+  #blog-detail .details .section-2 .image-names .description-4 {
+    width: 200px;
+  }
+  #blog-detail .details .section-3 .comments .image-names .description-4 {
+    width: 200px;
+    margin-top: 0;
+  }
+  #blog-detail .section-5 {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+  #blog-detail .section-5 .logo span {
+    margin-left: 177px;
+  }
+  #blog-detail .section-6 {
+    margin-left: 0;
+  }
+  #blog-detail .section-6 .logo span {
+    margin-left: 177px;
+  }
+  #blog-detail .section-7 {
+    margin-left: 0;
+  }
+  #blog-detail .section-7 .logo span {
+    margin-left: 177px;
+  }
+  #blog-detail .section-8 {
+    margin-left: 0;
+  }
+  #blog-detail .section-8 .logo span {
+    margin-left: 177px;
+  }
+  #blog-detail .section-9 {
+    margin-left: 0;
+  }
+  #blog-detail .section-9 .logo span {
+    margin-left: 177px;
+  }
+  #blog-detail .section-10 {
+    margin-left: 0;
+  }
+  #cart-products .basket-products {
+    overflow-x: scroll;
+  }
+  #wishlist-products .wishlist-products {
+    overflow-x: scroll;
+  }
+}
+@media (min-width: 760px) and (max-width: 1200px) {
+  #products .category ul li a {
+    font-size: 15px;
+  }
+  #products .products .price-button button {
+    margin-left: 197px;
+  }
+  #our-services .service .description h3 {
+    width: 350px !important;
+    margin-left: 172px !important;
+  }
+  #authors .authors .description p {
+    width: 579px;
+  }
+  #autobiography1 .autobiography1 .left .name {
+    margin-left: 275px;
+  }
+  #autobiography1 .autobiography1 .left .title {
+    margin-left: 200px;
+  }
+  #autobiography1 .autobiography1 .left .description {
+    margin-left: 120px;
+  }
+  #autobiography1 .autobiography1 .left .description p {
+    width: 450px;
+  }
+  #autobiography1 .autobiography1 .left .button {
+    margin-left: 243px;
+  }
+  #autobiography1 .autobiography1 .right {
+    background-image: none !important;
+  }
+  #autobiography2 .autobiography2 .right .name {
+    margin-left: 230px;
+  }
+  #autobiography2 .autobiography2 .right .title {
+    margin-left: 170px;
+  }
+  #autobiography2 .autobiography2 .right .description {
+    margin-left: 80px;
+  }
+  #autobiography2 .autobiography2 .right .description p {
+    width: 450px;
+  }
+  #autobiography2 .autobiography2 .right .button {
+    margin-left: 200px;
+  }
+  #promo-products .description {
+    margin-left: 120px;
+  }
+  #promo-products .description p {
+    width: 450px;
+  }
+  #promo-products .cartsss .box-area {
+    margin-left: -20px;
+  }
+  #product-sidebar .products .price-button button {
+    margin-left: 197px;
+  }
+  #product-sidebar .logo span {
+    margin-left: 272px !important;
+  }
+  #product-sidebar .right-section {
+    margin-left: 0;
+  }
+  #product-sidebar .right-section .images img {
+    width: 135px;
+    height: 190px;
+  }
+  #blog .section-2 .description {
+    width: 600px;
+  }
+  #blog .section-6 .description p {
+    width: 582px !important;
+  }
+  #blog .section-6 .logo span {
+    margin-left: 340px !important;
+  }
+  #blog .section-7 .logo span {
+    margin-left: 340px !important;
+  }
+  #blog .section-8 .logo span {
+    margin-left: 340px !important;
+  }
+  #blog .section-9 .logo span {
+    margin-left: 340px !important;
+  }
+  #blog .section-10 .logo span {
+    margin-left: 340px !important;
+  }
+  #blog-detail .details .section-1 .icons {
+    margin-left: 270px;
+  }
+  #blog-detail .details .section-2 .image-names .description-4 {
+    width: 515px;
+  }
+  #blog-detail .details .section-3 .comments .image-names .description-4 {
+    width: 515px;
+  }
+  #blog-detail .section-5 .description p {
+    width: 600px;
+  }
+  #blog-detail .section-5 .logo span {
+    margin-left: 341px;
+  }
+  #blog-detail .section-6 {
+    margin-left: 0;
+  }
+  #blog-detail .section-6 .logo span {
+    margin-left: 341px;
+  }
+  #blog-detail .section-7 {
+    margin-left: 0;
+  }
+  #blog-detail .section-7 .logo span {
+    margin-left: 341px;
+  }
+  #blog-detail .section-8 {
+    margin-left: 0;
+  }
+  #blog-detail .section-8 .logo span {
+    margin-left: 341px;
+  }
+  #blog-detail .section-9 {
+    margin-left: 0;
+  }
+  #blog-detail .section-9 .logo span {
+    margin-left: 341px;
+  }
+  #blog-detail .section-10 {
+    margin-left: 0;
+  }
+  #footer .footer-background-color {
+    background-color: #282828;
+  }
+  #footer .footer-background-color .right .story .images1 img {
+    width: 31%;
+  }
+  #footer .footer-background-color .right .story .images2 img {
+    width: 31%;
+  }
+  #footer .footer-background-color .btn {
+    margin-left: 220px;
+  }
+}
+#background {
+  margin-top: 73px;
+}
+#background .background-image {
+  width: 100%;
+  height: 400px;
+}
+#background .title-name {
+  text-align: center;
+  padding-top: 150px;
+  color: white;
+}
+#background .title-name p {
+  font-family: monospace;
+}
+#background .title-name h3 {
+  font-family: monospace;
+}
+
+#carts {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+#carts .small-logo1 {
+  margin-left: 58px;
+  margin-top: 10px;
+}
+#carts .small-logo1 span {
+  font-size: 20px;
+}
+#carts .description1 p {
+  width: 213px;
+  text-align: center;
+  margin-left: -40px;
+  color: gray;
+}
+#carts .small-logo2 {
+  margin-left: 83px;
+  margin-top: 10px;
+}
+#carts .small-logo2 span {
+  font-size: 20px;
+}
+#carts .description2 p {
+  width: 213px;
+  text-align: center;
+  margin-left: -15px;
+  color: gray;
+}
+#carts .carts3 .image {
+  margin-left: 18px;
+}
+#carts .small-logo3 {
+  margin-left: 69px;
+  margin-top: 10px;
+}
+#carts .small-logo3 span {
+  font-size: 20px;
+}
+#carts .description3 p {
+  width: 213px;
+  text-align: center;
+  margin-left: -24px;
+  color: gray;
+}
+#carts .small-logo4 {
+  margin-left: 93px;
+  margin-top: 10px;
+}
+#carts .small-logo4 span {
+  font-size: 20px;
+}
+#carts .name4 {
+  margin-left: 15px;
+}
+#carts .description4 p {
+  width: 213px;
+  text-align: center;
+  color: gray;
+}
+
+#autobiography1 {
+  margin-top: 150px;
+}
+#autobiography1 .autobiography1 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+#autobiography1 .autobiography1 .left .name {
+  color: gray;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .name p {
+  padding-top: 101px;
+  font-family: fangsong;
+}
+#autobiography1 .autobiography1 .left .title {
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .description {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#autobiography1 .autobiography1 .left .description p {
+  width: 400px;
+}
+#autobiography1 .autobiography1 .left .button {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .left .button button {
+  width: 200px;
+  background: none;
+  border: 1px solid black;
+}
+#autobiography1 .autobiography1 .left .button button:hover {
+  background-color: #282828;
+  transition: 0.5s;
+}
+#autobiography1 .autobiography1 .left .button button:hover p {
+  color: white;
+}
+#autobiography1 .autobiography1 .left .button button p {
+  padding-top: 13px;
+  color: black;
+  font-family: initial;
+}
+#autobiography1 .autobiography1 .left .image {
+  margin-left: 500px;
+}
+#autobiography1 .autobiography1 .left .image img {
+  z-index: 1;
+}
+#autobiography1 .autobiography1 .right {
+  width: 200px;
+  height: 100%;
+}
+#autobiography1 .autobiography1 .right .image1 {
+  position: relative;
+}
+#autobiography1 .autobiography1 .right .image1 img {
+  width: 300px;
+  margin-top: -46px;
+  margin-left: 100px;
+}
+#autobiography1 .autobiography1 .right .image2 img {
+  width: 350px;
+  margin-top: -88px;
+  margin-left: 200px;
+}
+
+#autobiography2 {
+  margin-top: 200px;
+}
+#autobiography2 .autobiography2 {
+  background-color: aliceblue;
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+#autobiography2 .autobiography2 .left .backgrounds {
+  display: flex;
+}
+#autobiography2 .autobiography2 .left .backgrounds .backgorund-image {
+  width: 200px;
+  height: 500px;
+}
+#autobiography2 .autobiography2 .left .backgrounds .images .image1 img {
+  width: 400px;
+  margin-top: -38px;
+}
+#autobiography2 .autobiography2 .left .backgrounds .images .image2 img {
+  width: 200px;
+  margin-left: -140px;
+  margin-top: -42px;
+}
+#autobiography2 .autobiography2 .right {
+  margin-left: 50px;
+}
+#autobiography2 .autobiography2 .right .name {
+  color: gray;
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .name p {
+  padding-top: 101px;
+  font-family: fangsong;
+}
+#autobiography2 .autobiography2 .right .title {
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .description {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#autobiography2 .autobiography2 .right .description p {
+  width: 400px;
+}
+#autobiography2 .autobiography2 .right .button {
+  margin-top: 40px;
+  margin-left: 100px;
+}
+#autobiography2 .autobiography2 .right .button button {
+  width: 200px;
+  background: none;
+  border: 1px solid black;
+}
+#autobiography2 .autobiography2 .right .button button:hover {
+  background-color: #282828;
+  transition: 0.5s;
+}
+#autobiography2 .autobiography2 .right .button button:hover p {
+  color: white;
+}
+#autobiography2 .autobiography2 .right .button button p {
+  padding-top: 13px;
+  color: black;
+  font-family: initial;
+}
+#autobiography2 .autobiography2 .right .image {
+  margin-left: 320px;
+}
+#autobiography2 .autobiography2 .right .image img {
+  width: 300px;
+}
+
+#promo-products {
+  background-color: #FBF9F6;
+  margin-top: 150px;
+}
+#promo-products .title {
+  text-align: center;
+  padding-top: 100px;
+}
+#promo-products .title p {
+  color: gray;
+  font-family: monospace;
+}
+#promo-products .name {
+  text-align: center;
+}
+#promo-products .name h1 {
+  font-family: monospace;
+}
+#promo-products .description {
+  text-align: center;
+  margin-left: 400px;
+  margin-top: 20px;
+}
+#promo-products .description p {
+  color: gray;
+  font-family: monospace;
+  width: 511px;
+}
+#promo-products .box-area .image {
+  width: 250px;
+  margin-left: 25px;
+}
+#promo-products .box-area .image img {
+  width: 100%;
+  cursor: pointer;
+}
+#promo-products .box-area .name {
+  opacity: 0;
+  transition: 0.4s;
+}
+#promo-products .box-area .name h5 {
+  margin-top: -40px;
+}
+#promo-products .box-area .price {
+  transition: 0.4s;
+  text-align: center !important;
+  opacity: 0;
+}
+#promo-products .box-area:hover .name,
+#promo-products .box-area:hover .price {
+  opacity: 1;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#product-sidebar {
+  margin-top: 100px;
+}
+#product-sidebar .results-sort {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#product-sidebar .results-sort .results p {
+  color: gray;
+}
+#product-sidebar .results-sort .sort {
+  width: 250px !important;
+}
+#product-sidebar .results-sort .sort .form-select {
+  border-radius: inherit;
+  color: gray;
+  height: 50px;
+}
+#product-sidebar .results-sort .sort .form-select:focus {
+  box-shadow: none;
+  border-color: rgba(128, 128, 128, 0.2117647059);
+}
+#product-sidebar .all-products {
+  display: flex !important;
+}
+#product-sidebar .all-products .products {
+  width: 100%;
+  height: 560px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+#product-sidebar .all-products .products a img {
+  transition: s;
+  width: 100%;
+  height: 400px;
+}
+#product-sidebar .all-products .products .name {
+  margin-top: 10px;
+}
+#product-sidebar .all-products .products .name a {
+  text-decoration: none;
+  color: gray;
+  font-family: monospace;
+}
+#product-sidebar .all-products .products .name a:hover {
+  color: red;
+  transition: 0.8s;
+}
+#product-sidebar .all-products .products .category-name a {
+  text-decoration: none;
+  color: black;
+  font-family: initial;
+  font-size: 24px;
+}
+#product-sidebar .all-products .products .category-name a:hover {
+  color: red;
+  transition: 0.8s;
+}
+#product-sidebar .all-products .products .price-button {
+  display: flex;
+  margin-top: 15px;
+}
+#product-sidebar .all-products .products .price-button p {
+  color: gray;
+  font-family: monospace;
+}
+#product-sidebar .all-products .products .price-button button {
+  border: none;
+  margin-left: 167px;
+  background-color: #d14031;
+  border-radius: 0;
+}
+#product-sidebar .all-products .products .price-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#product-sidebar .all-products .wishlist-cart {
+  opacity: 0;
+  transition: 0.5s;
+  margin-left: -85px;
+  margin-top: 75px;
+  font-size: 22px;
+  transition: 0.5s;
+}
+#product-sidebar .all-products i {
+  cursor: pointer;
+  color: red;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  width: 33px;
+  height: 33px;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+#product-sidebar .all-products i:nth-child(2) {
+  cursor: pointer;
+  color: #000;
+  padding-top: 6px;
+  padding-left: 4px;
+}
+#product-sidebar .all-products:hover .wishlist-cart {
+  opacity: 1;
+}
+#product-sidebar .products {
+  margin-top: 50px;
+}
+#product-sidebar .products .image img {
+  width: 100%;
+}
+#product-sidebar .products .name {
+  margin-top: 10px;
+}
+#product-sidebar .products .name a {
+  text-decoration: none;
+  color: gray;
+  font-family: monospace;
+}
+#product-sidebar .products .name a:hover {
+  color: red;
+  transition: 0.8s;
+}
+#product-sidebar .products .category-name a {
+  text-decoration: none;
+  color: black;
+  font-family: initial;
+  font-size: 24px;
+}
+#product-sidebar .products .category-name a:hover {
+  color: red;
+  transition: 0.8s;
+}
+#product-sidebar .products .price-button {
+  display: flex;
+  margin-top: 15px;
+}
+#product-sidebar .products .price-button p {
+  color: gray;
+  font-family: monospace;
+}
+#product-sidebar .products .price-button button {
+  border: none;
+  margin-left: 167px;
+  background-color: #d14031;
+  border-radius: 0;
+}
+#product-sidebar .products .price-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#product-sidebar .pagination {
+  justify-content: center;
+  margin-top: 100px;
+}
+#product-sidebar .pagination .left-icon i {
+  color: gray;
+  cursor: pointer;
+}
+#product-sidebar .pagination .left-icon i:hover {
+  color: black;
+  transition: 0.5s;
+}
+#product-sidebar .pagination .number {
+  display: flex;
+  gap: 15px;
+  margin-left: 15px;
+}
+#product-sidebar .pagination .number p {
+  color: gray;
+  cursor: pointer;
+  font-family: math;
+}
+#product-sidebar .pagination .number p:hover {
+  color: black;
+  transition: 0.5s;
+}
+#product-sidebar .pagination .right-icon {
+  margin-left: 15px;
+}
+#product-sidebar .pagination .right-icon i {
+  color: gray;
+  cursor: pointer;
+}
+#product-sidebar .pagination .right-icon i:hover {
+  color: black;
+  transition: 0.5s;
+}
+#product-sidebar .right-section {
+  margin-left: 80px;
+}
+#product-sidebar .right-section .search input {
+  height: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.2117647059);
+  width: 100%;
+  outline: none;
+  padding-left: 15px;
+}
+#product-sidebar .right-section .filter {
+  margin-top: 40px;
+  font-weight: bold;
+}
+#product-sidebar .right-section .filter h5 {
+  font-family: initial;
+}
+#product-sidebar .right-section .product-price {
+  font-family: "Crimson Text";
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+#product-sidebar .right-section .price-title {
+  padding: 2px 20px;
+}
+#product-sidebar .right-section .price-title h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-family: "Crimson Text";
+}
+#product-sidebar .right-section .price-filter .card {
+  border: none;
+  padding: 0 20px 20px 20px;
+}
+#product-sidebar .right-section .price-filter h4 {
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+#product-sidebar .right-section .price-filter .price-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+#product-sidebar .right-section .price-filter .price-content .filter-button button {
+  border: none;
+  background-color: #d14031;
+  height: 40px;
+  width: 90px;
+  color: white;
+}
+#product-sidebar .right-section .price-filter .price-content .filter-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#product-sidebar .right-section .price-filter label {
+  font-size: 12px;
+  font-weight: 500;
+}
+#product-sidebar .right-section .price-filter p {
+  font-size: 16px;
+  font-weight: 600;
+}
+#product-sidebar .right-section .price-filter .range-slider {
+  position: relative;
+  margin: 15px 0 30px 0;
+}
+#product-sidebar .right-section .price-filter input[type=range] {
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  left: 0;
+}
+#product-sidebar .right-section .price-filter input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #36b37e;
+  cursor: pointer;
+  margin-top: -5px;
+  position: relative;
+  z-index: 1;
+}
+#product-sidebar .right-section .price-filter input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  background: #d14031;
+  border-radius: 3px;
+  border: none;
+}
+#product-sidebar .right-section .borders {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+#product-sidebar .right-section .borders .border {
+  width: 100%;
+}
+#product-sidebar .right-section .logo {
+  margin-top: -18px;
+}
+#product-sidebar .right-section .logo span {
+  font-size: 20px;
+  margin-left: 107px;
+}
+#product-sidebar .right-section .top-5 {
+  margin-top: 20px;
+}
+#product-sidebar .right-section .top-5 h5 {
+  font-family: initial;
+}
+#product-sidebar .right-section .images {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+#product-sidebar .right-section .images img {
+  width: 41px;
+  height: 80px;
+}
+#product-sidebar .right-section .borders {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+#product-sidebar .right-section .borders .border {
+  width: 100%;
+}
+#product-sidebar .right-section .logo {
+  margin-top: -18px;
+}
+#product-sidebar .right-section .logo span {
+  font-size: 20px;
+  margin-left: 107px;
+}
+#product-sidebar .right-section .categories {
+  margin-top: 20px;
+}
+#product-sidebar .right-section .categories h5 {
+  font-family: initial;
+}
+#product-sidebar .right-section .product-categories {
+  margin-top: 15px;
+}
+#product-sidebar .right-section .product-categories .product-category {
+  display: flex;
+}
+#product-sidebar .right-section .product-categories .product-category span {
+  margin-left: 10px;
+  font-family: "Josefin Sans", sans-serif;
+  color: gray;
+  cursor: pointer;
+}
+#product-sidebar .right-section .product-categories .product-category p {
+  font-family: "Josefin Sans", sans-serif;
+  color: gray;
+  cursor: pointer;
+}
+#product-sidebar .right-section .product-categories .product-category p:hover {
+  color: #d14031;
+  transition: 0.5s;
+}
+#product-sidebar .right-section .borders {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+#product-sidebar .right-section .borders .border {
+  width: 100%;
+}
+#product-sidebar .right-section .logo {
+  margin-top: -18px;
+}
+#product-sidebar .right-section .logo span {
+  font-size: 20px;
+  margin-left: 107px;
+}
+#product-sidebar .right-section .tags {
+  margin-top: 20px;
+}
+#product-sidebar .right-section .tags h5 {
+  font-family: initial;
+}
+#product-sidebar .right-section .tags-name {
+  margin-top: 15px;
+}
+#product-sidebar .right-section .tags-name p {
+  color: gray;
+  font-family: initial;
+  font-size: 20px;
+}
+#product-sidebar .right-section .tags-name p:hover {
+  color: #d14031;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#product-sidebar .right-section .instagram {
+  margin-top: 20px;
+}
+#product-sidebar .right-section .instagram h5 {
+  font-family: initial;
+}
+#product-sidebar .right-section .instagram-image {
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+}
+#product-sidebar .right-section .instagram-image a img {
+  width: 100%;
+}
+#product-sidebar .right-section .socials {
+  margin-top: 20px;
+}
+#product-sidebar .right-section .socials h5 {
+  font-family: initial;
+}
+#product-sidebar .right-section .icons {
+  margin-left: -33px;
+  margin-top: 20px;
+}
+#product-sidebar .right-section .icons ul {
+  display: flex;
+  gap: 15px;
+}
+#product-sidebar .right-section .icons ul li {
+  list-style: none;
+}
+#product-sidebar .right-section .icons ul li a {
+  text-decoration: none;
+}
+#product-sidebar .right-section .icons ul li a i {
+  color: black;
+}
+#product-sidebar .right-section .icons ul li a i:hover {
+  color: #d14031;
+  transition: 0.5s;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#detail {
+  margin-top: 100px;
+}
+#detail .product-image {
+  position: sticky;
+  top: 50px !important;
+  left: 0;
+}
+#detail .product-image img {
+  width: 100%;
+}
+#detail .section-1 .name p {
+  color: gray;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+}
+#detail .section-1 .name p:hover {
+  color: rgb(241, 6, 6);
+  transition: 1s;
+}
+#detail .section-1 .wellness {
+  margin-top: -15px;
+}
+#detail .section-1 .wellness h2 {
+  font-family: auto;
+}
+#detail .section-1 .price p {
+  font-size: 20px;
+}
+#detail .section-1 .description {
+  margin-top: 20px;
+}
+#detail .section-1 .description p {
+  font-family: auto;
+  color: gray;
+}
+#detail .section-1 .add-basket-button {
+  margin-top: 20px;
+  gap: 10px;
+}
+#detail .section-1 .add-basket-button button {
+  width: 200px;
+  height: 50px;
+  background-color: #d14031;
+  color: white;
+  border: none;
+  font-family: auto;
+}
+#detail .section-1 .add-basket-button button:nth-child(2) {
+  background-color: green;
+}
+#detail .section-1 .add-basket-button button:nth-child(2):hover {
+  background-color: rgb(2, 78, 2);
+  transition: 0.5s;
+}
+#detail .section-1 .add-basket-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#detail .section-1 .sku-code {
+  display: flex;
+  margin-top: 50px;
+}
+#detail .section-1 .sku-code p {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .sku-code span {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .categories {
+  display: flex;
+}
+#detail .section-1 .categories p {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .categories span {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .tags {
+  display: flex;
+}
+#detail .section-1 .tags p {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .tags span {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .border {
+  margin-top: 20px;
+}
+#detail .section-1 .authorimage-authorname {
+  margin-top: 50px;
+  display: flex;
+}
+#detail .section-1 .authorimage-authorname .author-image img {
+  width: 80px;
+}
+#detail .section-1 .authorimage-authorname .author-name {
+  margin-left: 20px;
+}
+#detail .section-1 .authorimage-authorname .author-name p {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .authorimage-authorname .author-name span {
+  font-size: 20px;
+  font-family: auto;
+}
+#detail .section-1 .author-description {
+  margin-top: 20px;
+}
+#detail .section-1 .author-description p {
+  color: gray;
+  font-family: auto;
+}
+#detail .section-1 .author-comment {
+  background-color: #fbf9f6;
+  padding: 30px 40px;
+  margin-top: 30px;
+}
+#detail .section-1 .author-comment .starts {
+  display: flex;
+  gap: 5px;
+}
+#detail .section-1 .author-comment .comment p {
+  color: gray;
+  font-family: auto;
+  margin-top: 20px;
+  font-size: 18px;
+}
+#detail .section-1 .author-comment .logo-name {
+  display: flex;
+  padding-top: 10px;
+}
+#detail .section-1 .author-comment .logo-name .names {
+  margin-left: 10px;
+}
+#detail .section-1 .author-comment .logo-name .names p {
+  font-family: auto;
+  font-size: 18px;
+}
+
+#review-area .tab-menu {
+  margin-top: 100px;
+}
+#review-area .tab-menu ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+#review-area .tab-menu ul .active {
+  transition: 1s;
+  background-color: #000;
+}
+#review-area .tab-menu ul .active a {
+  color: #fff !important;
+}
+#review-area .tab-menu ul li {
+  list-style: none;
+  border: 1px solid black;
+  width: 150px;
+  text-align: center;
+  height: 40px;
+  padding-top: 7px;
+  cursor: pointer;
+}
+#review-area .tab-menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+#review-area .description {
+  margin-top: 20px;
+}
+#review-area .description p {
+  text-align: center;
+  font-family: auto;
+  color: gray;
+}
+#review-area .filterDiv {
+  display: none;
+}
+#review-area .show {
+  display: block;
+}
+#review-area .user-comment {
+  margin-top: 20px;
+  text-align: center;
+}
+#review-area .user-comment p {
+  font-size: 20px;
+  font-family: auto;
+  font-weight: bold;
+}
+#review-area .user-comment .stars i {
+  cursor: pointer;
+  color: gray;
+}
+#review-area .user-comment input {
+  width: 50%;
+  height: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.2117647059);
+  padding-left: 15px;
+  outline: none;
+}
+#review-area .user-comment textarea {
+  width: 50%;
+  border: 1px solid rgba(128, 128, 128, 0.2117647059);
+  padding-left: 15px;
+  padding-top: 15px;
+  outline: none;
+}
+#review-area .user-comment .submit-button {
+  margin-top: 20px;
+}
+#review-area .user-comment .submit-button button {
+  width: 130px;
+  height: 50px;
+  background-color: #d14031;
+  color: white;
+  border: none;
+  font-family: initial;
+}
+#review-area .user-comment .submit-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+
+#related-products {
+  margin-top: 100px;
+}
+#related-products .related-products-word h2 {
+  font-family: auto;
+}
+#related-products .related-products {
+  margin-top: 50px;
+}
+#related-products .related-products .image img {
+  cursor: pointer;
+  width: 100%;
+}
+#related-products .related-products .author-name {
+  margin-top: 10px;
+}
+#related-products .related-products .author-name p {
+  color: gray;
+  font-family: auto;
+  font-size: 18px;
+  cursor: pointer;
+}
+#related-products .related-products .author-name p:hover {
+  color: rgb(241, 6, 6);
+  transition: 1s;
+}
+#related-products .related-products .book-name {
+  margin-top: -10px;
+}
+#related-products .related-products .book-name span {
+  font-family: auto;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+#related-products .related-products .book-name span:hover {
+  color: rgb(241, 6, 6);
+  transition: 1s;
+}
+#related-products .related-products .book-price {
+  margin-top: 5px;
+}
+#related-products .related-products .book-price p {
+  color: gray;
+  font-family: auto;
+}
+
+#map {
+  margin-top: 73px;
+}
+#map iframe {
+  width: 100%;
+}
+
+#contact {
+  margin-top: 100px;
+  margin-left: 70px;
+}
+#contact .name h4 {
+  font-family: initial;
+}
+#contact .location {
+  margin-top: 30px;
+  display: flex;
+  cursor: pointer;
+}
+#contact .location .address {
+  margin-left: 10px;
+}
+#contact .location .address p {
+  font-family: monospace;
+  color: gray;
+}
+#contact .location:hover p {
+  color: red;
+  transition: 0.5s;
+}
+#contact .phone {
+  display: flex;
+  cursor: pointer;
+}
+#contact .phone .number {
+  margin-left: 10px;
+}
+#contact .phone .number p {
+  font-family: monospace;
+  color: gray;
+}
+#contact .phone:hover p {
+  color: red;
+  transition: 0.5s;
+}
+#contact .message {
+  display: flex;
+  cursor: pointer;
+}
+#contact .message .mail {
+  margin-left: 10px;
+}
+#contact .message .mail p {
+  font-family: monospace;
+  color: gray;
+}
+#contact .message:hover p {
+  color: red;
+  transition: 0.5s;
+}
+
+#brand {
+  margin-top: 150px;
+}
+#brand img {
+  width: 100%;
+  height: 170px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+#brand img:hover {
+  margin-top: -20px;
+}
+
+#background .blog-background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .blog-background-images h2 {
+  text-align: center;
+  color: black;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#blog {
+  margin-top: 150px;
+}
+#blog .section-1 .image-1 a img {
+  width: 100%;
+  height: 500px;
+}
+#blog .section-1 .name-date {
+  display: flex;
+  margin-top: 20px;
+}
+#blog .section-1 .name-date .name p {
+  color: gray;
+  font-family: initial;
+  cursor: pointer;
+}
+#blog .section-1 .name-date .name p:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog .section-1 .name-date .date p {
+  color: gray;
+  font-family: initial;
+  cursor: pointer;
+}
+#blog .section-1 .name-date .date p:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog .section-1 .title a {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+#blog .section-1 .title a:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog .section-1 .description {
+  margin-top: 10px;
+}
+#blog .section-1 .description p {
+  color: gray;
+}
+#blog .section-1 .read-more {
+  width: 100px;
+}
+#blog .section-1 .read-more a {
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  font-size: 20px;
+}
+#blog .section-1 .read-more a:hover {
+  color: black;
+  transition: 0.5s;
+}
+#blog .section-1 .read-more a::after {
+  margin-top: 10px;
+  content: "";
+  position: relative;
+  display: block;
+  top: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: #858483;
+}
+#blog .section-2 {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #fbf9f6;
+  height: 300px;
+}
+#blog .section-2 .sign h1 {
+  color: #d14031;
+  text-align: center;
+  font-size: 100px;
+}
+#blog .section-2 .description {
+  text-align: center;
+  width: 620px;
+  margin-left: 125px;
+}
+#blog .section-2 .description p {
+  font-family: cursive;
+}
+#blog .section-2 .author-name {
+  text-align: center;
+  margin-top: 20px;
+}
+#blog .section-2 .author-name p {
+  color: gray;
+  font-family: cursive;
+}
+#blog .section-3 {
+  margin-top: 100px;
+}
+#blog .section-3 .image-1 a img {
+  width: 100%;
+  height: 500px;
+}
+#blog .section-3 .name-date {
+  display: flex;
+  margin-top: 20px;
+}
+#blog .section-3 .name-date .name p {
+  color: gray;
+  font-family: initial;
+  cursor: pointer;
+}
+#blog .section-3 .name-date .name p:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog .section-3 .name-date .date p {
+  color: gray;
+  font-family: initial;
+  cursor: pointer;
+}
+#blog .section-3 .name-date .date p:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog .section-3 .title a {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+}
+#blog .section-3 .title a:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog .section-3 .description {
+  margin-top: 10px;
+}
+#blog .section-3 .description p {
+  color: gray;
+}
+#blog .section-3 .read-more {
+  width: 100px;
+}
+#blog .section-3 .read-more a {
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  font-size: 20px;
+}
+#blog .section-3 .read-more a:hover {
+  color: black;
+  transition: 0.5s;
+}
+#blog .section-3 .read-more a::after {
+  margin-top: 10px;
+  content: "";
+  position: relative;
+  display: block;
+  top: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: #858483;
+}
+#blog .section-4 {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #fbf9f6;
+  height: 200px;
+}
+#blog .section-4 .icon {
+  text-align: center;
+  padding-top: 50px;
+}
+#blog .section-4 .icon i {
+  color: #d14031;
+  font-size: 40px;
+}
+#blog .section-4 .link {
+  margin-top: 30px;
+  text-align: center;
+}
+#blog .section-4 .link a {
+  color: black;
+  text-decoration: none;
+  font-family: cursive;
+}
+#blog .section-4 .link a:hover {
+  color: #d14031;
+  transition: 0.5s;
+}
+#blog .section-5 {
+  margin-top: 100px;
+}
+#blog .section-5 .pagination {
+  justify-content: center;
+}
+#blog .section-5 .pagination .left-icon i {
+  color: gray;
+  cursor: pointer;
+}
+#blog .section-5 .pagination .left-icon i:hover {
+  color: black;
+  transition: 0.5s;
+}
+#blog .section-5 .pagination .number {
+  display: flex;
+  gap: 15px;
+  margin-left: 15px;
+}
+#blog .section-5 .pagination .number p {
+  color: gray;
+  cursor: pointer;
+  font-family: math;
+}
+#blog .section-5 .pagination .number p:hover {
+  color: black;
+  transition: 0.5s;
+}
+#blog .section-5 .pagination .right-icon {
+  margin-left: 15px;
+}
+#blog .section-5 .pagination .right-icon i {
+  color: gray;
+  cursor: pointer;
+}
+#blog .section-5 .pagination .right-icon i:hover {
+  color: black;
+  transition: 0.5s;
+}
+#blog .section-6 {
+  margin-left: 100px;
+}
+#blog .section-6 .country {
+  margin-top: 30px;
+}
+#blog .section-6 .country p {
+  color: gray;
+  font-family: initial;
+}
+#blog .section-6 .name {
+  margin-top: -15px;
+}
+#blog .section-6 .name h4 {
+  cursor: pointer;
+  font-family: initial;
+}
+#blog .section-6 .name h4:hover {
+  color: #d14031;
+  transition: 0.5s;
+}
+#blog .section-6 .description p {
+  width: 198px;
+}
+#blog .section-6 .borders {
+  display: flex;
+  gap: 30px;
+}
+#blog .section-6 .borders .border {
+  width: 100%;
+}
+#blog .section-6 .logo {
+  margin-top: -18px;
+}
+#blog .section-6 .logo span {
+  font-size: 20px;
+  margin-left: 152px;
+}
+#blog .section-7 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#blog .section-7 .categories h5 {
+  font-family: initial;
+}
+#blog .section-7 .category {
+  margin-top: 15px;
+}
+#blog .section-7 .category p {
+  color: gray;
+  font-family: initial;
+}
+#blog .section-7 .category p:hover {
+  color: #d14031;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#blog .section-7 .borders {
+  display: flex;
+  gap: 30px;
+}
+#blog .section-7 .borders .border {
+  width: 100%;
+}
+#blog .section-7 .logo {
+  margin-top: -18px;
+}
+#blog .section-7 .logo span {
+  font-size: 20px;
+  margin-left: 152px;
+}
+#blog .section-8 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#blog .section-8 .image img {
+  width: 100%;
+}
+#blog .section-8 .borders {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+#blog .section-8 .borders .border {
+  width: 100%;
+}
+#blog .section-8 .logo {
+  margin-top: -18px;
+}
+#blog .section-8 .logo span {
+  font-size: 20px;
+  margin-left: 152px;
+}
+#blog .section-9 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#blog .section-9 .tags h5 {
+  font-family: initial;
+}
+#blog .section-9 .tags-name {
+  margin-top: 15px;
+}
+#blog .section-9 .tags-name p {
+  color: gray;
+  font-family: initial;
+  font-size: 20px;
+}
+#blog .section-9 .tags-name p:hover {
+  color: #d14031;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#blog .section-9 .borders {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+#blog .section-9 .borders .border {
+  width: 100%;
+}
+#blog .section-9 .logo {
+  margin-top: -18px;
+}
+#blog .section-9 .logo span {
+  font-size: 20px;
+  margin-left: 152px;
+}
+#blog .section-10 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#blog .section-10 .socials h5 {
+  font-family: initial;
+}
+#blog .section-10 .icons {
+  margin-left: -33px;
+  margin-top: 20px;
+}
+#blog .section-10 .icons ul {
+  display: flex;
+  gap: 15px;
+}
+#blog .section-10 .icons ul li {
+  list-style: none;
+}
+#blog .section-10 .icons ul li a {
+  text-decoration: none;
+}
+#blog .section-10 .icons ul li a i {
+  color: black;
+}
+#blog .section-10 .icons ul li a i:hover {
+  color: #d14031;
+  transition: 0.5s;
+}
+#blog .section-10 .borders {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+#blog .section-10 .borders .border {
+  width: 100%;
+}
+#blog .section-10 .logo {
+  margin-top: -18px;
+}
+#blog .section-10 .logo span {
+  font-size: 20px;
+  margin-left: 152px;
+}
+#blog .section-11 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#blog .section-11 .latest-titles h5 {
+  font-family: initial;
+}
+#blog .section-11 .image-name {
+  display: flex;
+}
+#blog .section-11 .image-name .image img {
+  width: 70px;
+}
+#blog .section-11 .image-name .name-price {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+#blog .section-11 .image-name .name-price a {
+  text-decoration: none;
+  font-family: initial;
+  color: gray;
+  font-size: 20px;
+}
+#blog .section-11 .image-name .name-price a:hover {
+  color: #d14031;
+  transition: 0.5s;
+}
+#blog .section-11 .image-name .name-price p {
+  font-family: initial;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#blog-detail {
+  margin-top: 150px;
+}
+#blog-detail .details .section-1 .blog-image img {
+  width: 100%;
+}
+#blog-detail .details .section-1 .name-date {
+  display: flex;
+  margin-top: 20px;
+}
+#blog-detail .details .section-1 .name-date .name p {
+  color: gray;
+  font-family: initial;
+  cursor: pointer;
+}
+#blog-detail .details .section-1 .name-date .name p:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog-detail .details .section-1 .name-date .date p {
+  color: gray;
+  font-family: initial;
+  cursor: pointer;
+}
+#blog-detail .details .section-1 .name-date .date p:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog-detail .details .section-1 .title h1 {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  font-family: auto;
+}
+#blog-detail .details .section-1 .title h1:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog-detail .details .section-1 .description-1 {
+  margin-top: 20px;
+}
+#blog-detail .details .section-1 .description-1 p {
+  color: gray;
+  font-family: auto;
+}
+#blog-detail .details .section-1 .description-2 {
+  margin-top: 50px;
+}
+#blog-detail .details .section-1 .description-2 p {
+  font-family: auto;
+}
+#blog-detail .details .section-1 .description-3 {
+  margin-top: 50px;
+}
+#blog-detail .details .section-1 .description-3 p {
+  color: gray;
+  font-family: auto;
+}
+#blog-detail .details .section-1 .icons {
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 340px;
+}
+#blog-detail .details .section-1 .icons ul {
+  display: flex;
+  gap: 15px;
+}
+#blog-detail .details .section-1 .icons ul li {
+  list-style: none;
+}
+#blog-detail .details .section-1 .icons ul li a {
+  text-decoration: none;
+  color: black;
+}
+#blog-detail .details .section-1 .icons ul li a i:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog-detail .details .section-2 {
+  margin-top: 50px;
+}
+#blog-detail .details .section-2 .image-names .image-name {
+  display: flex;
+}
+#blog-detail .details .section-2 .image-names .image-name .image img {
+  width: 100px;
+}
+#blog-detail .details .section-2 .image-names .image-name .name {
+  margin-left: 50px;
+}
+#blog-detail .details .section-2 .image-names .image-name .name p {
+  color: gray;
+  font-family: auto;
+}
+#blog-detail .details .section-2 .image-names .image-name .name span {
+  font-size: 25px;
+  font-family: auto;
+  margin-top: -10px;
+}
+#blog-detail .details .section-2 .image-names .description-4 {
+  width: 708px;
+  margin-left: 149px;
+}
+#blog-detail .details .section-2 .image-names .description-4 p {
+  color: gray;
+  font-family: auto;
+}
+#blog-detail .details .section-2 .image-names .icons {
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 115px;
+}
+#blog-detail .details .section-2 .image-names .icons ul {
+  display: flex;
+  gap: 15px;
+}
+#blog-detail .details .section-2 .image-names .icons ul li {
+  list-style: none;
+}
+#blog-detail .details .section-2 .image-names .icons ul li a {
+  text-decoration: none;
+  color: black;
+}
+#blog-detail .details .section-2 .image-names .icons ul li a i:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog-detail .details .section-3 {
+  margin-top: 100px;
+}
+#blog-detail .details .section-3 .comments-words h4 {
+  font-family: auto;
+}
+#blog-detail .details .section-3 .comments {
+  margin-top: 50px;
+}
+#blog-detail .details .section-3 .comments .image-names .image-name {
+  display: flex;
+}
+#blog-detail .details .section-3 .comments .image-names .image-name .image img {
+  width: 100px;
+}
+#blog-detail .details .section-3 .comments .image-names .image-name .name {
+  margin-left: 50px;
+  display: flex;
+}
+#blog-detail .details .section-3 .comments .image-names .image-name .name p {
+  font-family: auto;
+  font-size: 20px;
+}
+#blog-detail .details .section-3 .comments .image-names .image-name .name span {
+  font-family: auto;
+  color: gray;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+#blog-detail .details .section-3 .comments .image-names .description-4 {
+  width: 708px;
+  margin-left: 149px;
+  margin-top: -50px;
+}
+#blog-detail .details .section-3 .comments .image-names .description-4 p {
+  color: gray;
+  font-family: auto;
+}
+#blog-detail .details .section-3 .comment-2 {
+  margin-top: 50px;
+}
+#blog-detail .details .section-3 .comment-2 .image-names .image-name {
+  display: flex;
+}
+#blog-detail .details .section-3 .comment-2 .image-names .image-name .image img {
+  width: 100px;
+}
+#blog-detail .details .section-3 .comment-2 .image-names .image-name .name {
+  margin-left: 50px;
+  display: flex;
+}
+#blog-detail .details .section-3 .comment-2 .image-names .image-name .name p {
+  font-family: auto;
+  font-size: 20px;
+}
+#blog-detail .details .section-3 .comment-2 .image-names .image-name .name span {
+  font-family: auto;
+  color: gray;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+#blog-detail .details .section-3 .comment-2 .image-names .description-4 {
+  width: 708px;
+  margin-left: 149px;
+  margin-top: -50px;
+}
+#blog-detail .details .section-3 .comment-2 .image-names .description-4 p {
+  color: gray;
+  font-family: auto;
+}
+#blog-detail .details .section-3 .comment-3 {
+  margin-top: 50px;
+}
+#blog-detail .details .section-3 .comment-3 .image-names .image-name {
+  display: flex;
+}
+#blog-detail .details .section-3 .comment-3 .image-names .image-name .image img {
+  width: 100px;
+}
+#blog-detail .details .section-3 .comment-3 .image-names .image-name .name {
+  margin-left: 50px;
+  display: flex;
+}
+#blog-detail .details .section-3 .comment-3 .image-names .image-name .name p {
+  font-family: auto;
+  font-size: 20px;
+}
+#blog-detail .details .section-3 .comment-3 .image-names .image-name .name span {
+  font-family: auto;
+  color: gray;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+#blog-detail .details .section-3 .comment-3 .image-names .description-4 {
+  width: 708px;
+  margin-left: 149px;
+  margin-top: -50px;
+}
+#blog-detail .details .section-3 .comment-3 .image-names .description-4 p {
+  color: gray;
+  font-family: auto;
+}
+#blog-detail .details .section-4 {
+  margin-top: 100px;
+}
+#blog-detail .details .section-4 .post-comment h4 {
+  font-family: auto;
+}
+#blog-detail .details .section-4 .user-comment {
+  margin-top: 40px;
+}
+#blog-detail .details .section-4 .user-comment p {
+  font-size: 20px;
+  font-family: auto;
+  font-weight: bold;
+}
+#blog-detail .details .section-4 .user-comment input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.2117647059);
+  padding-left: 15px;
+  outline: none;
+}
+#blog-detail .details .section-4 .user-comment textarea {
+  width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.2117647059);
+  padding-left: 15px;
+  padding-top: 15px;
+  outline: none;
+}
+#blog-detail .details .section-4 .user-comment .submit-button {
+  margin-top: 20px;
+}
+#blog-detail .details .section-4 .user-comment .submit-button button {
+  width: 130px;
+  height: 50px;
+  background-color: #d14031;
+  color: white;
+  border: none;
+  font-family: initial;
+}
+#blog-detail .details .section-4 .user-comment .submit-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#blog-detail .section-5 {
+  margin-left: 100px;
+}
+#blog-detail .section-5 .country {
+  margin-top: 30px;
+}
+#blog-detail .section-5 .country p {
+  color: gray;
+  font-family: initial;
+}
+#blog-detail .section-5 .name {
+  margin-top: -15px;
+}
+#blog-detail .section-5 .name h4 {
+  cursor: pointer;
+  font-family: initial;
+}
+#blog-detail .section-5 .name h4:hover {
+  color: #d14031;
+  transition: 0.5s;
+}
+#blog-detail .section-5 .description p {
+  width: 198px;
+}
+#blog-detail .section-5 .borders {
+  display: flex;
+  gap: 30px;
+}
+#blog-detail .section-5 .borders .border {
+  width: 100%;
+}
+#blog-detail .section-5 .logo {
+  margin-top: -18px;
+}
+#blog-detail .section-5 .logo span {
+  font-size: 20px;
+  margin-left: 152px;
+}
+#blog-detail .section-6 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#blog-detail .section-6 .categories h5 {
+  font-family: initial;
+}
+#blog-detail .section-6 .category {
+  margin-top: 15px;
+}
+#blog-detail .section-6 .category p {
+  color: gray;
+  font-family: initial;
+}
+#blog-detail .section-6 .category p:hover {
+  color: #d14031;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#blog-detail .section-6 .borders {
+  display: flex;
+  gap: 30px;
+}
+#blog-detail .section-6 .borders .border {
+  width: 100%;
+}
+#blog-detail .section-6 .logo {
+  margin-top: -18px;
+}
+#blog-detail .section-6 .logo span {
+  font-size: 20px;
+  margin-left: 152px;
+}
+#blog-detail .section-7 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#blog-detail .section-7 .image img {
+  width: 100%;
+}
+#blog-detail .section-7 .borders {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+#blog-detail .section-7 .borders .border {
+  width: 100%;
+}
+#blog-detail .section-7 .logo {
+  margin-top: -18px;
+}
+#blog-detail .section-7 .logo span {
+  font-size: 20px;
+  margin-left: 152px;
+}
+#blog-detail .section-8 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#blog-detail .section-8 .tags h5 {
+  font-family: initial;
+}
+#blog-detail .section-8 .tags-name {
+  margin-top: 15px;
+}
+#blog-detail .section-8 .tags-name p {
+  color: gray;
+  font-family: initial;
+  font-size: 20px;
+}
+#blog-detail .section-8 .tags-name p:hover {
+  color: #d14031;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#blog-detail .section-8 .borders {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+#blog-detail .section-8 .borders .border {
+  width: 100%;
+}
+#blog-detail .section-8 .logo {
+  margin-top: -18px;
+}
+#blog-detail .section-8 .logo span {
+  font-size: 20px;
+  margin-left: 152px;
+}
+#blog-detail .section-9 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#blog-detail .section-9 .socials h5 {
+  font-family: initial;
+}
+#blog-detail .section-9 .icons {
+  margin-left: -33px;
+  margin-top: 20px;
+}
+#blog-detail .section-9 .icons ul {
+  display: flex;
+  gap: 15px;
+}
+#blog-detail .section-9 .icons ul li {
+  list-style: none;
+}
+#blog-detail .section-9 .icons ul li a {
+  text-decoration: none;
+}
+#blog-detail .section-9 .icons ul li a i {
+  color: black;
+}
+#blog-detail .section-9 .icons ul li a i:hover {
+  color: #d14031;
+  transition: 0.5s;
+}
+#blog-detail .section-9 .borders {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+#blog-detail .section-9 .borders .border {
+  width: 100%;
+}
+#blog-detail .section-9 .logo {
+  margin-top: -18px;
+}
+#blog-detail .section-9 .logo span {
+  font-size: 20px;
+  margin-left: 152px;
+}
+#blog-detail .section-10 {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+#blog-detail .section-10 .latest-titles h5 {
+  font-family: initial;
+}
+#blog-detail .section-10 .image-name {
+  display: flex;
+}
+#blog-detail .section-10 .image-name .image img {
+  width: 70px;
+}
+#blog-detail .section-10 .image-name .name-price {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+#blog-detail .section-10 .image-name .name-price a {
+  text-decoration: none;
+  font-family: initial;
+  color: gray;
+  font-size: 20px;
+}
+#blog-detail .section-10 .image-name .name-price a:hover {
+  color: #d14031;
+  transition: 0.5s;
+}
+#blog-detail .section-10 .image-name .name-price p {
+  font-family: initial;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#cart-products .basket-products {
+  margin-top: 53px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 transparent, 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+  border-radius: 4px;
+  background: #fff;
+}
+#cart-products .basket-products .table th {
+  height: 48px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: black;
+}
+#cart-products tbody tr:nth-child(2) td:nth-child(6) a {
+  color: white !important;
+}
+#cart-products tbody td {
+  text-align: center;
+  width: 203px;
+  height: 103px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+#cart-products tbody td:nth-child(2) {
+  padding-top: 38px;
+}
+#cart-products tbody td:nth-child(3) {
+  padding-top: 38px;
+  font-size: 21px;
+  font-weight: 500;
+}
+#cart-products tbody td:nth-child(4) {
+  padding-top: 38px;
+}
+#cart-products tbody td:nth-child(4) button {
+  padding: 0;
+  min-width: 0;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  line-height: 40px;
+  outline: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+#cart-products tbody td:nth-child(4) button i {
+  color: rgba(0, 0, 0, 0.54);
+}
+#cart-products tbody td:nth-child(6) {
+  padding-top: 38px;
+}
+#cart-products tbody td:nth-child(5) {
+  padding-top: 38px;
+}
+#cart-products tbody td a {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+#cart-products tbody td img {
+  padding-left: 47px;
+  height: 101px;
+}
+#cart-products tbody td .shop {
+  margin-left: 19px;
+  margin-top: 13px;
+  text-align: center;
+  cursor: pointer;
+  width: 181px;
+  height: 49px;
+  background-color: #d14031;
+  border: none;
+  border-radius: 0;
+}
+#cart-products tbody td .shop:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#cart-products tbody td .shop a {
+  color: #fff;
+}
+#cart-products tbody td input {
+  width: 80px;
+  text-align: center;
+  background-color: #eee;
+  height: 35px;
+  border: 1px solid #e5e5e5;
+  color: rgba(0, 0, 0, 0.54);
+}
+#cart-products tbody .price {
+  padding-top: 38px;
+  font-size: 21px;
+  font-weight: 500;
+  color: red;
+}
+#cart-products tbody .check {
+  position: relative;
+  bottom: 14px;
+  right: 15px;
+  background-color: #ef6c00;
+  border-color: #ef6c00;
+  text-align: center;
+  cursor: pointer;
+  width: 181px;
+  height: 49px;
+}
+#cart-products .show-alert .alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cart-products .show-alert .alert .btn-red {
+  background-color: #f33927;
+  height: 32px;
+  border-radius: 18px;
+  padding: 5px 12px 6px 12px;
+  color: #fff;
+}
+#cart-products .show-alert .button-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cart-products .show-alert .button-shop button {
+  background-color: #d14031;
+  border: none;
+  border-radius: 0;
+}
+#cart-products .show-alert .btn-orange {
+  display: block;
+  color: #fff;
+  margin-top: 20px;
+  height: 50px;
+  width: 179px;
+}
+
+#error-pages {
+  margin-top: 73px;
+}
+#error-pages .error-background-image {
+  height: 1000px;
+  text-align: center;
+  padding-top: 300px;
+}
+#error-pages .error-background-image h1 {
+  font-family: cursive;
+}
+#error-pages .error-background-image h4 {
+  font-family: cursive;
+}
+#error-pages .error-background-image p {
+  font-family: cursive;
+  color: gray;
+}
+#error-pages .error-background-image button {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  background-color: #FAF9F5;
+  border: 1px solid;
+}
+
+#background .login-background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .login-background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#login-form {
+  margin-top: 100px;
+}
+#login-form .login h2 {
+  font-family: monospace;
+}
+#login-form .username-label {
+  margin-top: 30px;
+}
+#login-form .username-label label {
+  color: gray;
+}
+#login-form .username-input {
+  margin-top: 10px;
+}
+#login-form .username-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#login-form .password-label {
+  margin-top: 30px;
+}
+#login-form .password-label label {
+  color: gray;
+}
+#login-form .password-input {
+  margin-top: 10px;
+  display: flex;
+}
+#login-form .password-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#login-form .password-input i {
+  color: black;
+  margin-left: -31px;
+  margin-top: 14px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#login-form .password-input i:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#login-form .remenber-login {
+  display: flex;
+}
+#login-form .remenber-login .form-check {
+  margin-top: 33px;
+}
+#login-form .remenber-login .form-check input {
+  cursor: pointer;
+}
+#login-form .remenber-login .form-check input:focus {
+  box-shadow: none;
+  border-color: rgba(128, 128, 128, 0.2117647059);
+}
+#login-form .remenber-login .login-button {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+#login-form .remenber-login .login-button button {
+  width: 130px;
+  height: 50px;
+  background-color: #d14031;
+  color: white;
+  border: none;
+  font-family: initial;
+}
+#login-form .remenber-login .login-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#login-form .forgot-password {
+  margin-top: 10px;
+}
+#login-form .forgot-password a {
+  text-decoration: none;
+  color: black;
+}
+#login-form .forgot-password a:hover {
+  color: rgb(241, 6, 6);
+  transition: 0.5s;
+}
+#login-form .account {
+  display: flex;
+  margin-top: 10px;
+}
+#login-form .account .dont-account p {
+  font-weight: bold;
+}
+#login-form .account .register {
+  margin-left: 5px;
+}
+#login-form .account .register a {
+  text-decoration: none;
+  color: rgb(241, 6, 6);
+  font-weight: bold;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#forgot-password-form {
+  margin-top: 100px;
+}
+#forgot-password-form .login h2 {
+  font-family: monospace;
+}
+#forgot-password-form .email-label {
+  margin-top: 30px;
+}
+#forgot-password-form .email-label label {
+  color: gray;
+}
+#forgot-password-form .email-input {
+  margin-top: 10px;
+}
+#forgot-password-form .email-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#forgot-password-form .send-button {
+  margin-top: 20px;
+}
+#forgot-password-form .send-button button {
+  width: 130px;
+  height: 50px;
+  background-color: #d14031;
+  color: white;
+  border: none;
+  font-family: initial;
+}
+#forgot-password-form .send-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#register-form {
+  margin-top: 100px;
+}
+#register-form .register h2 {
+  font-family: monospace;
+}
+#register-form .first-name-label {
+  margin-top: 30px;
+}
+#register-form .first-name-label label {
+  color: gray;
+}
+#register-form .first-name-input {
+  margin-top: 10px;
+}
+#register-form .first-name-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#register-form .last-name-label {
+  margin-top: 30px;
+}
+#register-form .last-name-label label {
+  color: gray;
+}
+#register-form .last-name-input {
+  margin-top: 10px;
+}
+#register-form .last-name-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#register-form .email-address-label {
+  margin-top: 30px;
+}
+#register-form .email-address-label label {
+  color: gray;
+}
+#register-form .email-address-input {
+  margin-top: 10px;
+}
+#register-form .email-address-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#register-form .password-label {
+  margin-top: 30px;
+}
+#register-form .password-label label {
+  color: gray;
+}
+#register-form .password-input {
+  margin-top: 10px;
+  display: flex;
+}
+#register-form .password-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#register-form .password-input i {
+  color: gray;
+  margin-left: -31px;
+  margin-top: 14px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#register-form .password-input i:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#register-form .confirm-password-label {
+  margin-top: 30px;
+}
+#register-form .confirm-password-label label {
+  color: gray;
+}
+#register-form .confirm-password-input {
+  margin-top: 10px;
+  display: flex;
+}
+#register-form .confirm-password-input input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 15px;
+  caret-color: rgb(241, 6, 6);
+}
+#register-form .confirm-password-input i {
+  color: gray;
+  margin-left: -31px;
+  margin-top: 14px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#register-form .confirm-password-input i:hover {
+  color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#register-form .register .register-button {
+  margin-top: 20px;
+}
+#register-form .register .register-button button {
+  width: 130px;
+  height: 50px;
+  background-color: #d14031;
+  color: white;
+  font-family: initial;
+  border: none;
+}
+#register-form .register .register-button button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+
+#background .background-images {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+#background .background-images h2 {
+  text-align: center;
+  color: white;
+  padding-top: 120px;
+  font-family: monospace;
+}
+
+#wishlist-products .wishlist-products {
+  margin-top: 53px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 transparent, 0 1px 3px 0 rgba(0, 0, 0, 0.12) !important;
+  border-radius: 4px;
+  background: #fff;
+}
+#wishlist-products .wishlist-products .table tr {
+  display: flex;
+  justify-content: center;
+}
+#wishlist-products .wishlist-products .table tr th {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-width: 0px;
+  width: 314px !important;
+  text-align: center;
+  height: 60px;
+  padding: 0 24px;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 14px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: black;
+}
+#wishlist-products .wishlist-products .table tr th button {
+  background-color: #d14031;
+  border: none;
+  border-radius: 0;
+}
+#wishlist-products .wishlist-products .table tr th button:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#wishlist-products .wishlist-products .table tbody tr {
+  display: flex;
+  justify-content: center;
+}
+#wishlist-products .wishlist-products .table tbody td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 314px !important;
+  height: 103px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+#wishlist-products .wishlist-products .table tbody td:nth-child(2) {
+  width: 300px;
+}
+#wishlist-products .wishlist-products .table tbody td:nth-child(3) {
+  font-size: 21px;
+  font-weight: 500;
+}
+#wishlist-products .wishlist-products .table tbody td a {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+#wishlist-products .wishlist-products .table tbody td img {
+  padding-left: 47px;
+  height: 101px;
+}
+#wishlist-products .wishlist-products .table tbody td .btn {
+  margin-top: 13px;
+  text-align: center;
+  cursor: pointer;
+  width: 181px;
+  height: 49px;
+  background-color: #d14031;
+  border-radius: 0;
+  border: none;
+  margin-left: -445px;
+}
+#wishlist-products .wishlist-products .table tbody td .btn:hover {
+  background-color: rgb(172, 2, 2);
+  transition: 0.5s;
+}
+#wishlist-products .wishlist-products .table tbody td a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.show-alert .alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show-alert .alert .btn-red {
+  background-color: #f33927;
+  height: 32px;
+  border-radius: 18px;
+  padding: 5px 12px 6px 12px;
+  color: #fff;
+}
+.show-alert .button-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.show-alert .button-shop .btn-orange {
+  background-color: #ef6c00;
+  display: block;
+  border-color: #ef6c00;
+  color: #fff;
+  margin-top: 20px;
+  height: 50px;
+  width: 179px;
+}/*# sourceMappingURL=style.css.map */
