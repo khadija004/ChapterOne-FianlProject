@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
           integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/png" href="./assets/images/home/book-logo-5.png" />
-    <link rel="stylesheet" href="./assets/scss/style.css">
+    <link rel="icon" type="image/png" href="~/assets/images/home/book-logo-5.png" />
+    <link rel="stylesheet" href="~/assets/scss/style.css">
     <title>ChapterOne - Home</title>
 </head>
 <body>
@@ -23,15 +23,15 @@
                     <div class="col-6">
                         <div class="logo-pages">
                             <div class="logo">
-                                <a href="#"><img src="./assets/images/home/book-logo-5.png" alt=""></a>
+                                <a href="#"><img src="~/assets/images/home/book-logo-5.png" alt=""></a>
                             </div>
                             <div class="pages">
                                 <ul>
-                                    <li class="active-menu"><a href="#">Home</a></li>
-                                    <li><a href="About.html">About</a></li>
-                                    <li><a href="Shop.html">Shop</a></li>
-                                    <li><a href="Contact.html">Contact</a></li>
-                                    <li><a href="Blog.html">Blog</a></li>
+                                    <li class="active-menu"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                    <li><a asp-controller="About" asp-action="Index">About</a></li>
+                                    <li><a asp-controller="Shop" asp-action="Index">Shop</a></li>
+                                    <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+                                    <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                     <div class="col-6">
                         <div class="basket-search">
                             <div class="basket">
-                                <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a asp-controller="Cart" asp-action="Index"><i class="fa-solid fa-cart-shopping"></i></a>
                                 <div class="basket-number">
                                     <span>0</span>
                                 </div>
@@ -50,7 +50,7 @@
                                 <span class="border"></span>
                             </div>
                             <div class="wishlist">
-                                <a href="Wishlist.html"><i class="fa-solid fa-heart"></i></a>
+                                <a asp-controller="wishlist" asp-action="Index"><i class="fa-solid fa-heart"></i></a>
                                 <div class="wishlist-number">
                                     <span>0</span>
                                 </div>
@@ -78,13 +78,13 @@
             <div class="container">
                 <div class="nav">
                     <div class="logo-img">
-                        <a href="#"><img src="./assets/images/home/book-logo-5.png" alt=""></a>
+                        <a href="#"><img src="~/assets/images/home/book-logo-5.png" alt=""></a>
                     </div>
                     <div class="icons">
                         <ul>
-                            <li><a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                            <li><a href="Login.html"><i class="fa-solid fa-user"></i></a></li>
-                            <li><a href="Wishlist.html"><i class="fa-solid fa-heart"></i></a></li>
+                            <li><a asp-controller="cart" asp-action="Index"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                            <li><a asp-controller="About" asp-action="Index"><i class="fa-solid fa-user"></i></a></li>
+                            <li><a asp-controller="wishlist" asp-action="Index"><i class="fa-solid fa-heart"></i></a></li>
                             <li><i class="fa-solid fa-magnifying-glass search"></i></li>
                         </ul>
                     </div>
@@ -100,11 +100,11 @@
                 </div>
                 <div class="hamburger-menu d-none">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Shop.html">Shop</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-controller="About" asp-action="Index">About</a></li>
+                        <li><a asp-controller="Shop" asp-action="Index">Shop</a></li>
+                        <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+                        <li><a asp-controller="Blog" asp-action="Index">Blog</a></li>
 
                     </ul>
                 </div>
@@ -168,14 +168,14 @@
                                 <div class="story">
                                     <div class="col-lg-4 col-md-6 col-sm-12">
                                         <div class="images1">
-                                            <img src="./assets/images/home/footer-image-1.jpg" alt="">
-                                            <img src="./assets/images/home/footer-image-2.jpg" alt="">
-                                            <img src="./assets/images/home/footer-image-3.jpg" alt="">
+                                            <img src="~/assets/images/home/footer-image-1.jpg" alt="">
+                                            <img src="~/assets/images/home/footer-image-2.jpg" alt="">
+                                            <img src="~/assets/images/home/footer-image-3.jpg" alt="">
                                         </div>
                                         <div class="images2">
-                                            <img src="./assets/images/home/footer-image-4.jpg" alt="">
-                                            <img src="./assets/images/home/footer-image-5.jpg" alt="">
-                                            <img src="./assets/images/home/footer-image-6.jpg" alt="">
+                                            <img src="~/assets/images/home/footer-image-4.jpg" alt="">
+                                            <img src="~/assets/images/home/footer-image-5.jpg" alt="">
+                                            <img src="~/assets/images/home/footer-image-6.jpg" alt="">
                                         </div>
     
                                     </div>
@@ -206,7 +206,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
         integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/js/home.js"></script>
-    <script src="./assets/js/common.js"></script>
+    <script src="~/assets/js/home.js"></script>
+    <script src="~/assets/js/common.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("Css", required: false)
 </body>
 </html>
