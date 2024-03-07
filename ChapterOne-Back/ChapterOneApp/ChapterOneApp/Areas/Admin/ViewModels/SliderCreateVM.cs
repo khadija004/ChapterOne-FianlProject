@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ChapterOneApp.Areas.Admin.Views.ViewModels
+namespace ChapterOneApp.Areas.Admin.ViewModels
 {
     public class SliderCreateVM
     {

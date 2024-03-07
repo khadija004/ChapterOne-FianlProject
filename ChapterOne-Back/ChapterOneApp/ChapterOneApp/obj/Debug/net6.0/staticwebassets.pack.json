@@ -3645,6 +3645,18 @@
       "PackagePath": "staticwebassets\\assets\\images\\forgot-password\\forgot-password-backgorund-image.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\4a21b595-e9f6-40cd-82ab-76a8a66a2bf0_slider-image-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home\\4a21b595-e9f6-40cd-82ab-76a8a66a2bf0_slider-image-1.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\69e06d86-95b2-4b98-809d-5400845debde_slider-image-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home\\69e06d86-95b2-4b98-809d-5400845debde_slider-image-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\7f232387-770a-4f7c-b97f-e5589b53c2cc_slider-image-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home\\7f232387-770a-4f7c-b97f-e5589b53c2cc_slider-image-3.png"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\authobiography-backgorund.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\home\\authobiography-backgorund.jpg"
     },

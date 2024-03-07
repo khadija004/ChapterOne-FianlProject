@@ -1,38 +1,23 @@
-﻿<main>
+﻿@model HomeVM
+
+<main>
     <section id="slider">
         <div class="container">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./assets/images/home/slider-image-1.png" alt="">
-                        <p>IT'S CHAPTERONE</p>
-                        <h1>We love literature</h1>
-                        <h3>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur facere deserunt
-                            consequatur.
-                        </h3>
-                        <button class="shop">READ MORE</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/home/slider-image-2.jpg" alt="">
-                        <p>IT'S CHAPTERONE</p>
-                        <h1>You world of words</h1>
-                        <h3>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur facere deserunt
-                            consequatur.
-                        </h3>
-                        <button class="shop">READ MORE</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./assets/images/home/slider-image-3.png" alt="">
-                        <p>IT'S CHAPTERONE</p>
-                        <h1>The all-time classics</h1>
-                        <h3>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil pariatur facere deserunt
-                            consequatur.
-                        </h3>
-                        <button class="shop">READ MORE</button>
-                    </div>
+                    @foreach (var slider in Model.Sliders)
+                    {
+                        <div class="swiper-slide">
+                            <img src="~/assets/images/home/@slider.Image" alt="">
+                            <p>@slider.Title</p>
+                            <h1>@slider.Name</h1>
+                            <h3>
+                                @slider.Description
+                            </h3>
+                            <button class="shop">READ MORE</button>
+                        </div>
+                    }
+
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -70,7 +55,7 @@
 
                 <div class="col-lg-3 col-md-6 col-sm-12 filterDiv fantasy all product">
                     <div class="products" data-id="1">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-1.jpg" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-1.jpg" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">JOHN STRASS</a>
                         </div>
@@ -91,7 +76,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 filterDiv fantasy all product">
                     <div class="products" data-id="2">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-2.jpg" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-2.jpg" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">JESSICA JOHNSON</a>
                         </div>
@@ -112,7 +97,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 filterDiv bestsellers all product">
                     <div class="products" data-id="3">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-3.jpg" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-3.jpg" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">JANE DOE</a>
                         </div>
@@ -133,7 +118,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 filterDiv history all product">
                     <div class="products" data-id="4">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-4.jpg" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-4.jpg" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">JAMES HOFFMAN</a>
                         </div>
@@ -154,7 +139,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 all-products filterDiv bestsellers history all product">
                     <div class="products" data-id="5">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-5.jpg" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-5.jpg" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">ADAM STRASS</a>
                         </div>
@@ -176,7 +161,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12  filterDiv art all product">
                     <div class="products" data-id="6">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-6.jpg" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-6.jpg" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">JOHN STRASS</a>
                         </div>
@@ -197,7 +182,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12  filterDiv art all product">
                     <div class="products" data-id="7">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-7.jpg" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-7.jpg" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">JAMES HOFFMAN</a>
                         </div>
@@ -218,7 +203,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 filterDiv bestsellers lovestories all product">
                     <div class="products" data-id="8">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-8.jpg" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-8.jpg" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">JANE DOE</a>
                         </div>
@@ -239,7 +224,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12  filterDiv lovestories all product">
                     <div class="products" data-id="9">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-9.jpg" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-9.jpg" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">Jessica Johnson</a>
                         </div>
@@ -260,7 +245,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 filterDiv all product">
                     <div class="products" data-id="10">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-10.jpg" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-10.jpg" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">John Strass</a>
                         </div>
@@ -281,7 +266,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12  filterDiv fantasy all product">
                     <div class="products" data-id="11">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-11.webp" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-11.webp" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">LEO TOLSTOY</a>
                         </div>
@@ -302,7 +287,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 filterDiv fantasy all product">
                     <div class="products" data-id="2">
-                        <a href="ProductDetail.html"><img src="./assets/images/home/product-12.png" alt=""></a>
+                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-12.png" alt=""></a>
                         <div class="name">
                             <a href="ProductDetail.html">STEFAN ZWEIG</a>
                         </div>
@@ -373,7 +358,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="author">
                             <div class="image">
-                                <img src="./assets/images/home/author-1.png" alt="">
+                                <img src="~/assets/images/home/author-1.png" alt="">
                             </div>
                             <div class="profession">
                                 <p>AUTHOR</p>
@@ -392,7 +377,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="author">
                             <div class="image">
-                                <img src="./assets/images/home/author-2.png" alt="">
+                                <img src="~/assets/images/home/author-2.png" alt="">
                             </div>
                             <div class="profession">
                                 <p>DESIGNER</p>
@@ -411,7 +396,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="author">
                             <div class="image">
-                                <img src="./assets/images/home/author-3.png" alt="">
+                                <img src="~/assets/images/home/author-3.png" alt="">
                             </div>
                             <div class="profession">
                                 <p>CONSULTANT</p>
@@ -430,7 +415,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="author">
                             <div class="image">
-                                <img src="./assets/images/home/author-4.png" alt="">
+                                <img src="~/assets/images/home/author-4.png" alt="">
                             </div>
                             <div class="profession">
                                 <p>SUPPORT</p>
@@ -474,15 +459,15 @@
                         </button>
                     </div>
                     <div class="image">
-                        <img src="./assets/images/home/coffe.png" alt="">
+                        <img src="~/assets/images/home/coffe.png" alt="">
                     </div>
                 </div>
                 <div class="right" style="background-image: url(./assets/images/home/zerler.png)">
                     <div class="image1">
-                        <img src="./assets/images/home/eifel.jpg" alt="">
+                        <img src="~/assets/images/home/eifel.jpg" alt="">
                     </div>
                     <div class="image2">
-                        <img src="./assets/images/home/eifeltop.jpg" alt="">
+                        <img src="~/assets/images/home/eifeltop.jpg" alt="">
                     </div>
                 </div>
 
@@ -501,10 +486,10 @@
                         </div>
                         <div class="images">
                             <div class="image1">
-                                <img src="./assets/images/home/voyage-1.jpg" alt="">
+                                <img src="~/assets/images/home/voyage-1.jpg" alt="">
                             </div>
                             <div class="image2">
-                                <img src="./assets/images/home/voyage-2.jpg" alt="">
+                                <img src="~/assets/images/home/voyage-2.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -529,7 +514,7 @@
                         </button>
                     </div>
                     <div class="image">
-                        <img src="./assets/images/home/plane.png" alt="">
+                        <img src="~/assets/images/home/plane.png" alt="">
                     </div>
                 </div>
 
@@ -544,24 +529,24 @@
                     <div class="row">
                         <div class="col-8">
                             <div class="image1">
-                                <img src="./assets/images/home/gallery-1.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-1.jpg" alt="">
                             </div>
                             <div class="image4">
-                                <img src="./assets/images/home/gallery-9.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-9.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="image2">
-                                <img src="./assets/images/home/gallery-2.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-2.jpg" alt="">
                             </div>
                             <div class="image3">
-                                <img src="./assets/images/home/gallery-6.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-6.jpg" alt="">
                             </div>
                             <div class="image5">
-                                <img src="./assets/images/home/gallery-10.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-10.jpg" alt="">
                             </div>
                             <div class="image6">
-                                <img src="./assets/images/home/gallery-11.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-11.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -573,24 +558,24 @@
                     <div class="row">
                         <div class="col-4">
                             <div class="image7">
-                                <img src="./assets/images/home/gallery-4.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-4.jpg" alt="">
                             </div>
                             <div class="image8">
-                                <img src="./assets/images/home/gallery-5.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-5.jpg" alt="">
                             </div>
                             <div class="image9">
-                                <img src="./assets/images/home/gallery-8.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-8.jpg" alt="">
                             </div>
                             <div class="image10">
-                                <img src="./assets/images/home/gallery-12.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-12.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-8">
                             <div class="image11">
-                                <img src="./assets/images/home/gallery-7.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-7.jpg" alt="">
                             </div>
                             <div class="image12">
-                                <img src="./assets/images/home/gallery-3.jpg" alt="">
+                                <img src="~/assets/images/home/gallery-3.jpg" alt="">
                             </div>
                         </div>
 
@@ -604,22 +589,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-1.png" alt="">
+                    <img src="~/assets/images/home/brand-1.png" alt="">
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-2.png" alt="">
+                    <img src="~/assets/images/home/brand-2.png" alt="">
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-3.png" alt="">
+                    <img src="~/assets/images/home/brand-3.png" alt="">
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-4.png" alt="">
+                    <img src="~/assets/images/home/brand-4.png" alt="">
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-5.png" alt="">
+                    <img src="~/assets/images/home/brand-5.png" alt="">
                 </div>
                 <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-6.png" alt="">
+                    <img src="~/assets/images/home/brand-6.png" alt="">
                 </div>
             </div>
 
