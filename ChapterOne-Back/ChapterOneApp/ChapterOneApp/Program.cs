@@ -21,6 +21,11 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
 builder.Services.AddScoped<ISliderService, SliderService>();
+builder.Services.AddScoped<IAuthorService, AuthorService>();
+builder.Services.AddScoped<ITeamService, TeamService>();
+builder.Services.AddScoped<IPositionService, PositionService>();
+builder.Services.AddScoped<IOurService, OurService>();
+
 
 
 var app = builder.Build();
