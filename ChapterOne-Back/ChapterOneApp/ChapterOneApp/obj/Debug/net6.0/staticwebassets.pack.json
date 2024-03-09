@@ -3645,6 +3645,14 @@
       "PackagePath": "staticwebassets\\assets\\images\\forgot-password\\forgot-password-backgorund-image.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\209c38f4-95dd-4f2a-b1b5-04fde7f26165_author-3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home\\209c38f4-95dd-4f2a-b1b5-04fde7f26165_author-3.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\464bf1e8-3081-4d0a-b2c6-122b19ebff44_author-2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home\\464bf1e8-3081-4d0a-b2c6-122b19ebff44_author-2.png"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\4a21b595-e9f6-40cd-82ab-76a8a66a2bf0_slider-image-1.png",
       "PackagePath": "staticwebassets\\assets\\images\\home\\4a21b595-e9f6-40cd-82ab-76a8a66a2bf0_slider-image-1.png"
     },
@@ -3655,6 +3663,14 @@
     {
       "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\7f232387-770a-4f7c-b97f-e5589b53c2cc_slider-image-3.png",
       "PackagePath": "staticwebassets\\assets\\images\\home\\7f232387-770a-4f7c-b97f-e5589b53c2cc_slider-image-3.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\9322bf43-6093-49ff-9c01-df44cf3c0217_author-1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home\\9322bf43-6093-49ff-9c01-df44cf3c0217_author-1.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\aa63efba-7d26-4e02-8f2a-630bbf768ce8_author-4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home\\aa63efba-7d26-4e02-8f2a-630bbf768ce8_author-4.png"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\authobiography-backgorund.jpg",
@@ -3675,6 +3691,10 @@
     {
       "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\author-4.png",
       "PackagePath": "staticwebassets\\assets\\images\\home\\author-4.png"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\b9dbf728-eb53-4c52-b0cf-c6093f3f421f_our-service.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home\\b9dbf728-eb53-4c52-b0cf-c6093f3f421f_our-service.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\background-blue.png",
