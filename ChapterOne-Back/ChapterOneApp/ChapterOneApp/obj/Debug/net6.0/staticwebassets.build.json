@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RqSa9y/+4koijLwyIzCEgVkyPCsIHcNmRpcEONg2Ym8=",
+  "Hash": "8xfn7uP5wwpRpayaaSktJ9pelvMZL03enRPJwh5ns4g=",
   "Source": "ChapterOneApp",
   "BasePath": "_content/ChapterOneApp",
   "Mode": "Default",
@@ -15521,6 +15521,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\forgot-password\\forgot-password-backgorund-image.jpg"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\010265ac-57a0-496d-b0f8-d9383d032ec6_eifel.jpg",
+      "SourceId": "ChapterOneApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\",
+      "BasePath": "_content/ChapterOneApp",
+      "RelativePath": "assets/images/home/010265ac-57a0-496d-b0f8-d9383d032ec6_eifel.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\home\\010265ac-57a0-496d-b0f8-d9383d032ec6_eifel.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\209c38f4-95dd-4f2a-b1b5-04fde7f26165_author-3.png",
       "SourceId": "ChapterOneApp",
       "SourceType": "Discovered",
@@ -15536,6 +15553,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\home\\209c38f4-95dd-4f2a-b1b5-04fde7f26165_author-3.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\33e4f711-ae76-40da-b313-37a5e8537314_eifeltop.jpg",
+      "SourceId": "ChapterOneApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\",
+      "BasePath": "_content/ChapterOneApp",
+      "RelativePath": "assets/images/home/33e4f711-ae76-40da-b313-37a5e8537314_eifeltop.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\home\\33e4f711-ae76-40da-b313-37a5e8537314_eifeltop.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\38d1090f-52dc-4f91-9077-8cd397b32ae7_voyage-1.jpg",
+      "SourceId": "ChapterOneApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\",
+      "BasePath": "_content/ChapterOneApp",
+      "RelativePath": "assets/images/home/38d1090f-52dc-4f91-9077-8cd397b32ae7_voyage-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\home\\38d1090f-52dc-4f91-9077-8cd397b32ae7_voyage-1.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\464bf1e8-3081-4d0a-b2c6-122b19ebff44_author-2.png",
@@ -15723,6 +15774,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\home\\author-4.png"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\b71827b2-ff52-4a08-ac57-24bf766b0919_voyage-2.jpg",
+      "SourceId": "ChapterOneApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\",
+      "BasePath": "_content/ChapterOneApp",
+      "RelativePath": "assets/images/home/b71827b2-ff52-4a08-ac57-24bf766b0919_voyage-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\home\\b71827b2-ff52-4a08-ac57-24bf766b0919_voyage-2.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\home\\b9dbf728-eb53-4c52-b0cf-c6093f3f421f_our-service.jpg",

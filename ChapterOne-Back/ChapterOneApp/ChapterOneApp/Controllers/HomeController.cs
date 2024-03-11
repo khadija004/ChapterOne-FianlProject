@@ -14,17 +14,23 @@ namespace ChapterOneApp.Controllers
         readonly ISliderService _sliderService;
         readonly IOurService _ourService;
         readonly ITeamService _teamService;
+        private readonly IAutobiographyOneService _autobiographyOneService;
+        private readonly IAutobiographyTwoService _autobiographyTwoService;
 
 
         public HomeController(AppDbContext context, 
                                 ISliderService sliderService,        
                                 IOurService ourService,
-                                ITeamService teamService)
+                                ITeamService teamService,
+                                IAutobiographyOneService autobiographyOneService,
+                                IAutobiographyTwoService autobiographyTwoService)
         {
             _context = context;
             _sliderService = sliderService;
             _teamService = teamService;
             _ourService = ourService;
+            _autobiographyOneService = autobiographyOneService;
+            _autobiographyTwoService = autobiographyTwoService;
 
         }
 
@@ -35,6 +41,8 @@ namespace ChapterOneApp.Controllers
             List<Slider> sliders = await _sliderService.GetAll();
             List<Our> ours = await _ourService.GetAllAsync();
             List<Team> teams = await _teamService.GetAllAsync();
+            List<AutobiographyOne> autobiographyOnes = await _autobiographyOneService.GetAllAsync();
+            List<AutobiographyTwo> autobiographyTwos = await _autobiographyTwoService.GetAllAsync();
 
 
             HomeVM model = new()
@@ -42,6 +50,8 @@ namespace ChapterOneApp.Controllers
                 Sliders = sliders,
                 Ours = ours,
                 Teams = teams,
+                AutobiographyOnes = autobiographyOnes,
+                AutobiographyTwos = autobiographyTwos,
             };
 
             return View(model);

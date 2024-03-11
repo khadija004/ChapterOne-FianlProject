@@ -385,87 +385,93 @@
 
     <section id="autobiography1">
         <div class="container">
-            <div class="autobiography1"
-                 style="background-image: url(./assets/images/home/authobiography-backgorund.jpg)">
-                <div class="left">
-                    <div class="name">
-                        <p>AUTOBIOGRAPHY</p>
+            @foreach (var autobiographyOne in Model.AutobiographyOnes)
+            {
+                <div class="autobiography1"
+                     style="background-image: url(assets/images/home/authobiography-backgorund.jpg)">
+                    <div class="left">
+                        <div class="name">
+                            <p>@autobiographyOne.Title</p>
+                        </div>
+                        <div class="title">
+                            <h3>@autobiographyOne.Name</h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                @autobiographyOne.Description
+                            </p>
+                        </div>
+                        <div class="button">
+                            <button>
+                                <p>READ MORE</p>
+                            </button>
+                        </div>
+                        <div class="image">
+                            <img src="~/assets/images/home/coffe.png" alt="">
+                        </div>
                     </div>
-                    <div class="title">
-                        <h3>This month's guest host</h3>
+                    <div class="right" style="background-image: url(~/assets/images/home/zerler.png)">
+                        <div class="image1">
+                            <img src="~/assets/images/home/@autobiographyOne.SmallImage" alt="">
+                        </div>
+                        <div class="image2">
+                            <img src="~/assets/images/home/@autobiographyOne.LargeImage" alt="">
+                        </div>
                     </div>
-                    <div class="description">
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore vero, voluptatum
-                            repellendus in sequi possimus!
-                        </p>
-                    </div>
-                    <div class="button">
-                        <button>
-                            <p>READ MORE</p>
-                        </button>
-                    </div>
-                    <div class="image">
-                        <img src="~/assets/images/home/coffe.png" alt="">
-                    </div>
-                </div>
-                <div class="right" style="background-image: url(./assets/images/home/zerler.png)">
-                    <div class="image1">
-                        <img src="~/assets/images/home/eifel.jpg" alt="">
-                    </div>
-                    <div class="image2">
-                        <img src="~/assets/images/home/eifeltop.jpg" alt="">
-                    </div>
-                </div>
 
-            </div>
+                </div>
+            }
+
         </div>
     </section>
 
     <section id="autobiography2">
         <div class="container">
-            <div class="autobiography2">
+            @foreach (var autobiographyTwos in Model.AutobiographyTwos)
+            {
+                <div class="autobiography2">
 
-                <div class="left">
-                    <div class="backgrounds">
-                        <div class="backgorund-image"
-                             style="background-image: url(./assets/images/home/background-image-2.png)">
-                        </div>
-                        <div class="images">
-                            <div class="image1">
-                                <img src="~/assets/images/home/voyage-1.jpg" alt="">
+                    <div class="left">
+                        <div class="backgrounds">
+                            <div class="backgorund-image"
+                                 style="background-image: url(~/assets/images/home/background-image-2.png)">
                             </div>
-                            <div class="image2">
-                                <img src="~/assets/images/home/voyage-2.jpg" alt="">
+                            <div class="images">
+                                <div class="image1">
+                                    <img src="~/assets/images/home/@autobiographyTwos.LargeImage" alt="">
+                                </div>
+                                <div class="image2">
+                                    <img src="~/assets/images/home/@autobiographyTwos.SmallImage" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="right">
-                    <div class="name">
-                        <p>AUTOBIOGRAPHY</p>
+                    <div class="right">
+                        <div class="name">
+                            <p>@autobiographyTwos.Title</p>
+                        </div>
+                        <div class="title">
+                            <h3>@autobiographyTwos.Name</h3>
+                        </div>
+                        <div class="description">
+                            <p>
+                                @autobiographyTwos.Description
+                            </p>
+                        </div>
+                        <div class="button">
+                            <button>
+                                <p>READ MORE</p>
+                            </button>
+                        </div>
+                        <div class="image">
+                            <img src="~/assets/images/home/plane.png" alt="">
+                        </div>
                     </div>
-                    <div class="title">
-                        <h3>Travelogue of the year</h3>
-                    </div>
-                    <div class="description">
-                        <p>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore vero, voluptatum
-                            repellendus in sequi possimus!
-                        </p>
-                    </div>
-                    <div class="button">
-                        <button>
-                            <p>READ MORE</p>
-                        </button>
-                    </div>
-                    <div class="image">
-                        <img src="~/assets/images/home/plane.png" alt="">
-                    </div>
-                </div>
 
-            </div>
+                </div>
+            }
+
         </div>
     </section>
 

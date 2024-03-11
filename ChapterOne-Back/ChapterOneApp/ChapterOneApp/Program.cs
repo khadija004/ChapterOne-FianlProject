@@ -25,6 +25,11 @@ builder.Services.AddScoped<IAuthorService, AuthorService>();
 builder.Services.AddScoped<ITeamService, TeamService>();
 builder.Services.AddScoped<IPositionService, PositionService>();
 builder.Services.AddScoped<IOurService, OurService>();
+builder.Services.AddScoped<IAutobiographyOneService, AutobiographyOneService>();
+builder.Services.AddScoped<IAutobiographyTwoService, AutobiographyTwoService>();
+builder.Services.AddScoped<IAutobiographyThreeService, AutobiographyThreeService>();
+builder.Services.AddScoped<IAutobiographyFourService, AutobiographyFourService>();
+
 
 
 
