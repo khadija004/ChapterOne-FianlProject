@@ -29,6 +29,12 @@ builder.Services.AddScoped<IAutobiographyOneService, AutobiographyOneService>();
 builder.Services.AddScoped<IAutobiographyTwoService, AutobiographyTwoService>();
 builder.Services.AddScoped<IAutobiographyThreeService, AutobiographyThreeService>();
 builder.Services.AddScoped<IAutobiographyFourService, AutobiographyFourService>();
+builder.Services.AddScoped<IBrandService, BrandService>();
+builder.Services.AddScoped<IWrapperService, WrapperService>();
+builder.Services.AddScoped<IPromoService, PromoService>();
+
+
+
 
 
 

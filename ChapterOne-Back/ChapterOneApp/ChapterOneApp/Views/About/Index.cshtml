@@ -1,98 +1,58 @@
-﻿
-    <main>
-        <section id="background">
-            <div class="background-image" style="background-image:url(./assets/images/about/ordering-background.jpg)">
-                <div class="title-name">
-                    <p>INFO</p>
-                    <h3>About Us</h3>
-                </div>
+﻿@model AboutVM
+<!-- Main Area -->
+<main>
+    <section id="background">
+        <div class="background-image"
+             style="background-image:url(/assets/images/about/ordering-background.jpg)">
+            <div class="title-name">
+                <p>INFO</p>
+                <h3>About Us</h3>
             </div>
-        </section>
-
-        <section id="carts">
-            <div class="container">
-                <div class="row">
+        </div>
+    </section>
+    <section id="carts">
+        <div class="container">
+            <div class="row">
+                @foreach (var wrapper in Model.Wrappers)
+                {
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="carts1">
                             <div class="image1">
-                                <img src="./assets/images/about/cart-1.png" alt="">
+                                <img src="~/assets/images/about/@wrapper.Image" alt="">
                             </div>
                             <div class="small-logo1">
                                 <span>❦</span>
                             </div>
                             <div class="name1">
-                                <h3>Bestsellers</h3>
+                                <h3>@wrapper.Name</h3>
                             </div>
                             <div class="description1">
-                                <p>Except sint occaecat cupidatat non proident, sunt culpa qui officia deserunt.</p>
+                                <p>@wrapper.Description</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="carts2">
-                            <div class="image">
-                                <img src="./assets/images/about/cart-2.png" alt="">
-                            </div>
-                            <div class="small-logo2">
-                                <span>❦</span>
-                            </div>
-                            <div class="name2">
-                                <h3>Readers choice</h3>
-                            </div>
-                            <div class="description2">
-                                <p>Except sint occaecat cupidatat non proident, sunt culpa qui officia deserunt.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="carts3">
-                            <div class="image">
-                                <img src="./assets/images/about/cart-3.png" alt="">
-                            </div>
-                            <div class="small-logo3">
-                                <span>❦</span>
-                            </div>
-                            <div class="name3">
-                                <h3>Biographical</h3>
-                            </div>
-                            <div class="description3">
-                                <p>Except sint occaecat cupidatat non proident, sunt culpa qui officia deserunt.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="carts4">
-                            <div class="image">
-                                <img src="./assets/images/about/cart-4.png" alt="">
-                            </div>
-                            <div class="small-logo4">
-                                <span>❦</span>
-                            </div>
-                            <div class="name4">
-                                <h3>Science Fiction</h3>
-                            </div>
-                            <div class="description4">
-                                <p>Except sint occaecat cupidatat non proident, sunt culpa qui officia deserunt.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                }
+
             </div>
-        </section>
-        <section id="autobiography1">
-            <div class="container">
+        </div>
+    </section>
+    <section id="autobiography1">
+        <div class="container">
+            @foreach (var autobiographyThree in Model.AutobiographyThrees)
+            {
                 <div class="autobiography1"
-                    style="background-image: url(./assets/images/home/authobiography-backgorund.jpg)">
+                     style="background-image: url(/assets/images/home/authobiography-backgorund.jpg)">
                     <div class="left">
                         <div class="name">
-                            <p>AUTOBIOGRAPHY</p>
+                            <p>@autobiographyThree.Title</p>
                         </div>
                         <div class="title">
-                            <h3>Long printing history</h3>
+                            <h3>@autobiographyThree.Name</h3>
                         </div>
                         <div class="description">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore vero, voluptatum
-                                repellendus in sequi possimus!</p>
+                            <p>
+                                @autobiographyThree.Description
+                            </p>
                         </div>
                         <div class="button">
                             <button>
@@ -100,37 +60,40 @@
                             </button>
                         </div>
                         <div class="image">
-                            <img src="./assets/images/home/coffe.png" alt="">
+                            <img src="~/assets/images/home/coffe.png" alt="">
                         </div>
                     </div>
-                    <div class="right" style="background-image: url(./assets/images/home/zerler.png)">
+                    <div class="right" style="background-image: url(~/assets/images/home/zerler.png)">
                         <div class="image1">
-                            <img src="./assets/images/about/autography-image-1.jpg" alt="">
+                            <img src="~/assets/images/about/@autobiographyThree.SmallImage" alt="">
                         </div>
                         <div class="image2">
-                            <img src="./assets/images/about/autography-image-2.jpg" alt="">
+                            <img src="~/assets/images/about/@autobiographyThree.LargeImage" alt="">
                         </div>
                     </div>
 
                 </div>
-            </div>
-        </section>
-        <section id="autobiography2">
-            <div class="container">
+            }
+
+        </div>
+    </section>
+    <section id="autobiography2">
+        <div class="container">
+            @foreach (var autobiographyFours in Model.AutobiographyFours)
+            {
                 <div class="autobiography2">
 
                     <div class="left">
                         <div class="backgrounds">
                             <div class="backgorund-image"
-                                style="background-image: url(./assets/images/home/background-image-2.png)">
-
+                                 style="background-image: url(/assets/images/home/background-image-2.png)">
                             </div>
                             <div class="images">
                                 <div class="image1">
-                                    <img src="./assets/images/about/autography-image-3.jpg" alt="">
+                                    <img src="~/assets/images/about/@autobiographyFours.LargeImage" alt="">
                                 </div>
                                 <div class="image2">
-                                    <img src="./assets/images/about/autography-image-4.jpg" alt="">
+                                    <img src="~/assets/images/about/@autobiographyFours.SmallImage" alt="">
                                 </div>
                             </div>
                         </div>
@@ -138,14 +101,15 @@
 
                     <div class="right">
                         <div class="name">
-                            <p>AUTOBIOGRAPHY</p>
+                            <p>@autobiographyFours.Title</p>
                         </div>
                         <div class="title">
-                            <h3>Coffee with favorite Erika</h3>
+                            <h3>@autobiographyFours.Name</h3>
                         </div>
                         <div class="description">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore vero, voluptatum
-                                repellendus in sequi possimus!</p>
+                            <p>
+                                @autobiographyFours.Description
+                            </p>
                         </div>
                         <div class="button">
                             <button>
@@ -153,175 +117,181 @@
                             </button>
                         </div>
                         <div class="image">
-                            <img src="./assets/images/home/plane.png" alt="">
+                            <img src="~/assets/images/home/plane.png" alt="">
                         </div>
                     </div>
 
                 </div>
+            }
+
+        </div>
+    </section>
+    <section id="promo-products">
+        <div class="container">
+            <div class="title">
+                <p>@Model.HeaderBackgrounds["PromoHeader"]</p>
             </div>
-        </section>
-        <section id="promo-products">
-            <div class="container">
-                <div class="title">
-                    <p>SHOP BESTSELLERS</p>
-                </div>
-                <div class="name">
-                    <h1>Promo products</h1>
-                </div>
-                <div class="description">
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="cartsss">
+            <div class="name">
+                <h1>@Model.HeaderBackgrounds["PromoName"]</h1>
+            </div>
+            <div class="description">
+                <p>
+                    @Model.HeaderBackgrounds["PromoDescription"]
+                </p>
+            </div>
+            <div class="row">
+                <div class="cartsss">
+
+                    @foreach (var promo in Model.Promos)
+                    {
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="box-area">
                                 <div class="image">
-                                    <img src="./assets/images/about/carusel-image-1.jpg" alt="">
+                                    <img src="~/assets/images/about/@promo.Image" alt="">
                                 </div>
                                 <div class="name">
-                                    <h5>Wooden Toy</h5>
+                                    <h5>@promo.Name</h5>
                                 </div>
                                 <div class="price">
-                                    <p>$50.00</p>
+                                    <p>$@promo.Price</p>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="box-area">
-                                <div class="image">
-                                    <img src="./assets/images/about/carusel-image-2.jpg" alt="">
-                                </div>
-                                <div class="name">
-                                    <h5>Red Clock</h5>
-                                </div>
-                                <div class="price">
-                                    <p>$15.00</p>
-                                </div>
+                    }
+
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="box-area">
+                            <div class="image">
+                                <img src="~/assets/images/about/carusel-image-2.jpg" alt="">
                             </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="box-area">
-                                <div class="image">
-                                    <img src="./assets/images/about/carusel-image-3.jpg" alt="">
-                                </div>
-                                <div class="name">
-                                    <h5>Coffee Thermos</h5>
-                                </div>
-                                <div class="price">
-                                    <p>$35.00</p>
-                                </div>
+                            <div class="name">
+                                <h5>Red Clock</h5>
                             </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="box-area">
-                                <div class="image">
-                                    <img src="./assets/images/about/carusel-image-4.jpg" alt="">
-                                </div>
-                                <div class="name">
-                                    <h5>Color Pencils</h5>
-                                </div>
-                                <div class="price">
-                                    <p>$12.00</p>
-                                </div>
+                            <div class="price">
+                                <p>$15.00</p>
                             </div>
-
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="box-area">
-                                <div class="image">
-                                    <img src="./assets/images/about/carusel-image-5.jpg" alt="">
-                                </div>
-                                <div class="name">
-                                    <h5>Month Planner</h5>
-                                </div>
-                                <div class="price">
-                                    <p>$29.00</p>
-                                </div>
-                            </div>
 
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="box-area">
-                                <div class="image">
-                                    <img src="./assets/images/about/carusel-image-6.jpg" alt="">
-                                </div>
-                                <div class="name">
-                                    <h5>Red Backpack</h5>
-                                </div>
-                                <div class="price">
-                                    <p>$50.00</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="box-area">
-                                <div class="image">
-                                    <img src="./assets/images/about/carusel-image-7.jpg" alt="">
-                                </div>
-                                <div class="name">
-                                    <h5>Creative Gift</h5>
-                                </div>
-                                <div class="price">
-                                    <p>$15.00</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="box-area">
-                                <div class="image">
-                                    <img src="./assets/images/about/carusel-image-8.jpg" alt="">
-                                </div>
-                                <div class="name">
-                                    <h5>Green Vase</h5>
-                                </div>
-                                <div class="price">
-                                    <p>$35.00</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="box-area">
-                                <div class="image">
-                                    <img src="./assets/images/about/carusel-image-9.jpg" alt="">
-                                </div>
-                                <div class="name">
-                                    <h5>Color Pencils</h5>
-                                </div>
-                                <div class="price">
-                                    <p>$12.00</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="box-area">
-                                <div class="image">
-                                    <img src="./assets/images/about/carusel-image-10.jpg" alt="">
-                                </div>
-                                <div class="name">
-                                    <h5>Yellow Chair</h5>
-                                </div>
-                                <div class="price">
-                                    <p>$29.00</p>
-                                </div>
-                            </div>
-
-                        </div>
                     </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="box-area">
+                            <div class="image">
+                                <img src="~/assets/images/about/carusel-image-3.jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>Coffee Thermos</h5>
+                            </div>
+                            <div class="price">
+                                <p>$35.00</p>
+                            </div>
+                        </div>
 
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="box-area">
+                            <div class="image">
+                                <img src="~/assets/images/about/carusel-image-4.jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>Color Pencils</h5>
+                            </div>
+                            <div class="price">
+                                <p>$12.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="box-area">
+                            <div class="image">
+                                <img src="~/assets/images/about/carusel-image-5.jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>Month Planner</h5>
+                            </div>
+                            <div class="price">
+                                <p>$29.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="box-area">
+                            <div class="image">
+                                <img src="~/assets/images/about/carusel-image-6.jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>Red Backpack</h5>
+                            </div>
+                            <div class="price">
+                                <p>$50.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="box-area">
+                            <div class="image">
+                                <img src="~/assets/images/about/carusel-image-7.jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>Creative Gift</h5>
+                            </div>
+                            <div class="price">
+                                <p>$15.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="box-area">
+                            <div class="image">
+                                <img src="~/assets/images/about/carusel-image-8.jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>Green Vase</h5>
+                            </div>
+                            <div class="price">
+                                <p>$35.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="box-area">
+                            <div class="image">
+                                <img src="~/assets/images/about/carusel-image-9.jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>Color Pencils</h5>
+                            </div>
+                            <div class="price">
+                                <p>$12.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="box-area">
+                            <div class="image">
+                                <img src="~/assets/images/about/carusel-image-10.jpg" alt="">
+                            </div>
+                            <div class="name">
+                                <h5>Yellow Chair</h5>
+                            </div>
+                            <div class="price">
+                                <p>$29.00</p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
-        </section>
-
-    </main>
-
+        </div>
+    </section>
+</main>
+<!-- Main Area -->
 @section Scripts{
     <script src="~/assets/js/about.js"></script>
 }

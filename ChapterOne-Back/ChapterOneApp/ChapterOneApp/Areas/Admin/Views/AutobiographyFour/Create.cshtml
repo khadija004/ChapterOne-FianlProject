@@ -1,0 +1,62 @@
+﻿@model AutobiographyFourCreateVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container my-5">
+
+    <form class="form-sample" asp-action="Create" method="post" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label for="formFile" class="form-label my-2">Large Image</label>
+            <input class="form-control" id="customFile" asp-for="LargePhoto" />
+            <span class="text-danger" asp-validation-for="LargePhoto"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="formFile" class="form-label my-2">Small Photo</label>
+            <input class="form-control" id="customFile" asp-for="SmallPhoto" />
+            <span class="text-danger" asp-validation-for="SmallPhoto"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="formFile" class="form-label my-2">Name</label>
+            <input class="form-control" id="customFile" asp-for="Name" />
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="formFile" class="form-label my-2">Title</label>
+            <input class="form-control" id="customFile" asp-for="Title" />
+            <span class="text-danger" asp-validation-for="Title"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="formFile" class="form-label my-2">Description</label>
+            <textarea class="form-control" id="category-text" asp-for="Description" rows="3"></textarea>
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+
+
+
+        <div class="buttons my-3">
+            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            <a class="btn btn-light" asp-action="Index">Cancel</a>
+        </div>
+
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

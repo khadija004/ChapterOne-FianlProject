@@ -16,6 +16,8 @@ namespace ChapterOneApp.Controllers
         readonly ITeamService _teamService;
         private readonly IAutobiographyOneService _autobiographyOneService;
         private readonly IAutobiographyTwoService _autobiographyTwoService;
+        private readonly IBrandService _brandService;
+
 
 
         public HomeController(AppDbContext context, 
@@ -23,7 +25,8 @@ namespace ChapterOneApp.Controllers
                                 IOurService ourService,
                                 ITeamService teamService,
                                 IAutobiographyOneService autobiographyOneService,
-                                IAutobiographyTwoService autobiographyTwoService)
+                                IAutobiographyTwoService autobiographyTwoService,
+                                IBrandService brandService)
         {
             _context = context;
             _sliderService = sliderService;
@@ -31,6 +34,8 @@ namespace ChapterOneApp.Controllers
             _ourService = ourService;
             _autobiographyOneService = autobiographyOneService;
             _autobiographyTwoService = autobiographyTwoService;
+            _brandService = brandService;
+
 
         }
 
@@ -43,6 +48,8 @@ namespace ChapterOneApp.Controllers
             List<Team> teams = await _teamService.GetAllAsync();
             List<AutobiographyOne> autobiographyOnes = await _autobiographyOneService.GetAllAsync();
             List<AutobiographyTwo> autobiographyTwos = await _autobiographyTwoService.GetAllAsync();
+            List<Brand> brands = await _brandService.GetAllAsync();
+
 
 
             HomeVM model = new()
@@ -52,6 +59,8 @@ namespace ChapterOneApp.Controllers
                 Teams = teams,
                 AutobiographyOnes = autobiographyOnes,
                 AutobiographyTwos = autobiographyTwos,
+                Brands = brands,
+
             };
 
             return View(model);
