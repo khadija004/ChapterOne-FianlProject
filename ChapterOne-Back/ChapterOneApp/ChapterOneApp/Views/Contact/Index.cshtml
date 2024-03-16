@@ -1,4 +1,5 @@
-﻿
+﻿@model ContactVM
+<!-- Main Area -->
 <main>
     <section id="map">
         <div class="container">
@@ -7,153 +8,57 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="name">
-                        <h4>Bookstore Central</h4>
-                    </div>
-                    <div class="location">
-                        <div class="icon">
-                            <i class="fa-solid fa-location-dot"></i>
+                @foreach (var store in Model.Stores)
+                {
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="name">
+                            <h4>Bookstore Central</h4>
                         </div>
-                        <div class="address">
-                            <p>194 Amsterdam Ave NY</p>
+                        <div class="location">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="address">
+                                <p>@store.Location</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="phone">
-                        <div class="icon">
-                            <i class="fa-solid fa-mobile"></i>
+                        <div class="phone">
+                            <div class="icon">
+                                <i class="fa-solid fa-mobile"></i>
+                            </div>
+                            <div class="number">
+                                <p>@store.Phone</p>
+                            </div>
                         </div>
-                        <div class="number">
-                            <p>(+123) 456 789</p>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="mail">
-                            <p>chapter@example.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="name">
-                        <h4>Bookstore 1</h4>
-                    </div>
-                    <div class="location">
-                        <div class="icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="address">
-                            <p>194 Amsterdam Ave NY</p>
+                        <div class="message">
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="mail">
+                                <p>@store.Mail</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="phone">
-                        <div class="icon">
-                            <i class="fa-solid fa-mobile"></i>
-                        </div>
-                        <div class="number">
-                            <p>(+123) 456 789</p>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="mail">
-                            <p>chapter@example.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="name">
-                        <h4>Bookstore 2</h4>
-                    </div>
-                    <div class="location">
-                        <div class="icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="address">
-                            <p>194 Amsterdam Ave NY</p>
-                        </div>
-                    </div>
-                    <div class="phone">
-                        <div class="icon">
-                            <i class="fa-solid fa-mobile"></i>
-                        </div>
-                        <div class="number">
-                            <p>(+123) 456 789</p>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="mail">
-                            <p>chapter@example.com</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12">
-                    <div class="name">
-                        <h4>Publisher</h4>
-                    </div>
-                    <div class="location">
-                        <div class="icon">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </div>
-                        <div class="address">
-                            <p>194 Amsterdam Ave NY</p>
-                        </div>
-                    </div>
-                    <div class="phone">
-                        <div class="icon">
-                            <i class="fa-solid fa-mobile"></i>
-                        </div>
-                        <div class="number">
-                            <p>(+123) 456 789</p>
-                        </div>
-                    </div>
-                    <div class="message">
-                        <div class="icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="mail">
-                            <p>chapter@example.com</p>
-                        </div>
-                    </div>
-                </div>
+                }
+
             </div>
         </div>
     </section>
     <section id="brand">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-1.png" alt="">
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-2.png" alt="">
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-3.png" alt="">
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-4.png" alt="">
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-5.png" alt="">
-                </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 brand">
-                    <img src="./assets/images/home/brand-6.png" alt="">
-                </div>
+                @foreach (var brand in Model.Brands)
+                {
+                    <div class="col-lg-2 col-md-6 col-sm-12 brand">
+                        <img src="~/assets/images/home/@brand.Image" alt="">
+                    </div>
+                }
             </div>
 
         </div>
     </section>
-
 </main>
+<!-- Main Area -->

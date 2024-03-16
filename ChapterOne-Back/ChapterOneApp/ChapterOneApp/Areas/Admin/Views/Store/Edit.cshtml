@@ -1,0 +1,45 @@
+﻿@model StoreUpdateVM
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<div class="container my-5">
+    <h1>Edit</h1>
+
+
+    <form class="form-sample" method="post" enctype="multipart/form-data">
+
+        <label for="formFile" class="form-label my-2">Location</label>
+        <input type="text mt-3" class="form-control" id="customFile" asp-for="Location" />
+        <span class="text-danger" asp-validation-for="Location">@ViewBag.error</span>
+
+        <label for="formFile" class="form-label my-2">Phone</label>
+        <input type="text mt-3" class="form-control" id="customFile" asp-for="Phone" />
+        <span class="text-danger" asp-validation-for="Phone">@ViewBag.error</span>
+
+        <label for="formFile" class="form-label my-2">Mail</label>
+        <input type="text mt-3" class="form-control" id="customFile" asp-for="Mail" />
+        <span class="text-danger" asp-validation-for="Mail">@ViewBag.error</span>
+        
+
+        <div class="buttons my-3">
+            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            <a class="btn btn-light" asp-action="Index">Cancel</a>
+        </div>
+
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
