@@ -1,0 +1,319 @@
+﻿@model BlogDetailVM
+
+@inject UserManager<AppUser> userManager;
+
+@{
+    ViewData["Title"] = "BlogDetail";
+}
+
+
+<!-- Main Area -->
+<main>
+    <section id="background">
+        <div class="background-images" style="background-image:url(/assets/images/blog-detail/backgorund.jpeg)">
+            <h2>Blog Detail</h2>
+        </div>
+    </section>
+    <section id="blog-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="details">
+                        <div class="section-1">
+                            <div class="blog-image">
+                                <img src="~/assets/images/blog/@Model.BlogDt.Image" alt="">
+                            </div>
+                            <div class="name-date">
+                                <div class="name">
+                                    <p>@Model.BlogDt.Compiler.Name /</p>
+                                </div>
+                                <div class="date">
+                                    <p> @Model.BlogDt.CreateDate.ToString("dd MMMMM yyyy") </p>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h1>@Model.BlogDt.Title</h1>
+                            </div>
+                            <div class="description-1">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident… sunt in culpa qui
+                                    officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                                    error
+                                    sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                    quae
+                                    ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                    explicabo.
+                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                    quia
+                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem
+                                    ipsum
+                                    dolor sit amet, consectetur.
+                                </p>
+                            </div>
+                            <div class="description-2">
+                                <p>
+                                    ’’Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    ut
+                                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in
+                                    reprehenderit.’’
+                                </p>
+                            </div>
+                            <div class="description-3">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident… sunt in culpa qui
+                                    officia
+                                    deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
+                                    error
+                                    sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                    quae
+                                    ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                    explicabo.
+                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
+                                    quia
+                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Lorem
+                                    ipsum
+                                    dolor sit amet, consectetur.
+                                </p>
+                            </div>
+
+                            <div class="border mt-5"></div>
+                            <div class="icons">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2F"
+                                           target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.pinterest.com/" target="_blank">
+                                            <i class="fa-brands fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="border mt-5"></div>
+                        </div>
+
+
+
+                        <div class="section-3">
+                            <div class="comment-words">
+                                <h4>Comments</h4>
+                            </div>
+                            <div class="border mt-3"></div>
+                            <div class="comments">
+                                @foreach (var blogComment in Model.BlogComments)
+                                {
+                                    <div class="image-names">
+                                        <div class="image-name">
+                                            <div class="image">
+                                                <img src="~/assets/images/blog-detail/profil-image.jpg" alt="">
+                                            </div>
+                                            <div class="name">
+                                                <p>@(blogComment.AppUser.FirstName + " " + blogComment.AppUser.LastName)</p>
+                                                <span>@blogComment.CreateDate.ToString("dd MMMMM yyyy")</span>
+                                            </div>
+                                        </div>
+                                        <div class="description-4">
+                                            <p>
+                                                @blogComment.Message
+                                            </p>
+                                        </div>
+                                    </div>
+                                }
+
+
+                                <div class="border mt-5"></div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="section-4">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                AppUser user = userManager.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+                                <form class="feedback-form" asp-controller="Blog" asp-action="PostComment" asp-route-userId="@user.Id" asp-route-blogId="@Model.BlogDt.Id" method="post">
+                                    <div class="post-comment">
+                                        <h4>Post a Comment</h4>
+                                    </div>
+                                    <div class="user-comment">
+                                        <input value="@(user.FirstName + " " + user.LastName)" class="mt-4" type="text" placeholder="Your Name" asp-for="CommentVM.FullName">
+                                        <input value="@user.Email " CommentVM.Email" type="email" placeholder="Your Email" class="mt-3" asp-for="CommentVM.Email">
+                                        <input asp-for="CommentVM.Subject" type="text" placeholder="Subject" class="mt-3">
+                                        <textarea asp-for="CommentVM.Message" cols="30" rows="10" class="mt-3" placeholder="Your Review"></textarea>
+                                        <div class="submit-button">
+                                            <button type="submit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="section-5">
+                        <div class="image">
+                            <img src="~/assets/images/blog/author.png" alt="">
+                        </div>
+                        <div class="country">
+                            <p>AUSTRIA</p>
+                        </div>
+                        <div class="name">
+                            <h4>John Strass</h4>
+                        </div>
+                        <div class="description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ...
+                            </p>
+                        </div>
+                        <div class="borders">
+                            <div class="border">
+                            </div>
+                            <div class="border">
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <span>❦</span>
+                        </div>
+
+                    </div>
+
+                    <div class="section-7">
+                        <div class="image">
+                            <img src="~/assets/images/blog/blog-sidebar-image.jpg" alt="">
+                        </div>
+                        <div class="borders">
+                            <div class="border">
+                            </div>
+                            <div class="border">
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <span>❦</span>
+                        </div>
+                    </div>
+
+                    <div class="section-9">
+                        <div class="socials">
+                            <h5>Social</h5>
+                        </div>
+                        <div class="icons">
+                            <ul>
+                                <li>
+                                    <a target="_blank" href="https://twitter.com/">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.instagram.com/?hl=en">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.flickr.com/">
+                                        <i class="fa-brands fa-flickr"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" href="https://www.pinterest.com/">
+                                        <i class="fa-brands fa-pinterest-p"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="borders">
+                            <div class="border">
+                            </div>
+                            <div class="border">
+                            </div>
+                        </div>
+                        <div class="logo">
+                            <span>❦</span>
+                        </div>
+                    </div>
+                    <div class="section-10">
+                        <div class="latest-titles">
+                            <h5>The latest titles</h5>
+                        </div>
+                        <div class="image-name">
+                            <div class="image">
+                                <a href="ProductDetail.html">
+                                    <img src="~/assets/images/blog/product-1.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="name-price">
+                                <a href="">Winter Darkest Tragedy</a>
+                                <p>$38.00</p>
+                            </div>
+                        </div>
+                        <div class="image-name mt-2">
+                            <div class="image">
+                                <a href="ProductDetail.html">
+                                    <img src="~/assets/images/blog/product-2.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="name-price">
+                                <a href="ProductDetail.html">Symphony Of Trilogy</a>
+                                <p>$22.00</p>
+                            </div>
+                        </div>
+                        <div class="image-name mt-2">
+                            <div class="image">
+                                <a href="ProductDetail.html">
+                                    <img src="~/assets/images/blog/product-3.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="name-price">
+                                <a href="ProductDetail.html">Wellness And Paradise</a>
+                                <p>$67.00</p>
+                            </div>
+                        </div>
+                        <div class="image-name mt-2">
+                            <div class="image">
+                                <a href="ProductDetail.html">
+                                    <img src="~/assets/images/blog/product-4.jpg"
+                                         alt="">
+                                </a>
+                            </div>
+                            <div class="name-price">
+                                <a href="ProductDetail.html">Renaissance History</a>
+                                <p>$30.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Main Area -->

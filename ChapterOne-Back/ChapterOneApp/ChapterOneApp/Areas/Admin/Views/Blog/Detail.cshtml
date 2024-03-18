@@ -1,0 +1,50 @@
+﻿@model Blog
+
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container my-5">
+
+    <form class="form-sample" asp-action="Create" method="post" enctype="multipart/form-data">
+
+        <div class="mt-3" >
+            <img src="~/assets/images/Blog//@Model.Image" style="width:250px;height:200px"  />
+        </div>
+
+
+        <div class="form-group">
+            <label for="formFile" class="form-label my-2">Title</label>
+            <input class="form-control" id="customFile" disabled asp-for="@Model.Title" />
+        </div>
+
+        <div class="form-group">
+            <label for="formFile" class="form-label my-2">Description</label>
+            <input class="form-control" id="customFile" disabled asp-for="@Model.Description" />
+        </div>
+
+        <div class="form-group">
+            <label for="formFile" class="form-label my-2">Message</label>
+            <input class="form-control" id="customFile" disabled asp-for="@Model.Message" />
+        </div>
+
+        <div class="buttons my-3">
+            
+            <a class="btn btn-light" asp-action="Index">Cancel</a>
+        </div>
+
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+

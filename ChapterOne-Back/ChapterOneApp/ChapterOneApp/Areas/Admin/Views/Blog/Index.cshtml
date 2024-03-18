@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Blog>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container my-5">
+    <a class="btn btn-success text-white" asp-action="Create" style="float:right">Create</a>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Image
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Operations
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var blog in Model)
+                {
+                    <tr data-id="@blog.Id">
+                        <td class="py-1">
+                            <img src="~/assets/images/blog//@blog.Image" style="width:200px;height:120px;border-radius:0" alt="image" />
+                        </td>
+
+                        <td class="py-1">
+                            @blog.Title
+                        </td>
+                        
+                        <td>
+                            <a asp-action="Detail" asp-route-id="@blog.Id" data-toggle="tooltip" data-original-title="Detail">
+                                <i class="fa-solid fa-circle-info" style="color: #dbd530;"></i>
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@blog.Id" data-toggle="tooltip" data-original-title="Edit">
+                                <i class="fa-solid fa-pen-to-square" style="color: #44ce42;"></i>
+                            </a>
+                            <a class="delete-blog" data-toggle="tooltip" data-original-title="Remove">
+                                <i class="fa-solid fa-trash" style="color: #da3e45;"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script src="~/admin/js/custom.js"></script>
+}
+
+
+
