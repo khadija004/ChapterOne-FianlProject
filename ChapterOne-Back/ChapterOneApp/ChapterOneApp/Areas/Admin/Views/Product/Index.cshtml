@@ -1,0 +1,102 @@
+﻿@model Paginate<ProductListVM>
+
+@{
+    ViewData["Title"] = "Index";
+    //int count = ((Model.Datas.Count() * Model.CurrentPage) - (Model.Datas.Count() - 1));
+    int take = ViewBag.take;
+    int number = (Model.CurrentPage - 1) * take + 1;
+}
+
+
+
+<div class="container my-5">
+    <a class="btn btn-success text-white" asp-action="Create" style="float:right">Create</a>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        #
+                    </th>
+                    <th>
+                        MainImage
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        SKU
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Operations
+                    </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model.Datas)
+                {
+                    <tr data-id="@product.Id">
+                        <td class="py-1">
+                            @number
+                        </td>
+                        <td class="py-1">
+                            <img src="~/assets/images/shop//@product.Image" style="width:200px;height:200px;border-radius:0" alt="image" />
+                        </td>
+                        <td class="py-1">
+                            @product.Name
+                        </td>
+                        <td class="py-1">
+                            @product.SKU
+                        </td>
+                        <td class="py-1">
+                            @product.Price
+                        </td>
+
+                        <td>
+                            <a asp-action="Detail" asp-route-id="@product.Id" data-toggle="tooltip" data-original-title="Detail">
+                                <i class="fa-solid fa-circle-info" style="color: #dbd530;"></i>
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@product.Id" data-toggle="tooltip" data-original-title="Edit">
+                                <i class="fa-solid fa-pen-to-square" style="color: #44ce42;"></i>
+                            </a>
+                            <a class="delete-product" data-toggle="tooltip" data-original-title="Remove">
+                                <i class="fa-solid fa-trash" style="color: #da3e45;"></i>
+                            </a>
+                        </td>
+                    </tr>
+                    number++;
+                }
+            </tbody>
+        </table>
+    </div>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center mt-3">
+            <li class="page-item @(Model.HasPrevious? "":"disabled")">
+                <a class="page-link" asp-action="Index" asp-route-page="@(Model.CurrentPage - 1)" tabindex="-1">Previous</a>
+            </li>
+            @for (int i = 1; i <= Model.TotalPage; i++)
+            {
+                <li class="page-item @(Model.CurrentPage == i ? "disabled" : "")"><a class="page-link" asp-action="Index" asp-route-page="@i">@i</a></li>
+            }
+            <li class="page-item @(Model.HasNext? "":"disabled")">
+                <a class="page-link" asp-action="Index" asp-route-page="@(Model.CurrentPage + 1)">Next</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+@section Scripts{
+    <script src="~/admin/js/custom.js"></script>
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+﻿@model BlogComment
+@{
+    ViewData["Title"] = "Detail";
+}
+@section Css{
+    <link href="~/Admin/build/css/custom.min.css" rel="stylesheet">
+}
+<section class="pcoded-main-container">
+    <div class="pcoded-content">
+        <div class="row">
+            <div class="col-12">
+                <form asp-action="Detail">
+                    <div class="form-group ml-5 mt-3">
+                        <label>Blog Name</label>
+                        <input disabled class="form-control" asp-for="Blog.Title">
+                    </div>
+                    <div class="form-group ml-5 mt-3">
+                        <label>User Name</label>
+                        <input disabled class="form-control" asp-for="FullName">
+                    </div>
+                    <div class="form-group ml-5 mt-3">
+                        <label>Email</label>
+                        <input disabled class="form-control" asp-for="Email">
+                    </div>
+                    <div class="form-group ml-5 mt-3">
+                        <label>Message</label>
+                        <input disabled class="form-control" asp-for="Message">
+                    </div>
+                    <a asp-action="Index" class="btn btn-success ml-5 mt-3"><i class="feather mr-2 icon-check-circle"></i>Go to list</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts{
+    <script src="~/Admin/src/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+}
+
+
+
+
+
+

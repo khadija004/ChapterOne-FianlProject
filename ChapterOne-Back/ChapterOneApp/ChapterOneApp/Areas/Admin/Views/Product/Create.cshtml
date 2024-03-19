@@ -1,0 +1,63 @@
+﻿@model ProductCreateVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container my-5">
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="formFile" class="form-label my-2">Photos</label>
+            <input class="form-control" id="customFile" asp-for="Photo" />
+            <span class="text-danger" asp-validation-for="Photo"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="my-2">Add Name</label>
+            <input class="form-control " id="customFile" asp-for="Name" />
+            <span class="text-danger" asp-validation-for="Name"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="my-2">Add Description</label>
+            <textarea class="form-control" id="description-text" asp-for="Description" rows="5"></textarea>
+            <span class="text-danger" asp-validation-for="Description"></span>
+        </div>
+
+        <div class="form-group">
+            <label class="my-2">Add Price</label>
+            <input type="number" step=".01" class="form-control" id="customFile" asp-for="Price" />
+            <span class="text-danger" asp-validation-for="Price"></span>
+        </div>
+        
+        <div class="form-group">
+            <label class="my-2">Add Author</label>
+            <select class="form-control" id="customFile" asp-for="AuthorIds" asp-items="@ViewBag.authors"></select>
+        </div>
+
+        <div class="form-group">
+            <label class="my-2">Add Tag</label>
+            <select class="form-control" id="customFile" asp-for="TagIds" asp-items="@ViewBag.tags"></select>
+        </div>
+
+        <div class="form-group">
+            <label class="my-2">Add Genre</label>
+            <select class="form-control" id="customFile" asp-for="GenreIds" asp-items="@ViewBag.genres"></select>
+        </div>
+
+        <div class="buttons my-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a class="btn btn-light" asp-action="Index">Cancel</a>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+
+}
+
+
+
+
+

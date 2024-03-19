@@ -14,9 +14,11 @@ namespace ChapterOneApp.Controllers
         readonly ISliderService _sliderService;
         readonly IOurService _ourService;
         readonly ITeamService _teamService;
-        private readonly IAutobiographyOneService _autobiographyOneService;
-        private readonly IAutobiographyTwoService _autobiographyTwoService;
-        private readonly IBrandService _brandService;
+        readonly IAutobiographyOneService _autobiographyOneService;
+        readonly IAutobiographyTwoService _autobiographyTwoService;
+        readonly IBrandService _brandService;
+        readonly IProductService _produtcService;
+        readonly IGenreService _genreService;
 
 
 
@@ -26,7 +28,9 @@ namespace ChapterOneApp.Controllers
                                 ITeamService teamService,
                                 IAutobiographyOneService autobiographyOneService,
                                 IAutobiographyTwoService autobiographyTwoService,
-                                IBrandService brandService)
+                                IBrandService brandService,
+                                IProductService productService,
+                                IGenreService genreService)
         {
             _context = context;
             _sliderService = sliderService;
@@ -35,6 +39,8 @@ namespace ChapterOneApp.Controllers
             _autobiographyOneService = autobiographyOneService;
             _autobiographyTwoService = autobiographyTwoService;
             _brandService = brandService;
+            _produtcService = productService;
+            _genreService = genreService;
 
 
         }
@@ -49,6 +55,10 @@ namespace ChapterOneApp.Controllers
             List<AutobiographyOne> autobiographyOnes = await _autobiographyOneService.GetAllAsync();
             List<AutobiographyTwo> autobiographyTwos = await _autobiographyTwoService.GetAllAsync();
             List<Brand> brands = await _brandService.GetAllAsync();
+            List<Product> products = await _produtcService.GetAll();
+            List<Genre> genres = await _genreService.GetAllAsync();
+            Dictionary<string, string> headerBackground = _context.HeaderBackgrounds.AsEnumerable().ToDictionary(m => m.Key, m => m.Value);
+
 
 
 
@@ -59,8 +69,10 @@ namespace ChapterOneApp.Controllers
                 Teams = teams,
                 AutobiographyOnes = autobiographyOnes,
                 AutobiographyTwos = autobiographyTwos,
+                HeaderBackgrounds = headerBackground,
                 Brands = brands,
-
+                Products = products,
+                Genres = genres
             };
 
             return View(model);

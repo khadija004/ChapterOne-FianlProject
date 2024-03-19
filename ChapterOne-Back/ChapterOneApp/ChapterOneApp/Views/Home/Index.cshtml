@@ -35,277 +35,59 @@
                         <li class="item active btn-tab" onclick="filterSelection('all')" data-id="all">
                             <a>All</a>
                         </li>
-                        <li class="item btn-tab" onclick="filterSelection('bestsellers')" data-id="bestsellers">
-                            <a>Best Sellers</a>
-                        </li>
-                        <li class="item btn-tab" onclick="filterSelection('fantasy')" data-id="fantasy">
-                            <a class="btn-tab">Fantasy</a>
-                        </li>
-                        <li class="item btn-tab" onclick="filterSelection('history')" data-id="history">
-                            <a class="btn-tab">History</a>
-                        </li>
-                        <li class="item btn-tab" onclick="filterSelection('art')" data-id="art">
-                            <a class="btn-tab">Art</a>
-                        </li>
-                        <li class="item btn-tab" onclick="filterSelection('lovestories')" data-id="lovestories">
-                            <a class="btn-tab">Love Stories</a>
-                        </li>
+                        @foreach (var genre in Model.Genres)
+                        {
+                            <li class="item btn-tab" onclick="filterSelection('@genre.Name')" data-id="@genre.Name">
+                                <a>@genre.Name</a>
+                            </li>
+                        }
+       
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-sm-12 filterDiv fantasy all product">
-                    <div class="products" data-id="1">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-1.jpg" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">JOHN STRASS</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Winter Darkest Tragedy</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$38.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
+                @foreach (var item in Model.Products)
+                {
+                    <div class="col-lg-3 col-md-6 col-sm-12 filterDiv @item.ProductGenres.FirstOrDefault().Genre.Name all product">
+                        <div class="products" data-id="@item.Id">
+                            <a asp-controller="Shop" asp-action="ProductDetail" asp-route-id="@item.Id"><img src="~/assets/images/shop/@item.Image" alt=""></a>
+                            <div class="name">
+                                <a asp-controller="Shop" asp-action="ProductDetail" asp-route-id="@item.Id">@item.ProductGenres.FirstOrDefault().Genre.Name </a>
+                            </div>
+                            <div class="category-name">
+                                <a asp-controller="Shop" asp-action="ProductDetail" asp-route-id="@item.Id">@item.Name</a>
+                            </div>
+                            <div class="price-button">
+                                <p>$@item.Price</p>
+                            </div>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <div class="wishlist-cart" data-id="@item.Id">
+                                    <i class="fa-solid fa-heart wishlist-add" data-toggle="tooltip" data-placement="top"
+                                       title="Add To Wishlist"></i>
+                                    <i class="fa-solid fa-cart-shopping cart-add" data-toggle="tooltip" data-placement="top"
+                                       title="Add To Cart"></i>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="wishlist-cart">
+                                    <a asp-controller="Account" asp-action="Login" class="text-decoration-none">
+                                        <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
+                                           title="Add To Wishlist"></i>
+                                    </a>
+                                    <a asp-controller="Account" asp-action="Login">
+                                        <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
+                                           title="Add To Cart" style="color:black"></i>
+                                    </a>
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 filterDiv fantasy all product">
-                    <div class="products" data-id="2">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-2.jpg" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">JESSICA JOHNSON</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Symphony Of Trilogy</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$22.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
+                                </div>
+                            }
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 filterDiv bestsellers all product">
-                    <div class="products" data-id="3">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-3.jpg" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">JANE DOE</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Wellness And Paradise</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$67.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 filterDiv history all product">
-                    <div class="products" data-id="4">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-4.jpg" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">JAMES HOFFMAN</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Renaissance History</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$30.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 all-products filterDiv bestsellers history all product">
-                    <div class="products" data-id="5">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-5.jpg" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">ADAM STRASS</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Fantasy Storytelling</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$29.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
                         </div>
 
                     </div>
+                }
 
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12  filterDiv art all product">
-                    <div class="products" data-id="6">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-6.jpg" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">JOHN STRASS</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Easy Fast Cooking</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$78.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12  filterDiv art all product">
-                    <div class="products" data-id="7">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-7.jpg" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">JAMES HOFFMAN</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Amster Hamster Trip</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$69.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 filterDiv bestsellers lovestories all product">
-                    <div class="products" data-id="8">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-8.jpg" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">JANE DOE</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Summertime Love Stories</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$33.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12  filterDiv lovestories all product">
-                    <div class="products" data-id="9">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-9.jpg" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">Jessica Johnson</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Learn To Love Yourself</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$50.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 filterDiv all product">
-                    <div class="products" data-id="10">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-10.jpg" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">John Strass</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Japan Travel Stories</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$56.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12  filterDiv fantasy all product">
-                    <div class="products" data-id="11">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-11.webp" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">LEO TOLSTOY</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Anna Karenina</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$66.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 filterDiv fantasy all product">
-                    <div class="products" data-id="2">
-                        <a href="ProductDetail.html"><img src="~/assets/images/home/product-12.png" alt=""></a>
-                        <div class="name">
-                            <a href="ProductDetail.html">STEFAN ZWEIG</a>
-                        </div>
-                        <div class="category-name">
-                            <a href="ProductDetail.html">Chees</a>
-                        </div>
-                        <div class="price-button">
-                            <p>$45.00</p>
-                        </div>
-                        <div class="wishlist-cart">
-                            <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                               title="Add To Wishlist"></i>
-                            <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                               title="Add To Cart"></i>
-                        </div>
-                    </div>
-
-                </div>
             </div>
         </div>
     </section>
@@ -342,20 +124,18 @@
         <div class="container">
             <div class="authors">
                 <div class="services">
-                    <p>OUR SERVICES</p>
+                    <p>@Model.HeaderBackgrounds["TeamHeader"]</p>
                 </div>
                 <div class="month">
-                    <h1>Authors of the month</h1>
+                    <h1>@Model.HeaderBackgrounds["TeamName"]</h1>
                 </div>
                 <div class="description">
                     <p>
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat.
+                        @Model.HeaderBackgrounds["TeamDescription"]
                     </p>
 
                 </div>
                 <div class="row">
-
                     @foreach (var team in Model.Teams)
                     {
                         <div class="col-lg-3 col-md-6 col-sm-12">
@@ -377,6 +157,7 @@
                             </div>
                         </div>
                     }
+
 
                 </div>
             </div>

@@ -1,0 +1,85 @@
+﻿@model ProductDetailVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container my-5">
+   
+    <label class="my-2">Image</label>
+    <div class="form-group">
+        <img src="~/assets/images/shop//@Model.Image" style="width: 150px; height: 150px;" />
+    </div>
+
+    <div class="form-group">
+        <label class="my-2">Name</label>
+        <input class="form-control" disabled id="customFile" asp-for="Name" />
+    </div>
+
+    <div class="form-group">
+        <label class="my-2">Description</label>
+        <input class="form-control" disabled id="description-text" asp-for="Description" />
+    </div>
+
+    <div class="form-group">
+        <label class="my-2">Price</label>
+        <input type="text" disabled class="form-control" id="customFile" asp-for="Price" />
+    </div>
+
+    <div class="form-group">
+        <label class="my-2">Sale Count</label>
+        <input class="form-control" disabled id="customFile" asp-for="SaleCount" />
+    </div>
+
+    <div class="form-group">
+        <label class="my-2">Stock Count</label>
+        <input class="form-control" disabled id="customFile" asp-for="StockCount" />
+    </div>
+
+    <div class="form-group">
+        <label class="my-2">Rate</label>
+        <div class="rating-box">
+            <ul>
+                @for (int i = 0; i < Model.Rate; i++)
+                {
+                    <li><i class="fa fa-star"></i></li>
+                }
+                @for (int i = 0; i < 5 - Model.Rate; i++)
+                {
+                    <li><i class="fa fa-star" style="color:gray"></i></li>
+                }
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="my-2">SKU</label>
+        <input class="form-control" disabled id="customFile" asp-for="SKU" />
+    </div>
+
+    <div class="form-group">
+        <label class="my-2">Genre</label>
+        <input class="form-control" disabled id="customFile" value="@string.Join(",",Model.ProductGenres.Select(m=>m.Genre.Name))" />
+    </div>
+
+    <div class="form-group">
+        <label class="my-2">Author</label>
+        <input class="form-control" disabled id="customFile" value="@string.Join(",",Model.ProductAuthors.Select(m=>m.Author.Name))" />
+    </div>
+
+    <div class="form-group">
+        <label class="my-2">Tag</label>
+        <input class="form-control" disabled id="customFile" value="@string.Join(",",Model.ProductTags.Select(m=>m.Tag.Name))" />
+    </div>
+
+    <div class="form-group">
+        <div class="buttons my-3">
+            <a class="btn btn-light" asp-action="Index">Cancel</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+

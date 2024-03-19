@@ -35,6 +35,8 @@ builder.Services.AddScoped<IPromoService, PromoService>();
 builder.Services.AddScoped<IStoreService, StoreService>();
 builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ITagService, TagService>();
+builder.Services.AddScoped<IGenreService, GenreService>();
 
 
 
