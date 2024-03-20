@@ -37,6 +37,9 @@ builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ITagService, TagService>();
 builder.Services.AddScoped<IGenreService, GenreService>();
+builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IWishlistService, WishlistService>();
+builder.Services.AddScoped<ILayoutService, LayoutService>();
 
 
 

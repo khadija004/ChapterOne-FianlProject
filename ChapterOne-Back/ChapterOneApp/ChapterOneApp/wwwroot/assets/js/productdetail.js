@@ -38,6 +38,47 @@ $(document).ready(function () {
     })
 
 
+    $(function () {
+        //add to wishlist detail
+        $(document).on("click", ".add-to-wishlist-detail", function (e) {
+
+            let id = $(this).attr("data-id");
+            let data = { id: id };
+            let count = (".wishlist-count");
+            $.ajax({
+                type: "Post",
+                url: "/Shop/AddToWishlist",
+                data: data,
+                success: function (res) {
+                    $(count).text(res);
+                }
+            })
+            return false;
+        })
+
+    })
+
+
+    $(function () {
+        //add cart (product detail)
+        $(document).on("click", ".addCart", function (e) {
+            let id = $(this).attr("data-id");
+            let data = { id: id };
+            let count = (".basket-count");
+            $.ajax({
+                type: "Post",
+                url: "/Shop/AddToCart",
+                data: data,
+                success: function (res) {
+                    $(count).text(res);
+                }
+            })
+            return false;
+        })
+
+    })
+
+
 })
 
 
@@ -74,3 +115,5 @@ function w3RemoveClass(element, name) {
     }
     element.className = arr1.join(" ");
 }
+
+

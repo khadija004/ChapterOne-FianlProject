@@ -1,0 +1,238 @@
+﻿@model ProductDetailVM
+
+@inject UserManager<AppUser> userManager;
+
+<!-- Main Area -->
+<main>
+    <section id="background">
+        <div class="background-images" style="background-image:url(/assets/images/product-detail/bacground.jpg)">
+            <h2>Product Detail</h2>
+        </div>
+    </section>
+    <section id="detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="product-image">
+                        <img src="~/assets/images/shop/@Model.ProductDt?.Image" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                    <div class="section-1">
+                        <div class="name">
+                            <p>BY @Model.ProductDt.ProductAuthors?.FirstOrDefault().Author.Name</p>
+                        </div>
+                        <div class="wellness">
+                            <h2>@Model.ProductDt.ProductAuthors?.FirstOrDefault().Product.Name</h2>
+                        </div>
+                        <div class="price">
+                            <p>$@Model.ProductDt.Price</p>
+                        </div>
+                        <div class="description">
+                            <p>
+                                @Model.ProductDt.Description
+                            </p>
+                        </div>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <div class="add-basket-button d-flex">
+                                <div data-id="@Model.ProductDt.Id" class="add-btn-first addCart">
+                                    <button style="text-transform:uppercase;">Add to basket</button>
+                                </div>
+                                <div data-id="@Model.ProductDt.Id" class="add-btn-first add-to-wishlist-detail">
+                                    <button style="background-color:green;text-transform:uppercase;">Add to Wishlist</button>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="add-basket-button d-flex">
+                                <div>
+                                    <button style="background-color:#d14031;">
+                                        <a asp-controller="Account" asp-action="Login" style="text-decoration:none;color:white;text-transform:uppercase;">Add to Cart</a>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button style="background-color:green;">
+                                        <a asp-controller="Account" asp-action="Login" style="text-decoration:none;color:white;text-transform:uppercase;">Add to Wishlist</a>
+                                    </button>
+                                </div>
+                            </div>
+                        }
+
+                        <div class="sku-code">
+                            <p>SKU: </p>
+                            <span>@Model.ProductDt.SKU</span>
+                        </div>
+                        <div class="categories">
+                            <p>Genre: </p>
+                            <span> @Model.ProductDt.ProductGenres?.FirstOrDefault().Genre.Name</span>
+                        </div>
+                        <div class="tags">
+                            <p>Tags: </p>
+                            <span>@Model.ProductDt.ProductTags?.FirstOrDefault().Tag.Name</span>
+                        </div>
+
+                        <div class="border"></div>
+
+                        <div class="authorimage-authorname">
+                            <div class="author-image">
+                                <img src="~/assets/images/product-detail/user-1.png" alt="">
+                            </div>
+                            <div class="author-name">
+                                <p>France</p>
+                                <span>@Model.ProductDt.ProductAuthors.FirstOrDefault().Author.Name</span>
+                            </div>
+                        </div>
+
+                        <div class="author-description">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.
+                            </p>
+                        </div>
+
+                        <div class="border mt-5"></div>
+
+
+                        <div class="author-comment">
+                            @foreach (var productComment in Model.ProductComments)
+                            {
+                                <div class="starts">
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star text-danger"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <div class="comment">
+                                    <p>
+                                        @productComment.Message
+                                    </p>
+                                </div>
+
+                                <div class="logo-name">
+                                    <div class="logo-image">
+                                        <img src="~/assets/images/product-detail/logo-1.png" alt="">
+                                    </div>
+                                    <div class="names">
+                                        <p>@(productComment.AppUser.FirstName + " " + productComment.AppUser.LastName)</p>
+                                        <span class="date">@productComment.CreateDate.ToString("dd MMMMM yyyy")</span>
+                                    </div>
+                                </div>
+                            }
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="review-area">
+        <div class="container">
+            <div class="tab-menu">
+                <ul id="myBtnContainer">
+                    <li onclick="filterSelection('description')" class="item1 active btn-tab" data-id="description">
+                        <a>Description</a>
+                    </li>
+                    <li onclick="filterSelection('additional')" class="item2 btn-tab" data-id="additional">
+                        <a>
+                            Additional
+                        </a>
+                    </li>
+                    <li onclick="filterSelection('reviews')" class="item3 btn-tab" data-id="reviews">
+                        <a>
+                            Reviews
+                            <span>(@Model.ProductComments.Count())</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filterDiv description">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non proident.
+                </p>
+            </div>
+            <div class="additional-information filterDiv description d-none">
+                <p>Weight:0.5 kg</p>
+                <p>Dimensions:56 × 23 × 27 cm</p>
+                <p>Type:Paperback, Hardcover, Audiobook, Audio CD, Kindle</p>
+            </div>
+            <div class="user-comment filterDiv reviews d-none">
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    AppUser user = userManager.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+                    <form class="feedback-form" asp-controller="Shop" asp-action="PostComment" asp-route-userId="@user.Id" asp-route-productId="@Model.ProductDt.Id" method="post">
+                        <p>Leave a comment</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <input value="@(user.FirstName + " " + user.LastName)" class="mt-4" type="text" placeholder="Your Name" asp-for="CommentVM.FullName">
+                        <input value="@user.Email " CommentVM.Email" type="email" placeholder="Your Email" class="mt-3" asp-for="CommentVM.Email">
+                        <input asp-for="CommentVM.Subject" type="text" placeholder="Subject" class="mt-3">
+                        <textarea asp-for="CommentVM.Message" cols="30" rows="10" class="mt-3" placeholder="Your Review"></textarea>
+                        <div class="submit-button">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+
+                }
+
+            </div>
+        </div>
+
+    </section>
+    <section id="related-products">
+        <div class="container">
+            <div class="related-products-word">
+                <h2>Related products</h2>
+            </div>
+            <div class="border mt-4"></div>
+
+            <div class="row">
+                @foreach (var relatedProduct in Model.RelatedProducts)
+                {
+                    <div class="col-lg-2 col-md-6 col-sm-12">
+                        <div class="related-products">
+                            <div class="image">
+                                <a asp-action="ProductDetail" asp-route-id="@relatedProduct.Id">
+                                    <img src="~/assets/images/shop/@relatedProduct.Image" alt="">
+                                </a>
+                            </div>
+                            <div class="author-name">
+                                <p>@relatedProduct.ProductAuthors?.FirstOrDefault().Author.Name</p>
+                            </div>
+                            <div class="book-name">
+                                <span>@relatedProduct.Name</span>
+                            </div>
+                            <div class="book-price">
+                                <p>$@relatedProduct.Price</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Main Area -->
+@section Scripts{
+    <script src="~/assets/js/productdetail.js"></script>
+}
+

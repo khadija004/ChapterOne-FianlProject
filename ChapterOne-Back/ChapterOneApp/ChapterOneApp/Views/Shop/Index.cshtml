@@ -1,6 +1,13 @@
-﻿<main>
+﻿@model ShopVM
+
+@{
+    ViewData["Title"] = "Index";
+    int sumCategoryProductss = 0;
+}
+<!-- Main Area -->
+<main>
     <section id="background">
-        <div class="background-images" style="background-image:url(./assets/images/shop/bookstore.jpg)">
+        <div class="background-images" style="background-image:url(/assets/images/shop/bookstore.jpg)">
             <h2>Shop</h2>
         </div>
     </section>
@@ -13,335 +20,39 @@
                             <p>Showing 1–12 of 12 results</p>
                         </div>
                         <div class="sort">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Sort By Latest</option>
-                                <option value="1">Sort By Popularity</option>
-                                <option value="2">Sort By Avarage Rating</option>
-                                <option value="3">Sort By Price:Low To High</option>
-                                <option value="4">Sort By Price:High to Low</option>
-                            </select>
+                            <form name="sortProducts" id="sortProducts">
+                                <select id="sort" name="sort" class="form-select" aria-label="Default select example">
+                                    <option value="1" selected disabled>Choose option</option>
+                                    <option value="2">Sort By Latest</option>
+                                    <option value="3">Sort By Popularity</option>
+                                    <option value="4">Sort By Avarage Rating</option>
+                                    <option value="5">Sort By Price:Low To High</option>
+                                    <option value="6">Sort By Price:High to Low</option>
+                                </select>
+                            </form>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-1.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">John Strass</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Winter Darkest Tragedy</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$38.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-2.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">Jessica Johnson</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Symphony Of Trilogy</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$22.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-3.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">Jane Doe</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Wellness And Paradise</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$67.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-4.jpg"
-                                             alt=""><a href=""></a>
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">James Hoffman</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Renaissance History</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$30.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-5.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">Adam Strass</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Fantasy Storytelling</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$29.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-6.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">John Strass</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Easy Fast Cooking</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$78.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-7.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">James Hoffman</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Amster Hamster Trip</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$69.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-8.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">Jane Doe</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Summertime Love Stories</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$33.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-9.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">Jessica Johnson</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Learn To Love Yourself</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$50.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-10.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">John Strass</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Japan Travel Stories</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$56.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-11.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">Adam Strass</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Beauty Unplugged</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$46.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 all-products">
-                            <div class="products">
-                                <div class="image">
-                                    <a href="ProductDetail.html">
-                                        <img src="./assets/images/shop/product-12.jpg"
-                                             alt="">
-                                    </a>
-                                </div>
-                                <div class="name">
-                                    <a href="ProductDetail.html">James Hoffman</a>
-                                </div>
-                                <div class="category-name">
-                                    <a href="ProductDetail.html">Lost Dreams in Paris</a>
-                                </div>
-                                <div class="price-button">
-                                    <p>$37.00</p>
-                                </div>
-                            </div>
-                            <div class="wishlist-cart">
-                                <i class="fa-solid fa-heart" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Wishlist"></i>
-                                <i class="fa-solid fa-cart-shopping" data-toggle="tooltip" data-placement="top"
-                                   title="Add To Cart"></i>
-                            </div>
-                        </div>
+
+                    <div class="row product-list">
+                        <partial name="_ProductsPartial" model="@Model.PaginateDatas" />
                     </div>
-                    <div class="pagination">
-                        <div class="left-icon">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </div>
-                        <div class="number">
-                            <p>1</p>
-                            <p>2</p>
-                        </div>
-                        <div class="right-icon">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </div>
-                    </div>
+
+
 
                 </div>
                 <div class="col-lg-3 col-sm-12">
                     <div class="right-section">
                         <div class="search">
-                            <input type="text" placeholder="Search">
+                            <form id="widgets-searchbox">
+                                <ul id="search-list" style="color:black">
+                                    <li style="list-style:none;text-decoration:none;color:black">
+                                        <input class="input-field"
+                                               type="text"
+                                               placeholder="Search" />
+                                    </li>
+                                </ul>
+
+                            </form>
                         </div>
 
                         <div class="product-price mt-5">
@@ -349,32 +60,30 @@
                                 <h3>FILTER BY PRICE</h3>
                             </div>
                             <div class="price-filter">
-                                <div class="card">
-
-
-                                    <div class="range-slider">
-                                        <input type="range" class="min-price" value="100" min="10" max="500"
-                                               step="10" style="accent-color: #d8d8d8;">
-                                        <input type="range" class="max-price" value="250" min="10" max="500"
-                                               step="10" style="accent-color: #d8d8d8;">
-                                    </div>
-                                    <div class="price-content">
-
-                                        <div style="color: gray;">
-                                            <p>Price:</p>
+                                <form id="filterForm" method="post" asp-controller="shop" asp-action="index">
+                                    <div class="card">
+                                        <div class="range-slider">
+                                            <input name="value1" type="range" class="min-price" value="100" min="10" max="500"
+                                                   step="10" style="accent-color: #d8d8d8;">
+                                            <input name="value2" type="range" class="max-price" value="250" min="10" max="500"
+                                                   step="10" style="accent-color: #d8d8d8;">
                                         </div>
-                                        <div>
-                                            <p id="min-value">50</p>
-                                        </div>
-
-                                        <div>
-                                            <p id="max-value">500</p>
-                                        </div>
-                                        <div class="filter-button">
-                                            <button>FILTER</button>
+                                        <div class="price-content">
+                                            <div style="color: gray;">
+                                                <p>Price:</p>
+                                            </div>
+                                            <div>
+                                                <p id="min-value">50</p>
+                                            </div>
+                                            <div>
+                                                <p id="max-value">500</p>
+                                            </div>
+                                            <div class="filter-button">
+                                                <button type="submit">FILTER</button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
 
 
@@ -395,11 +104,11 @@
                         </div>
 
                         <div class="images">
-                            <img src="./assets/images/shop/small-product-1.jpg" alt="">
-                            <img src="./assets/images/shop/small-product-2.jpg" alt="">
-                            <img src="./assets/images/shop/small-product-3.jpg" alt="">
-                            <img src="./assets/images/shop/small-product-4.jpg" alt="">
-                            <img src="./assets/images/shop/small-product-5.jpg" alt="">
+                            <img src="~/assets/images/shop/small-product-1.jpg" alt="">
+                            <img src="~/assets/images/shop/small-product-2.jpg" alt="">
+                            <img src="~/assets/images/shop/small-product-3.jpg" alt="">
+                            <img src="~/assets/images/shop/small-product-4.jpg" alt="">
+                            <img src="~/assets/images/shop/small-product-5.jpg" alt="">
                         </div>
 
                         <div class="borders">
@@ -413,47 +122,58 @@
                         </div>
 
                         <div class="categories">
-                            <h5>Categories</h5>
+                            <h5>Genre</h5>
                         </div>
 
                         <div class="product-categories">
+
+
                             <div class="product-category">
-                                <p>ACTION</p>
-                                <span>( 13 )</span>
+                                <p class="all-product">All</p>
+                                <span>( @Model.CountProducts )</span>
                             </div>
-                            <div class="product-category">
-                                <p>ART</p>
-                                <span>( 3 )</span>
+                            @foreach (var genre in Model.Genres)
+                            {
+                                <div class="product-category">
+                                    <p data-id="@genre.Id" class="genre">@genre.Name</p>
+                                    <span>( @genre.ProductGenres?.Count() )</span>
+                                </div>
+                            }
+                        </div>
+
+                        <div class="borders">
+                            <div class="border">
                             </div>
-                            <div class="product-category">
-                                <p>BEST SELLERS</p>
-                                <span>( 12 )</span>
-                            </div>
-                            <div class="product-category">
-                                <p>DESIGN</p>
-                                <span>( 6 )</span>
-                            </div>
-                            <div class="product-category">
-                                <p>FANTASY</p>
-                                <span>( 2 )</span>
-                            </div>
-                            <div class="product-category">
-                                <p>HISTORY</p>
-                                <span>( 3 )</span>
-                            </div>
-                            <div class="product-category">
-                                <p>HOME</p>
-                                <span>( 10 )</span>
-                            </div>
-                            <div class="product-category">
-                                <p>LOVE STORIES</p>
-                                <span>( 2 )</span>
-                            </div>
-                            <div class="product-category">
-                                <p>NEW</p>
-                                <span>( 12 )</span>
+                            <div class="border">
                             </div>
                         </div>
+                        <div class="logo">
+                            <span>❦</span>
+                        </div>
+
+                        <div class="categories">
+                            <h5>Authors</h5>
+                        </div>
+
+
+                        <div class="product-categories">
+                            @foreach (var author in Model.Authors)
+                            {
+                                sumCategoryProductss += (int)author.ProductAuthors?.Count();
+                            }
+                            <div class="product-category">
+                                <p class="all-product">All</p>
+                                <span>(@sumCategoryProductss)</span>
+                            </div>
+                            @foreach (var author in Model.Authors)
+                            {
+                                <div class="product-category">
+                                    <p data-id="@author.Id" class="author">@author.Name</p>
+                                    <span>(@author.ProductAuthors?.Count())</span>
+                                </div>
+                            }
+                        </div>
+
 
                         <div class="borders">
                             <div class="border">
@@ -470,14 +190,10 @@
                             <h5>Tags</h5>
                         </div>
                         <div class="tags-name">
-                            <p>Adventure</p>
-                            <p>Bestseller</p>
-                            <p>Biography</p>
-                            <p>Design</p>
-                            <p>Fiction</p>
-                            <p>New</p>
-                            <p>Novel</p>
-                            <p>Pulitzer</p>
+                            @foreach (var tag in Model.Tags)
+                            {
+                                <p data-id="@tag.Id" class="tag">@tag.Name</p>
+                            }
                         </div>
                         <div class="borders">
                             <div class="border">
@@ -495,18 +211,18 @@
 
                         <div class="instagram-image">
                             <a target="_blank" href="https://www.instagram.com/?hl=en">
-                                <img src="./assets/images/shop/instagram-photo-1.jpg" alt="">
+                                <img src="~/assets/images/shop/instagram-photo-1.jpg" alt="">
                             </a>
                             <a target="_blank" href="https://www.instagram.com/?hl=en">
-                                <img src="./assets/images/shop/instagram-photo-2.jpg" alt="">
+                                <img src="~/assets/images/shop/instagram-photo-2.jpg" alt="">
                             </a>
                         </div>
                         <div class="instagram-image mt-1">
                             <a target="_blank" href="https://www.instagram.com/?hl=en">
-                                <img src="./assets/images/shop/instagram-photo-3.jpg" alt="">
+                                <img src="~/assets/images/shop/instagram-photo-3.jpg" alt="">
                             </a>
                             <a target="_blank" href="https://www.instagram.com/?hl=en">
-                                <img src="./assets/images/shop/instagram-photo-4.jpg" alt="">
+                                <img src="~/assets/images/shop/instagram-photo-4.jpg" alt="">
                             </a>
                         </div>
 
@@ -556,8 +272,7 @@
         </div>
     </section>
 </main>
-
-
+<!-- Main Area -->
 @section Scripts{
     <script src="~/assets/js/shop.js"></script>
 }
