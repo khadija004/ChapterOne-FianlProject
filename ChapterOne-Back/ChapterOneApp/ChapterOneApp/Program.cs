@@ -4,6 +4,7 @@ using ChapterOneApp.Service.Interfaces;
 using ChapterOneApp.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using ChapterOneApp.Helpers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,22 @@ builder.Services.AddDbContext<AppDbContext>(option =>
 });
 
 builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+builder.Services.Configure<IdentityOptions>(opt =>
+{
+    opt.Password.RequiredLength = 8;
+    opt.Password.RequireDigit = true;
+    opt.Password.RequireLowercase = true;
+    opt.Password.RequireUppercase = true;
+    opt.Password.RequireNonAlphanumeric = true;
+    opt.User.RequireUniqueEmail = true;
+    opt.SignIn.RequireConfirmedEmail = true;
+    opt.Lockout.MaxFailedAccessAttempts = 3;
+    opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+    opt.Lockout.AllowedForNewUsers = true;
+});
+builder.Services.Configure<EmailSetting>(builder.Configuration.GetSection("EmailSetting"));
+
 
 builder.Services.AddScoped<ISliderService, SliderService>();
 builder.Services.AddScoped<IAuthorService, AuthorService>();
@@ -40,10 +57,11 @@ builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IWishlistService, WishlistService>();
 builder.Services.AddScoped<ILayoutService, LayoutService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<ISocialService, SocialService>();
 
 
-
-
+builder.Services.AddScoped<EmailSetting>();
 
 
 

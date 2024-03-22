@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iu3P5GdGo7DAGtRye7ePIFsQlv8mlM5zgbdh1Agg9cE=",
+  "Hash": "3cDxyfZp07b74v7ZWn5kIhBv7g5SXzFFjlueluDEgZc=",
   "Source": "ChapterOneApp",
   "BasePath": "_content/ChapterOneApp",
   "Mode": "Default",
@@ -18817,6 +18817,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\slick-1.8.1\\slick\\slick-theme.scss"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\templates\\verify.html",
+      "SourceId": "ChapterOneApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\",
+      "BasePath": "_content/ChapterOneApp",
+      "RelativePath": "assets/templates/verify.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\templates\\verify.html"
     }
   ]
 }

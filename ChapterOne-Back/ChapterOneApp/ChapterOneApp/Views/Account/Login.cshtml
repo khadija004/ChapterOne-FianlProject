@@ -1,0 +1,65 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<!-- Main Area -->
+<main>
+    <section id="background">
+        <div class="login-background-images"
+             style="background-image:url(/assets/images/login/login-backgorund-image.jpg)">
+            <h2>Login</h2>
+        </div>
+    </section>
+    <div class="text-danger" style="margin-left:300px" asp-validation-summary="All"></div>
+    <form method="post" asp-action="Login">
+        <section id="login-form">
+            <div class="container">
+                <div class="login">
+                    <h2>Login</h2>
+                </div>
+                <div class="username-label">
+                    <label for="">Username or email address *</label>
+                </div>
+                <div class="username-input">
+                    <input type="email" asp-for="EmailOrUsername">
+                    <span class="text-danger" asp-validation-for="EmailOrUsername"></span>
+                </div>
+                <div class="password-label">
+                    <label for="">Password *</label>
+                </div>
+                <div class="password-input">
+                    <input type="password" asp-for="Password">
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                    <i class="fa-regular fa-eye eyes"></i>
+                </div>
+                <div class="remenber-login">
+                    <div class="form-check">
+                        <input type="checkbox" id="remember_me" asp-for="IsRememberMe" />
+                        <label style="color:gray" class="form-check-label" for="form2Example31"> Remember me </label>
+                    </div>
+                    <div class="login-button">
+                        <button type="submit">LOG IN</button>
+                    </div>
+                </div>
+                <div class="forgot-password">
+                    <a asp-controller="Account" asp-action="ForgotPassword">Forgot Password?</a>
+                </div>
+                <div class="account">
+                    <div class="dont-account">
+                        <p>Don't have an account?</p>
+                    </div>
+                    <div class="register">
+                        <a asp-controller="Account" asp-action="Register">Register</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </form>
+</main>
+<!-- Main Area -->
+@section Scripts{
+    <script src="~/assets/js/login.js"></script>
+}

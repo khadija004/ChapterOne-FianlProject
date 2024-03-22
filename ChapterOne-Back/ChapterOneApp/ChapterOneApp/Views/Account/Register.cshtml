@@ -1,0 +1,70 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<!-- Main Area -->
+<main>
+    <section id="background">
+        <div class="background-images"
+             style="background-image:url(/assets/images/register/register-backgorund-image.jpg)">
+            <h2>Register</h2>
+        </div>
+    </section>
+    <form method="post" asp-action="Register">
+        <section id="register-form">
+            <div class="container">
+                <div class="register">
+                    <h2>Register</h2>
+                </div>
+                <div class="first-name-label">
+                    <label for="">First Name *</label>
+                </div>
+                <div class="first-name-input">
+                    <input type="text" asp-for="FirstName">
+                    <span class="text-danger" asp-validation-for="FirstName"></span>
+                </div>
+                <div class="last-name-label">
+                    <label for="">Last Name *</label>
+                </div>
+                <div class="last-name-input">
+                    <input type="text" asp-for="LastName">
+                    <span class="text-danger" asp-validation-for="LastName"></span>
+                </div>
+                <div class="email-address-label">
+                    <label for="">Email Address *</label>
+                </div>
+                <div class="email-address-input">
+                    <input type="email" asp-for="Email">
+                    <span class="text-danger" asp-validation-for="Email"></span>
+                </div>
+                <div class="password-label">
+                    <label for="">Password *</label>
+                </div>
+                <div class="password-input">
+                    <input type="password" asp-for="Password">
+                    <span class="text-danger" asp-validation-for="Password"></span>
+                    <i class="fa-regular fa-eye eyes"></i>
+                </div>
+                <div class="confirm-password-label">
+                    <label for="">Confirm Password *</label>
+                </div>
+                <div class="confirm-password-input">
+                    <input type="password" asp-for="ConfirmPassword">
+                    <span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+                    <i class="fa-regular fa-eye eyes"></i>
+                </div>
+                <div class="register">
+                    <div class="register-button">
+                        <button type="submit">Register</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+
+</main>
+<!-- Main Area -->
+@section Scripts{
+    <script src="~/assets/js/register.js"></script>
+}

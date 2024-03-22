@@ -4421,6 +4421,10 @@
       "PackagePath": "staticwebassets\\assets\\slick-1.8.1\\slick\\slick.scss"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\templates\\verify.html",
+      "PackagePath": "staticwebassets\\assets\\templates\\verify.html"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ChapterOneApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
