@@ -817,6 +817,10 @@
       "PackagePath": "staticwebassets\\admin\\images\\product_images_2\\thumb_image9.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\admin\\images\\profil-image.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profil-image.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\admin\\images\\samples\\1280x768\\1.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\samples\\1280x768\\1.jpg"
     },
@@ -3605,6 +3609,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\blog-detail\\blog-detail-image-1.jpg"
     },
     {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\blog-detail\\profil-image.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog-detail\\profil-image.jpg"
+    },
+    {
       "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\blog\\235058d2-5256-4971-9a06-2b3c45f4736a_blog-image-1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\blog\\235058d2-5256-4971-9a06-2b3c45f4736a_blog-image-1.jpg"
     },
@@ -4083,6 +4091,10 @@
     {
       "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\shop\\bookstore.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\shop\\bookstore.jpg"
+    },
+    {
+      "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\shop\\c403415e-6065-4e77-8afa-cffa28198dde_product-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop\\c403415e-6065-4e77-8afa-cffa28198dde_product-10.jpg"
     },
     {
       "Id": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\shop\\d543ac80-333d-4be8-9f07-ac73de9012ca_product-7.jpg",

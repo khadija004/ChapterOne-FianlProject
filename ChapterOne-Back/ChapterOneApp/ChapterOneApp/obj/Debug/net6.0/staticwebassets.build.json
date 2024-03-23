@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3cDxyfZp07b74v7ZWn5kIhBv7g5SXzFFjlueluDEgZc=",
+  "Hash": "0ybsedCInAWdKlu1gDBv1hUZmx8ZRkWn+onqsWuZr6U=",
   "Source": "ChapterOneApp",
   "BasePath": "_content/ChapterOneApp",
   "Mode": "Default",
@@ -3500,6 +3500,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\admin\\images\\product_images_2\\thumb_image9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\admin\\images\\profil-image.jpg",
+      "SourceId": "ChapterOneApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\",
+      "BasePath": "_content/ChapterOneApp",
+      "RelativePath": "admin/images/profil-image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\admin\\images\\profil-image.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\admin\\images\\samples\\1280x768\\1.jpg",
@@ -15555,6 +15572,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\blog-detail\\blog-detail-image-1.jpg"
     },
     {
+      "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\blog-detail\\profil-image.jpg",
+      "SourceId": "ChapterOneApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\",
+      "BasePath": "_content/ChapterOneApp",
+      "RelativePath": "assets/images/blog-detail/profil-image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\blog-detail\\profil-image.jpg"
+    },
+    {
       "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\cart\\cart-backgorund-image.jpg",
       "SourceId": "ChapterOneApp",
       "SourceType": "Discovered",
@@ -17389,6 +17423,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\shop\\bookstore.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\shop\\c403415e-6065-4e77-8afa-cffa28198dde_product-10.jpg",
+      "SourceId": "ChapterOneApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\",
+      "BasePath": "_content/ChapterOneApp",
+      "RelativePath": "assets/images/shop/c403415e-6065-4e77-8afa-cffa28198dde_product-10.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\shop\\c403415e-6065-4e77-8afa-cffa28198dde_product-10.jpg"
     },
     {
       "Identity": "C:\\Users\\HP\\Desktop\\Khadija\\ChapterOne-Back\\ChapterOneApp\\ChapterOneApp\\wwwroot\\assets\\images\\shop\\d543ac80-333d-4be8-9f07-ac73de9012ca_product-7.jpg",

@@ -319,10 +319,10 @@ namespace ChapterOneApp.Areas.Admin.Controllers
             ViewBag.tags = await GetTagAsync();
             ViewBag.authors = await GetAuthorAsync();
 
-            if (!ModelState.IsValid)
-            {
-                return View(model);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return View(model);
+            //}
 
             if (id is null) return BadRequest();
             Product product = await _productService.GettFullDataById((int)id);
