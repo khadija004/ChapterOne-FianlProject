@@ -3,12 +3,14 @@ using ChapterOneApp.Data;
 using ChapterOneApp.Helpers;
 using ChapterOneApp.Models;
 using ChapterOneApp.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace ChapterOneApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin,Admin")]
     public class PromoController : Controller
     {
         private readonly AppDbContext _context;

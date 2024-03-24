@@ -2,11 +2,13 @@
 using ChapterOneApp.Data;
 using ChapterOneApp.Models;
 using ChapterOneApp.Service.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChapterOneApp.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "SuperAdmin,Admin")]
 
     public class AuthorController : Controller
     {

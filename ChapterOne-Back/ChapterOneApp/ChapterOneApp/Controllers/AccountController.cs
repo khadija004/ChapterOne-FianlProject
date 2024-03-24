@@ -78,7 +78,7 @@ namespace ChapterOneApp.Controllers
             }
 
 
-            await _userManager.AddToRoleAsync(newUser, Roles.Member.ToString());
+            await _userManager.AddToRoleAsync(newUser, Roles.SuperAdmin.ToString());
 
             string token = await _userManager.GenerateEmailConfirmationTokenAsync(newUser);
 
